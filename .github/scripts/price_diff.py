@@ -53,7 +53,8 @@ def money(tenths: int) -> str:
 def main():
     now_utc = dt.datetime.utcnow().replace(tzinfo=dt.timezone.utc)
     now_uk = now_utc.astimezone(UK_TZ)
-    date_str_uk = now_uk.strftime("%d/%m/%Y")  # dd/MM/yyyy
+    # Use dd-MM-YYYY (dash) so it's valid for artifact names and looks UK-style
+    date_str_uk = now_uk.strftime("%d-%m-%Y")
 
     players, team_short = fetch_prices()
     prev = load_latest_snapshot()            # {id: cost}
@@ -82,9 +83,10 @@ def main():
     fallers.sort(key=lambda x: (-abs(x["delta"]), x["name"].lower()))
 
     has_changes = bool(changes)
+    header_counts = f"{date_str_uk} (Risers: {len(risers)}, Fallers: {len(fallers)})"
 
     # ------- Write detailed markdown (changes.md) -------
-    md_lines = [f"# FPL Price Changes — {date_str_uk}\n"]
+    md_lines = [f"# FPL Price Changes — {header_counts}\n"]
     if not has_changes:
         md_lines.append("_No price changes detected._\n")
     else:
@@ -115,9 +117,9 @@ def main():
 
     # ------- Build HTML-formatted Telegram message (tg_message.txt) -------
     if not has_changes:
-        tg = f"<b>FPL Price Changes — {date_str_uk}</b>\n\nNo changes."
+        tg = f"<b>FPL Price Changes — {header_counts}</b>\n\nNo changes."
     else:
-        head = f"<b>FPL Price Changes — {date_str_uk}</b>\n\n"
+        head = f"<b>FPL Price Changes — {header_counts}</b>\n\n"
         lines = []
 
         MAX_LINES = 25
