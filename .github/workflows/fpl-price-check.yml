@@ -1,0 +1,60 @@
+name: FPL Price Check
+
+on:
+  schedule:
+    - cron: "45 2 * * *"   # 02:45 UTC (≈ 04:45 CEST / 03:45 CET)
+  workflow_dispatch:
+
+jobs:
+  price-changes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # commit snapshots back to the repo
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Run diff
+        id: diff
+        env:
+          GITHUB_OUTPUT: ${{ github.output }}   # GitHub sets this automatically
+        run: |
+          python .github/scripts/price_diff.py
+
+      - name: Commit snapshot (if any)
+        run: |
+          git config user.name "fpl-price-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/snapshots/*.json
+          git commit -m "snapshot: $(date -u +%F)" || echo "No changes to commit"
+          git push || true
+
+      - name: Upload detailed changelog
+        if: steps.diff.outputs.has_changes == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: changes-${{ steps.diff.outputs.date }}
+          path: changes.md
+
+      - name: Notify Telegram
+        if: steps.diff.outputs.has_changes == 'true'
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: |
+          # Read the compact message produced by the script
+          MSG=$(cat tg_message.txt)
+          # Telegram limit is 4096 chars; script already trims, but double-guard here
+          MSG="${MSG:0:4090}"
+          curl -s "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TG_CHAT_ID}" \
+            --data-urlencode "text=${MSG}" \
+            --data-urlencode "disable_web_page_preview=true"
