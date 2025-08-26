@@ -1,15 +1,17 @@
 name: FPL Price Check
 
 on:
+  # Nightly run AFTER typical FPL price updates.
+  # NOTE: GitHub cron uses UTC. 02:45 UTC ≈ 04:45 CEST (summer) / 03:45 CET (winter).
   schedule:
-    - cron: "45 2 * * *"   # 02:45 UTC (≈ 04:45 CEST / 03:45 CET)
+    - cron: "45 2 * * *"
   workflow_dispatch:
 
 jobs:
   price-changes:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # commit snapshots back to the repo
+      contents: write         # needed to commit snapshots back to the repo
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -22,10 +24,14 @@ jobs:
       - name: Install deps
         run: pip install requests
 
+      # Runs your diff script. It should:
+      # - fetch bootstrap-static
+      # - compare to last snapshot (if any)
+      # - write: data/snapshots/YYYY-MM-DD.json
+      # - write: changes.md + tg_message.txt (only if changes)
+      # - set outputs: has_changes=true/false, date=YYYY-MM-DD
       - name: Run diff
         id: diff
-        env:
-          GITHUB_OUTPUT: ${{ github.output }}   # GitHub sets this automatically
         run: |
           python .github/scripts/price_diff.py
 
@@ -44,17 +50,22 @@ jobs:
           name: changes-${{ steps.diff.outputs.date }}
           path: changes.md
 
-      - name: Notify Telegram
+      - name: Notify Telegram (only when changes)
         if: steps.diff.outputs.has_changes == 'true'
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: |
-          # Read the compact message produced by the script
           MSG=$(cat tg_message.txt)
-          # Telegram limit is 4096 chars; script already trims, but double-guard here
+          # Telegram hard limit: 4096 chars; trim defensively
           MSG="${MSG:0:4090}"
           curl -s "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TG_CHAT_ID}" \
             --data-urlencode "text=${MSG}" \
             --data-urlencode "disable_web_page_preview=true"
+
+      # ----- OPTIONAL ONE-OFF SMOKE TEST -----
+      # Leave this in for the first run to prove the bot + chat_id work.
+      # Then remove these lines (or keep but set `if: false`).
+      - name: Test Telegram (smoke test)
+        if: alway
