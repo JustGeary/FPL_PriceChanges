@@ -41,7 +41,7 @@ jobs:
         if: steps.diff.outputs.has_changes == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: changes-${{ steps.diff.outputs.date }}
+          name: changes-${{ steps.diff.outputs.date }}   # dd-MM-YYYY (safe)
           path: changes.md
 
       - name: Notify Telegram (only when changes)
@@ -58,3 +58,15 @@ jobs:
             --data-urlencode "text=${MSG}" \
             --data-urlencode "parse_mode=HTML" \
             --data-urlencode "disable_web_page_preview=true"
+
+      # ----- OPTIONAL ONE-OFF SMOKE TEST -----
+      - name: Test Telegram (smoke test)
+        if: always()
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: |
+          curl -s "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TG_CHAT_ID}" \
+            --data-urlencode "text=✅ Smoke test from GitHub Actions: Telegram wiring looks good." \
+            --data-urlencode "parse_mode=HTML"
