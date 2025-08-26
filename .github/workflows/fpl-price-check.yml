@@ -24,12 +24,6 @@ jobs:
       - name: Install deps
         run: pip install requests
 
-      # Runs your diff script. It should:
-      # - fetch bootstrap-static
-      # - compare to last snapshot (if any)
-      # - write: data/snapshots/YYYY-MM-DD.json
-      # - write: changes.md + tg_message.txt (only if changes)
-      # - set outputs: has_changes=true/false, date=YYYY-MM-DD
       - name: Run diff
         id: diff
         run: |
@@ -62,4 +56,5 @@ jobs:
           curl -s "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${TG_CHAT_ID}" \
             --data-urlencode "text=${MSG}" \
+            --data-urlencode "parse_mode=HTML" \
             --data-urlencode "disable_web_page_preview=true"
