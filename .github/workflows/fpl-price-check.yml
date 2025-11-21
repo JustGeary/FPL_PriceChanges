@@ -22,7 +22,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install deps
-        run: pip install requests
+        run: pip install requests requests-oauthlib
 
       - name: Run diff
         id: diff
@@ -58,3 +58,13 @@ jobs:
             --data-urlencode "text=${MSG}" \
             --data-urlencode "parse_mode=HTML" \
             --data-urlencode "disable_web_page_preview=true"
+
+      - name: Post to X (only when changes)
+        if: steps.diff.outputs.has_changes == 'true'
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: |
+          python .github/scripts/post_to_x.py
