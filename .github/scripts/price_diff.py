@@ -18,16 +18,53 @@ TELEGRAM_HARD_LIMIT = 4096
 SAFE_BUDGET = 3900  # keep a buffer for safety
 
 
-def fetch_prices() -> Tuple[Dict[int, Tuple[str, int, int]], Dict[int, str]]:
+def fetch_prices() -> Tuple[Dict[int, Tuple[str, int, int]], Dict[int, str], Dict[int, float]]:
+    """
+    Fetch player prices, team short names, and ownership from the FPL API.
+
+    Returns:
+        players:    {player_id: (web_name, now_cost, team_id)}
+        team_short: {team_id: short_name}
+        ownership:  {player_id: selected_by_percent (float)}
+    """
     r = requests.get(FPL_URL, timeout=40)
     r.raise_for_status()
     data = r.json()
+
     team_short = {int(t["id"]): t["short_name"] for t in data["teams"]}
-    players = {
-        int(e["id"]): (e["web_name"], int(e["now_cost"]), int(e["team"]))
-        for e in data["elements"]
-    }
-    return players, team_short
+
+    players: Dict[int, Tuple[str, int, int]] = {}
+    ownership: Dict[int, float] = {}
+
+    for e in data["elements"]:
+        pid = int(e["id"])
+        name = e["web_name"]
+        cost = int(e["now_cost"])
+        team_id = int(e["team"])
+
+        try:
+            selected = float(e.get("selected_by_percent") or 0.0)
+        except (TypeError, ValueError):
+            selected = 0.0
+
+        players[pid] = (name, cost, team_id)
+        ownership[pid] = selected
+
+    return players, team_short, ownership
+
+
+def fetch_current_gw() -> int | None:
+    """Return the current gameweek id from FPL API, or None if not found."""
+    r = requests.get(FPL_URL, timeout=40)
+    r.raise_for_status()
+    data = r.json()
+    for ev in data.get("events", []):
+        if ev.get("is_current"):
+            try:
+                return int(ev["id"])
+            except (TypeError, ValueError):
+                return None
+    return None
 
 
 def load_latest_snapshot() -> Dict[str, int]:
@@ -51,7 +88,7 @@ def money(tenths: int) -> str:
 
 
 def build_lines(risers, fallers) -> List[str]:
-    """Return full (untrimmed) list of HTML-formatted lines with headers and bullets."""
+    """Return full (untrimmed) list of HTML-formatted lines with headers and bullets for Telegram."""
     lines: List[str] = []
     if risers:
         lines.append("📈 <b>Risers</b>")
@@ -70,67 +107,40 @@ def build_lines(risers, fallers) -> List[str]:
     return lines
 
 
-def build_x_status(date_str_uk: str, risers, fallers, max_len: int = 270) -> str:
+def build_x_chunks(header_text: str, title: str, emoji: str, items, max_len: int = 280) -> List[str]:
     """
-    Multi-line, emoji'd summary for X, showing current prices.
+    Build one or more X messages (chunks) for either Risers or Fallers.
 
-    Example:
-
-    FPL Price Changes — 21-11-2025
-
-    📈 Risers:
-    • Palmer (CHE) £7.5m
-
-    📉 Fallers:
-    • Rashford (MUN) £8.9m
+    Each chunk is <= max_len characters. If there are many players, they are
+    split across multiple tweets, which can later be posted as a thread.
     """
-    # No changes at all
-    if not risers and not fallers:
-        return f"FPL Price Changes — {date_str_uk}\n\nNo price changes today."
+    chunks: List[str] = []
+    if not items:
+        return chunks
 
-    lines: List[str] = [f"FPL Price Changes — {date_str_uk}", ""]
+    # Helper to compute length safely
+    def text_len(lines: List[str]) -> int:
+        return len("\n".join(lines).rstrip())
 
-    # Build full list of lines
-    if risers:
-        lines.append("📈 Risers:")
-        for c in risers:
-            lines.append(f"• {c['name']} ({c['team']}) {money(c['new'])}")
-        lines.append("")  # blank line after risers if fallers follow
+    # Start first chunk with full header + section title
+    current_lines: List[str] = [header_text, "", f"{emoji} {title}:"]
+    for idx, c in enumerate(items):
+        bullet = f"• {c['name']} ({c['team']}) {money(c['new'])}"
+        candidate = current_lines + [bullet]
+        if text_len(candidate) <= max_len:
+            current_lines = candidate
+        else:
+            # Finalise current chunk
+            chunks.append("\n".join(current_lines).rstrip())
+            # Start a new chunk: lighter header to save space, but still clear
+            cont_header = f"{emoji} {title} (cont.)"
+            current_lines = [cont_header, bullet]
 
-    if fallers:
-        if not lines or lines[-1] != "":
-            lines.append("")
-        lines.append("📉 Fallers:")
-        for c in fallers:
-            lines.append(f"• {c['name']} ({c['team']}) {money(c['new'])}")
+    # Append final chunk
+    if current_lines:
+        chunks.append("\n".join(current_lines).rstrip())
 
-    # Join and trim if needed
-    text = "\n".join(lines).rstrip()
-    if len(text) <= max_len:
-        return text
-
-    # If too long, trim from the bottom, counting hidden player lines
-    hidden = 0
-    trimmed_lines = lines[:]
-
-    def is_bullet(line: str) -> bool:
-        return line.startswith("• ")
-
-    while len("\n".join(trimmed_lines).rstrip()) > max_len and len(trimmed_lines) > 1:
-        removed = trimmed_lines.pop()
-        if is_bullet(removed):
-            hidden += 1
-        # Remove trailing empty lines
-        while trimmed_lines and trimmed_lines[-1] == "":
-            trimmed_lines.pop()
-        # If last line is a heading with no bullets under it, drop it too
-        if trimmed_lines and trimmed_lines[-1] in ("📈 Risers:", "📉 Fallers:"):
-            trimmed_lines.pop()
-
-    if hidden > 0:
-        trimmed_lines.append(f"… (+{hidden} more)")
-
-    return "\n".join(trimmed_lines).rstrip()
+    return chunks
 
 
 def main():
@@ -138,7 +148,7 @@ def main():
     now_uk = now_utc.astimezone(UK_TZ)
     date_str_uk = now_uk.strftime("%d-%m-%Y")  # dd-MM-YYYY
 
-    players, team_short = fetch_prices()
+    players, team_short, ownership = fetch_prices()
     prev = load_latest_snapshot()
     save_snapshot(now_utc, players)
 
@@ -154,19 +164,29 @@ def main():
                     "old": old,
                     "new": cost,
                     "delta": cost - old,
+                    "ownership": ownership.get(pid, 0.0),
                 }
             )
 
+    # Sort by highest ownership first, then name
     risers = sorted(
         (c for c in changes if c["delta"] > 0),
-        key=lambda x: (-abs(x["delta"]), x["name"].lower()),
+        key=lambda x: (-x.get("ownership", 0.0), x["name"].lower()),
     )
     fallers = sorted(
         (c for c in changes if c["delta"] < 0),
-        key=lambda x: (-abs(x["delta"]), x["name"].lower()),
+        key=lambda x: (-x.get("ownership", 0.0), x["name"].lower()),
     )
     has_changes = bool(changes)
-    header_counts = f"{date_str_uk} (Risers: {len(risers)}, Fallers: {len(fallers)})"
+
+    # Gameweek + header text for MD/Telegram
+    gw = fetch_current_gw()
+    if gw is not None:
+        header_prefix = f"GW{gw} — {date_str_uk}"
+    else:
+        header_prefix = date_str_uk
+
+    header_counts = f"{header_prefix} (Risers: {len(risers)}, Fallers: {len(fallers)})"
 
     # ---------- Markdown (full table) ----------
     md_lines = [f"# FPL Price Changes — {header_counts}\n"]
@@ -176,22 +196,22 @@ def main():
         if risers:
             md_lines += [
                 "## Risers",
-                "| Player | Team | Old | New | Δ |",
-                "|---|:---:|---:|---:|---:|",
+                "| Player | Team | Old | New | Δ | Own% |",
+                "|---|:---:|---:|---:|---:|---:|",
             ]
             md_lines += [
-                f"| {c['name']} | {c['team']} | {money(c['old'])} | {money(c['new'])} | +{c['delta']/10:.1f}m |"
+                f"| {c['name']} | {c['team']} | {money(c['old'])} | {money(c['new'])} | +{c['delta']/10:.1f}m | {c.get('ownership', 0.0):.1f}% |"
                 for c in risers
             ]
             md_lines.append("")
         if fallers:
             md_lines += [
                 "## Fallers",
-                "| Player | Team | Old | New | Δ |",
-                "|---|:---:|---:|---:|---:|",
+                "| Player | Team | Old | New | Δ | Own% |",
+                "|---|:---:|---:|---:|---:|---:|",
             ]
             md_lines += [
-                f"| {c['name']} | {c['team']} | {money(c['old'])} | {money(c['new'])} | {c['delta']/10:.1f}m |"
+                f"| {c['name']} | {c['team']} | {money(c['old'])} | {money(c['new'])} | {c['delta']/10:.1f}m | {c.get('ownership', 0.0):.1f}% |"
                 for c in fallers
             ]
             md_lines.append("")
@@ -226,17 +246,31 @@ def main():
                 hidden += 1
             # If we popped a blank line between groups, pop once more to remove the header above it
             if removed == "" and lines:
-                # remove the group header we just separated from
-                hdr = lines.pop()
+                _hdr = lines.pop()
                 # don't count header as hidden
 
     with open("tg_message.txt", "w", encoding="utf-8") as f:
         f.write(tg)
 
-    # ---------- X status (plain text) ----------
-    x_status = build_x_status(date_str_uk, risers, fallers)
-    with open("x_status.txt", "w", encoding="utf-8") as f:
-        f.write(x_status)
+    # ---------- X status (plain text, split into threaded chunks) ----------
+    if gw is not None:
+        header_risers = f"📈 FPL Risers GW{gw}\n📅 {date_str_uk} (R:{len(risers)})"
+        header_fallers = f"📉 FPL Fallers GW{gw}\n📅 {date_str_uk} (F:{len(fallers)})"
+    else:
+        header_risers = f"📈 FPL Risers\n📅 {date_str_uk} (R:{len(risers)})"
+        header_fallers = f"📉 FPL Fallers\n📅 {date_str_uk} (F:{len(fallers)})"
+
+    riser_chunks = build_x_chunks(header_risers, "Risers", "📈", risers)
+    faller_chunks = build_x_chunks(header_fallers, "Fallers", "📉", fallers)
+
+    # Write chunks to separate files for threading
+    for idx, msg in enumerate(riser_chunks, start=1):
+        with open(f"x_status_risers_{idx}.txt", "w", encoding="utf-8") as f:
+            f.write(msg)
+
+    for idx, msg in enumerate(faller_chunks, start=1):
+        with open(f"x_status_fallers_{idx}.txt", "w", encoding="utf-8") as f:
+            f.write(msg)
 
     # ---------- GitHub outputs ----------
     gh_out = os.environ.get("GITHUB_OUTPUT")
