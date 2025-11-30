@@ -107,7 +107,13 @@ def build_lines(risers, fallers) -> List[str]:
     return lines
 
 
-def build_x_chunks(header_text: str, title: str, emoji: str, items, max_len: int = 280) -> List[str]:
+def build_x_chunks(
+    header_text: str,
+    title: str,
+    emoji: str,
+    items,
+    max_len: int = 270,
+) -> List[str]:
     """
     Build one or more X messages (chunks) for either Risers or Fallers.
 
@@ -118,13 +124,14 @@ def build_x_chunks(header_text: str, title: str, emoji: str, items, max_len: int
     if not items:
         return chunks
 
-    # Helper to compute length safely
     def text_len(lines: List[str]) -> int:
         return len("\n".join(lines).rstrip())
 
-    # Start first chunk with full header + section title
+    # First chunk: header + blank + section title
     current_lines: List[str] = [header_text, "", f"{emoji} {title}:"]
-    for idx, c in enumerate(items):
+
+    # Build bullets, splitting into new chunks as needed
+    for c in items:
         bullet = f"• {c['name']} ({c['team']}) {money(c['new'])}"
         candidate = current_lines + [bullet]
         if text_len(candidate) <= max_len:
@@ -132,11 +139,10 @@ def build_x_chunks(header_text: str, title: str, emoji: str, items, max_len: int
         else:
             # Finalise current chunk
             chunks.append("\n".join(current_lines).rstrip())
-            # Start a new chunk: lighter header to save space, but still clear
+            # Subsequent chunks: lighter header (no hashtag)
             cont_header = f"{emoji} {title} (cont.)"
             current_lines = [cont_header, bullet]
 
-    # Append final chunk
     if current_lines:
         chunks.append("\n".join(current_lines).rstrip())
 
@@ -254,14 +260,24 @@ def main():
 
     # ---------- X status (plain text, split into threaded chunks) ----------
     if gw is not None:
-        header_risers = f"📈 FPL Risers GW{gw}\n📅 {date_str_uk} (R:{len(risers)})"
-        header_fallers = f"📉 FPL Fallers GW{gw}\n📅 {date_str_uk} (F:{len(fallers)})"
+        header_risers = f"📈 FPL Risers GW{gw}\n📅 {date_str_uk} (R:{len(risers)}) #FPL"
+        header_fallers = f"📉 FPL Fallers GW{gw}\n📅 {date_str_uk} (F:{len(fallers)}) #FPL"
     else:
-        header_risers = f"📈 FPL Risers\n📅 {date_str_uk} (R:{len(risers)})"
-        header_fallers = f"📉 FPL Fallers\n📅 {date_str_uk} (F:{len(fallers)})"
+        header_risers = f"📈 FPL Risers\n📅 {date_str_uk} (R:{len(risers)}) #FPL"
+        header_fallers = f"📉 FPL Fallers\n📅 {date_str_uk} (F:{len(fallers)}) #FPL"
 
-    riser_chunks = build_x_chunks(header_risers, "Risers", "📈", risers)
-    faller_chunks = build_x_chunks(header_fallers, "Fallers", "📉", fallers)
+    riser_chunks = build_x_chunks(
+        header_risers,
+        "Risers",
+        "📈",
+        risers,
+    )
+    faller_chunks = build_x_chunks(
+        header_fallers,
+        "Fallers",
+        "📉",
+        fallers,
+    )
 
     # Write chunks to separate files for threading
     for idx, msg in enumerate(riser_chunks, start=1):
