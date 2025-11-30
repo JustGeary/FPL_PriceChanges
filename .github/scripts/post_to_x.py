@@ -94,11 +94,11 @@ def post_thread(session, base_path: str, label: str):
 def main():
     session = get_session()
 
-    # Risers thread (if any files present)
-    post_thread(session, "x_status_risers", "RISERS")
-
-    # Fallers thread (if any files present)
+    # Post FALLERS first so RISERS appear above them in the profile timeline
     post_thread(session, "x_status_fallers", "FALLERS")
+
+    # Then post RISERS
+    post_thread(session, "x_status_risers", "RISERS")
 
 
 if __name__ == "__main__":
