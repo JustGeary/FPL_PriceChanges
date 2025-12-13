@@ -112,7 +112,7 @@ def build_x_chunks(
     title: str,
     emoji: str,
     items,
-    max_len: int = 270,
+    max_len: int = 255,  # <— tuned to avoid X "soft cap" 403s
 ) -> List[str]:
     """
     Build one or more X messages (chunks) for either Risers or Fallers.
@@ -130,7 +130,6 @@ def build_x_chunks(
     # First chunk: header + blank + section title
     current_lines: List[str] = [header_text, "", f"{emoji} {title}:"]
 
-    # Build bullets, splitting into new chunks as needed
     for c in items:
         bullet = f"• {c['name']} ({c['team']}) {money(c['new'])}"
         candidate = current_lines + [bullet]
@@ -139,7 +138,7 @@ def build_x_chunks(
         else:
             # Finalise current chunk
             chunks.append("\n".join(current_lines).rstrip())
-            # Subsequent chunks: lighter header (no hashtag)
+            # Subsequent chunks: lighter header
             cont_header = f"{emoji} {title} (cont.)"
             current_lines = [cont_header, bullet]
 
@@ -239,21 +238,16 @@ def main():
             extra = f"\n\n(+{hidden_count} more)" if hidden_count > 0 else ""
             return head + "\n".join(lines_list) + extra
 
-        # Trim from the end (fallers last) until we fit in SAFE_BUDGET
         while True:
             msg = assemble(lines, hidden)
             if len(msg) <= SAFE_BUDGET or not lines:
                 tg = msg
                 break
-            # Remove the last *non-header* line
             removed = lines.pop()
-            # skip blank header separators when counting hidden
             if removed and not removed.startswith(("📈", "📉")):
                 hidden += 1
-            # If we popped a blank line between groups, pop once more to remove the header above it
             if removed == "" and lines:
                 _hdr = lines.pop()
-                # don't count header as hidden
 
     with open("tg_message.txt", "w", encoding="utf-8") as f:
         f.write(tg)
@@ -266,20 +260,9 @@ def main():
         header_risers = f"📈 FPL Risers\n📅 {date_str_uk} (R:{len(risers)}) #FPL"
         header_fallers = f"📉 FPL Fallers\n📅 {date_str_uk} (F:{len(fallers)}) #FPL"
 
-    riser_chunks = build_x_chunks(
-        header_risers,
-        "Risers",
-        "📈",
-        risers,
-    )
-    faller_chunks = build_x_chunks(
-        header_fallers,
-        "Fallers",
-        "📉",
-        fallers,
-    )
+    riser_chunks = build_x_chunks(header_risers, "Risers", "📈", risers)
+    faller_chunks = build_x_chunks(header_fallers, "Fallers", "📉", fallers)
 
-    # Write chunks to separate files for threading
     for idx, msg in enumerate(riser_chunks, start=1):
         with open(f"x_status_risers_{idx}.txt", "w", encoding="utf-8") as f:
             f.write(msg)
@@ -288,7 +271,6 @@ def main():
         with open(f"x_status_fallers_{idx}.txt", "w", encoding="utf-8") as f:
             f.write(msg)
 
-    # ---------- GitHub outputs ----------
     gh_out = os.environ.get("GITHUB_OUTPUT")
     if gh_out:
         with open(gh_out, "a", encoding="utf-8") as f:
