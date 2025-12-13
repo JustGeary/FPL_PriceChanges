@@ -25,26 +25,18 @@ def get_session():
         print(f"Missing required env vars: {', '.join(missing)}")
         raise SystemExit(1)
 
-    session = OAuth1Session(
+    return OAuth1Session(
         api_key,
         client_secret=api_secret,
         resource_owner_key=access_token,
         resource_owner_secret=access_secret,
     )
-    return session
 
 
 def post_thread(session, base_path: str, label: str):
-    """
-    Post a sequence of tweets as a thread.
-
-    Expects files named like:
-      {base_path}_1.txt, {base_path}_2.txt, ...
-
-    Each subsequent tweet replies to the previous one.
-    """
     idx = 1
     parent_id = None
+
     while True:
         path = f"{base_path}_{idx}.txt"
         if not os.path.exists(path):
@@ -62,7 +54,6 @@ def post_thread(session, base_path: str, label: str):
             idx += 1
             continue
 
-        # Debug preview
         print(f"===== {label} CHUNK {idx} MESSAGE PREVIEW =====")
         print(text)
         print(f"===== {label} CHUNK {idx} LENGTH: {len(text)} =====")
@@ -77,14 +68,12 @@ def post_thread(session, base_path: str, label: str):
         print(f"[{label}] CHUNK {idx} X API raw response:", resp.text)
 
         if resp.status_code >= 400:
-            print(f"[{label}] Error posting to X (chunk {idx}): {resp.status_code} {resp.text}")
-            raise SystemExit(1)
+            raise RuntimeError(f"{label} chunk {idx} failed: {resp.status_code} {resp.text}")
 
         try:
             data = resp.json().get("data", {})
             parent_id = data.get("id", parent_id)
         except Exception:
-            # If parsing fails, keep using last known parent_id
             print(f"[{label}] Warning: could not parse tweet ID from response JSON.")
 
         print(f"[{label}] Successfully posted chunk {idx} to X.")
@@ -94,11 +83,15 @@ def post_thread(session, base_path: str, label: str):
 def main():
     session = get_session()
 
-    # Post FALLERS first so RISERS appear above them in the profile timeline
+    # Post FALLERS first so RISERS appear above in timeline
     post_thread(session, "x_status_fallers", "FALLERS")
 
-    # Then post RISERS
-    post_thread(session, "x_status_risers", "RISERS")
+    # Then RISERS — if this fails, log it but don't fail the entire run
+    try:
+        post_thread(session, "x_status_risers", "RISERS")
+    except Exception as e:
+        print(f"[RISERS] WARNING: posting failed after fallers succeeded: {e}")
+        # do not exit non-zero
 
 
 if __name__ == "__main__":
