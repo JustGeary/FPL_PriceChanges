@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 import os
+import time
 from requests_oauthlib import OAuth1Session
 
-POST_URL = "https://api.twitter.com/2/tweets"  # X API v2 endpoint
+# Use api.x.com (often avoids Cloudflare behaviour seen on api.twitter.com from GitHub runners)
+POST_URL = "https://api.x.com/2/tweets"
 
 
 def get_session():
@@ -25,15 +27,81 @@ def get_session():
         print(f"Missing required env vars: {', '.join(missing)}")
         raise SystemExit(1)
 
-    return OAuth1Session(
+    sess = OAuth1Session(
         api_key,
         client_secret=api_secret,
         resource_owner_key=access_token,
         resource_owner_secret=access_secret,
     )
 
+    # Helps with some WAF/CDN heuristics; harmless otherwise.
+    sess.headers.update(
+        {
+            "User-Agent": "FPLPriceBot/1.0 (+https://github.com/JustGeary/FPL_PriceChanges)",
+            "Accept": "application/json",
+        }
+    )
+    return sess
 
-def post_thread(session, base_path: str, label: str):
+
+def looks_like_cloudflare(resp_text: str) -> bool:
+    """
+    Cloudflare challenge returns HTML like 'Just a moment... Enable JavaScript and cookies to continue'
+    instead of JSON. Detect that and treat it as retryable.
+    """
+    if not resp_text:
+        return False
+    t = resp_text.lstrip().lower()
+    if t.startswith("<!doctype html") or t.startswith("<html"):
+        return ("just a moment" in t) or ("cf_chl" in t) or ("challenge" in t) or ("cloudflare" in t)
+    return False
+
+
+def post_with_retries(session, payload: dict, label: str, idx: int, max_attempts: int = 5):
+    """
+    Retry on:
+      - Cloudflare challenge HTML
+      - 429 rate limiting
+      - transient 5xx errors
+
+    Returns (resp_status_code, resp_text).
+    """
+    backoffs = [2, 5, 10, 20, 30]  # seconds
+
+    last_status = None
+    last_text = ""
+
+    for attempt in range(1, max_attempts + 1):
+        resp = session.post(POST_URL, json=payload, timeout=30)
+        last_status = resp.status_code
+        last_text = resp.text or ""
+
+        # Light logging each attempt (avoid dumping massive HTML every time)
+        trunc = (last_text[:350] + "…") if len(last_text) > 350 else last_text
+        print(f"[{label}] CHUNK {idx} attempt {attempt}/{max_attempts} status: {last_status}")
+        print(f"[{label}] CHUNK {idx} attempt {attempt} body (trunc): {trunc}")
+
+        # Cloudflare HTML challenge → retry
+        if looks_like_cloudflare(last_text):
+            wait = backoffs[min(attempt - 1, len(backoffs) - 1)]
+            print(f"[{label}] CHUNK {idx} Cloudflare challenge detected. Waiting {wait}s then retrying…")
+            time.sleep(wait)
+            continue
+
+        # Retryable HTTP status codes
+        if last_status in (429, 500, 502, 503, 504):
+            wait = backoffs[min(attempt - 1, len(backoffs) - 1)]
+            print(f"[{label}] CHUNK {idx} transient status {last_status}. Waiting {wait}s then retrying…")
+            time.sleep(wait)
+            continue
+
+        # Non-retryable (success or real error)
+        return last_status, last_text
+
+    return last_status or 0, last_text
+
+
+def post_thread(session, base_path: str, label: str, soft_fail: bool = False):
     idx = 1
     parent_id = None
 
@@ -62,16 +130,21 @@ def post_thread(session, base_path: str, label: str):
         if parent_id is not None:
             payload["reply"] = {"in_reply_to_tweet_id": parent_id}
 
-        resp = session.post(POST_URL, json=payload, timeout=20)
+        status, body = post_with_retries(session, payload, label, idx, max_attempts=5)
 
-        print(f"[{label}] CHUNK {idx} X API status code:", resp.status_code)
-        print(f"[{label}] CHUNK {idx} X API raw response:", resp.text)
+        print(f"[{label}] CHUNK {idx} final status:", status)
+        print(f"[{label}] CHUNK {idx} final raw response (trunc 800):", (body[:800] + "…") if len(body) > 800 else body)
 
-        if resp.status_code >= 400:
-            raise RuntimeError(f"{label} chunk {idx} failed: {resp.status_code} {resp.text}")
+        if status >= 400:
+            msg = f"{label} chunk {idx} failed: {status} {body[:300]}"
+            if soft_fail:
+                print(f"[{label}] WARNING: {msg}")
+                return False
+            raise RuntimeError(msg)
 
+        # Parse parent tweet id for threading
         try:
-            data = resp.json().get("data", {})
+            data = __import__("json").loads(body).get("data", {})
             parent_id = data.get("id", parent_id)
         except Exception:
             print(f"[{label}] Warning: could not parse tweet ID from response JSON.")
@@ -79,19 +152,24 @@ def post_thread(session, base_path: str, label: str):
         print(f"[{label}] Successfully posted chunk {idx} to X.")
         idx += 1
 
+    return True
+
 
 def main():
     session = get_session()
 
-    # Post FALLERS first so RISERS appear above in timeline
-    post_thread(session, "x_status_fallers", "FALLERS")
+    # Optional: allow FALLERS to soft-fail too, if Cloudflare blocks.
+    # Set in workflow env: X_SOFT_FAIL_FALLERS=true
+    soft_fail_fallers = os.getenv("X_SOFT_FAIL_FALLERS", "false").lower() == "true"
 
-    # Then RISERS — if this fails, log it but don't fail the entire run
+    # Post FALLERS first so RISERS appear above in timeline
+    post_thread(session, "x_status_fallers", "FALLERS", soft_fail=soft_fail_fallers)
+
+    # Then RISERS — keep your existing behaviour: warn but do not fail the whole run
     try:
-        post_thread(session, "x_status_risers", "RISERS")
+        post_thread(session, "x_status_risers", "RISERS", soft_fail=True)
     except Exception as e:
         print(f"[RISERS] WARNING: posting failed after fallers succeeded: {e}")
-        # do not exit non-zero
 
 
 if __name__ == "__main__":
