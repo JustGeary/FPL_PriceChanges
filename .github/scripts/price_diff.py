@@ -19,6 +19,14 @@ SAFE_BUDGET = 3900  # keep a buffer for safety
 
 
 def fetch_prices() -> Tuple[Dict[int, Tuple[str, int, int]], Dict[int, str], Dict[int, float]]:
+    """
+    Fetch player prices, team short names, and ownership from the FPL API.
+
+    Returns:
+        players:    {player_id: (web_name, now_cost, team_id)}
+        team_short: {team_id: short_name}
+        ownership:  {player_id: selected_by_percent (float)}
+    """
     r = requests.get(FPL_URL, timeout=40)
     r.raise_for_status()
     data = r.json()
@@ -46,6 +54,7 @@ def fetch_prices() -> Tuple[Dict[int, Tuple[str, int, int]], Dict[int, str], Dic
 
 
 def fetch_current_gw() -> int | None:
+    """Return the current gameweek id from FPL API, or None if not found."""
     r = requests.get(FPL_URL, timeout=40)
     r.raise_for_status()
     data = r.json()
@@ -67,7 +76,7 @@ def load_latest_snapshot() -> Dict[str, int]:
 
 
 def save_snapshot(ts_utc: dt.datetime, today_map: Dict[int, Tuple[str, int, int]]) -> pathlib.Path:
-    snap_path = SNAP_DIR / f"{ts_utc.date().isoformat()}.json"
+    snap_path = SNAP_DIR / f"{ts_utc.date().isoformat()}.json"  # ISO filename for natural sort
     comp = {str(pid): cost for pid, (_, cost, _) in today_map.items()}
     with snap_path.open("w", encoding="utf-8") as f:
         json.dump(comp, f, ensure_ascii=False, separators=(",", ":"))
@@ -79,6 +88,7 @@ def money(tenths: int) -> str:
 
 
 def build_lines(risers, fallers) -> List[str]:
+    """Return full (untrimmed) list of HTML-formatted lines with headers and bullets for Telegram."""
     lines: List[str] = []
     if risers:
         lines.append("📈 <b>Risers</b>")
@@ -88,7 +98,7 @@ def build_lines(risers, fallers) -> List[str]:
             )
     if fallers:
         if lines:
-            lines.append("")
+            lines.append("")  # blank line between groups
         lines.append("📉 <b>Fallers</b>")
         for ch in fallers:
             lines.append(
@@ -104,6 +114,12 @@ def build_x_chunks(
     items,
     max_len: int = 255,  # tuned to avoid X "soft cap" 403s
 ) -> List[str]:
+    """
+    Build one or more X messages (chunks) for either Risers or Fallers.
+
+    Each chunk is <= max_len characters. If there are many players, they are
+    split across multiple tweets, which can later be posted as a thread.
+    """
     chunks: List[str] = []
     if not items:
         return chunks
@@ -111,6 +127,7 @@ def build_x_chunks(
     def text_len(lines: List[str]) -> int:
         return len("\n".join(lines).rstrip())
 
+    # First chunk: header + blank + section title
     current_lines: List[str] = [header_text, "", f"{emoji} {title}:"]
 
     for c in items:
@@ -132,7 +149,7 @@ def build_x_chunks(
 def main():
     now_utc = dt.datetime.utcnow().replace(tzinfo=dt.timezone.utc)
     now_uk = now_utc.astimezone(UK_TZ)
-    date_str_uk = now_uk.strftime("%d-%m-%Y")
+    date_str_uk = now_uk.strftime("%d-%m-%Y")  # dd-MM-YYYY
 
     players, team_short, ownership = fetch_prices()
     prev = load_latest_snapshot()
@@ -154,6 +171,7 @@ def main():
                 }
             )
 
+    # Sort by highest ownership first, then name
     risers = sorted(
         (c for c in changes if c["delta"] > 0),
         key=lambda x: (-x.get("ownership", 0.0), x["name"].lower()),
@@ -164,16 +182,16 @@ def main():
     )
     has_changes = bool(changes)
 
-    gw = fetch_current_gw()
-
     # Markdown/Telegram header
+    gw = fetch_current_gw()
     if gw is not None:
         header_prefix = f"GW{gw} — {date_str_uk}"
     else:
         header_prefix = date_str_uk
+
     header_counts = f"{header_prefix} (Risers: {len(risers)}, Fallers: {len(fallers)})"
 
-    # ---------- Markdown ----------
+    # ---------- Markdown (full table) ----------
     md_lines = [f"# FPL Price Changes — {header_counts}\n"]
     if not has_changes:
         md_lines.append("_No price changes detected._\n")
@@ -207,7 +225,7 @@ def main():
     with open("changes.md", "w", encoding="utf-8") as f:
         f.write("\n".join(md_lines) + "\n")
 
-    # ---------- Telegram ----------
+    # ---------- Telegram (HTML, dynamic trimming) ----------
     if not has_changes:
         tg = f"<b>FPL Price Changes — {header_counts}</b>\n\nNo changes."
     else:
@@ -233,16 +251,19 @@ def main():
     with open("tg_message.txt", "w", encoding="utf-8") as f:
         f.write(tg)
 
-    # ---------- X headers with dynamic #GWxx hashtag ----------
-    gw_tag = f" #GW{gw}" if gw is not None else ""
-    tags = f"#FPL{gw_tag}"
+    # ---------- X status headers (UPDATED LAYOUT) ----------
+    # Requirement:
+    #   Line 1: "📉 FPL Fallers #GW15" (or risers)
+    #   Line 2: "📅 dd-mm-yyyy (F:23) #FPL"
+    # (No #GW on line 2 anymore)
 
     if gw is not None:
-        header_risers = f"📈 FPL Risers GW{gw}\n📅 {date_str_uk} (R:{len(risers)}) {tags}"
-        header_fallers = f"📉 FPL Fallers GW{gw}\n📅 {date_str_uk} (F:{len(fallers)}) {tags}"
+        gw_hash = f"#GW{gw}"
+        header_fallers = f"📉 FPL Fallers {gw_hash}\n📅 {date_str_uk} (F:{len(fallers)}) #FPL"
+        header_risers = f"📈 FPL Risers {gw_hash}\n📅 {date_str_uk} (R:{len(risers)}) #FPL"
     else:
-        header_risers = f"📈 FPL Risers\n📅 {date_str_uk} (R:{len(risers)}) {tags}"
-        header_fallers = f"📉 FPL Fallers\n📅 {date_str_uk} (F:{len(fallers)}) {tags}"
+        header_fallers = f"📉 FPL Fallers\n📅 {date_str_uk} (F:{len(fallers)}) #FPL"
+        header_risers = f"📈 FPL Risers\n📅 {date_str_uk} (R:{len(risers)}) #FPL"
 
     riser_chunks = build_x_chunks(header_risers, "Risers", "📈", risers)
     faller_chunks = build_x_chunks(header_fallers, "Fallers", "📉", fallers)
@@ -255,6 +276,7 @@ def main():
         with open(f"x_status_fallers_{idx}.txt", "w", encoding="utf-8") as f:
             f.write(msg)
 
+    # ---------- GitHub outputs ----------
     gh_out = os.environ.get("GITHUB_OUTPUT")
     if gh_out:
         with open(gh_out, "a", encoding="utf-8") as f:
