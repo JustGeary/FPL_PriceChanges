@@ -1,0 +1,91 @@
+name: Recover X posts for 12 September 2026
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: recover-x-2026-09-12
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests requests-oauthlib
+      - uses: actions/download-artifact@v4
+        with:
+          name: changes-12-09-2026
+          run-id: 34680487319
+          github-token: ${{ github.token }}
+          path: recovery-source
+      - name: Prepare original dated messages
+        run: |
+          python - <<'PY'
+          import importlib.util, json, pathlib, re
+          spec = importlib.util.spec_from_file_location('diff', '.github/scripts/price_diff.py')
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          md = pathlib.Path('recovery-source/changes.md').read_text()
+          assert '12-09-2026' in md and 'GW3' in md, 'Unexpected source date/gameweek'
+          groups = {'Risers': [], 'Fallers': []}
+          section = None
+          for line in md.splitlines():
+              if line in ('## Risers', '## Fallers'):
+                  section = line[3:]
+              elif section and line.startswith('| '):
+                  cells = [c.strip() for c in line.strip('|').split('|')]
+                  if len(cells) == 6 and cells[3].startswith('£'):
+                      groups[section].append({'name': cells[0], 'team': cells[1], 'new': round(float(cells[3][1:-1])*10)})
+          assert len(groups['Fallers']) == 19, 'Unexpected fallers count'
+          assert groups['Risers'], 'Missing risers'
+          messages = []
+          for title, emoji, letter in [('Fallers', '📉', 'F'), ('Risers', '📈', 'R')]:
+              header = f'{emoji} FPL {title} #GW3\n📅 12-09-2026 ({letter}:{len(groups[title])}) #FPL'
+              for text in module.build_x_chunks(header, title, emoji, groups[title]):
+                  assert len(text) <= 255
+                  messages.append({'group': title, 'text': text})
+                  print(text, '\n---', flush=True)
+          pathlib.Path('recovery-messages.json').write_text(json.dumps(messages, ensure_ascii=False))
+          PY
+      - name: Publish to X once and record receipts
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: |
+          python - <<'PY'
+          import importlib.util, json, os, pathlib
+          assert os.environ['GITHUB_RUN_ATTEMPT'] == '1', 'Do not rerun: inspect receipts first'
+          spec = importlib.util.spec_from_file_location('poster', '.github/scripts/post_to_x.py')
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          session = module.get_session()
+          parents = {}
+          for item in json.loads(pathlib.Path('recovery-messages.json').read_text()):
+              payload = {'text': item['text']}
+              if item['group'] in parents:
+                  payload['reply'] = {'in_reply_to_tweet_id': parents[item['group']]}
+              response = session.post(module.POST_URL, json=payload, timeout=30)
+              print('X status:', response.status_code, 'Response:', response.text[:1000], flush=True)
+              response.raise_for_status()
+              tweet_id = response.json()['data']['id']
+              parents[item['group']] = tweet_id
+              url = f'https://x.com/i/web/status/{tweet_id}'
+              with open('recovery-receipts.txt', 'a') as f:
+                  f.write(url + '\n')
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+                  f.write(f'- {item["group"]}: {url}\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: recovery-12-09-2026-receipts
+          path: |
+            recovery-messages.json
+            recovery-receipts.txt
