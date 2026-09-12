@@ -35,6 +35,8 @@ $exe = "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe"
 foreach ($entry in @(@{Name='Trigger';Time='00:05'},@{Name='Check';Time='00:15'})) {
     $action = New-ScheduledTaskAction -Execute $exe -Argument "-NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$root\Invoke-FplSchedule.ps1`" -Mode $($entry.Name)"
     $trigger = New-ScheduledTaskTrigger -Daily -At $entry.Time
+    # No UTC offset: Task Scheduler follows the PC's UK wall clock across BST/GMT.
+    $trigger.StartBoundary = (Get-Date).ToString('yyyy-MM-dd') + 'T' + $entry.Time + ':00'
     Register-ScheduledTask -TaskName "FPL Price Bot - $($entry.Name)" -Action $action -Trigger $trigger -Principal $principal -Settings $settings -Description 'UK local time. Cloud execution remains on GitHub; independent GitHub cron fallback retained.' -Force | Out-Null
 }
 $probeAction = New-ScheduledTaskAction -Execute $exe -Argument "-NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$root\Invoke-FplSchedule.ps1`" -Mode Probe"
