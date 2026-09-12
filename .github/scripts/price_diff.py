@@ -76,7 +76,7 @@ def load_latest_snapshot() -> Dict[str, int]:
 
 
 def save_snapshot(ts_utc: dt.datetime, today_map: Dict[int, Tuple[str, int, int]]) -> pathlib.Path:
-    snap_path = SNAP_DIR / f"{ts_utc.date().isoformat()}.json"  # ISO filename for natural sort
+    snap_path = SNAP_DIR / f"{ts_utc.astimezone(UK_TZ).date().isoformat()}.json"
     comp = {str(pid): cost for pid, (_, cost, _) in today_map.items()}
     with snap_path.open("w", encoding="utf-8") as f:
         json.dump(comp, f, ensure_ascii=False, separators=(",", ":"))
@@ -146,13 +146,13 @@ def build_x_chunks(
     return chunks
 
 
-def main():
-    now_utc = dt.datetime.utcnow().replace(tzinfo=dt.timezone.utc)
+def main(prepared=None):
+    now_utc = prepared['timestamp'] if prepared else dt.datetime.now(dt.timezone.utc)
     now_uk = now_utc.astimezone(UK_TZ)
     date_str_uk = now_uk.strftime("%d-%m-%Y")  # dd-MM-YYYY
 
-    players, team_short, ownership = fetch_prices()
-    prev = load_latest_snapshot()
+    players, team_short, ownership = prepared['players_data'] if prepared else fetch_prices()
+    prev = prepared['previous'] if prepared else load_latest_snapshot()
     save_snapshot(now_utc, players)
 
     changes = []
@@ -183,7 +183,7 @@ def main():
     has_changes = bool(changes)
 
     # Markdown/Telegram header
-    gw = fetch_current_gw()
+    gw = prepared['gameweek'] if prepared else fetch_current_gw()
     if gw is not None:
         header_prefix = f"GW{gw} — {date_str_uk}"
     else:

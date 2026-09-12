@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-12",
+  "status": "complete",
+  "migration_note": "Original Telegram delivery and successful X recovery verified before enabling reliable scheduling.",
+  "recovery_run": "https://github.com/JustGeary/FPL_PriceChanges/actions/runs/34684750751",
+  "messages": [
+    {"channel":"x","group":"fallers","status":"sent","id":"2098698510505820582"},
+    {"channel":"x","group":"fallers","status":"sent","id":"2098698511738880357"},
+    {"channel":"x","group":"risers","status":"sent","id":"2098698513081119159"}
+  ]
+}

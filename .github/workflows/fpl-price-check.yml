@@ -1,70 +1,54 @@
 name: FPL Price Check
-
 on:
-  # Nightly run AFTER typical FPL price updates.
-  # NOTE: GitHub cron uses UTC. 02:45 UTC ≈ 04:45 CEST (summer) / 03:45 CET (winter).
   schedule:
-    - cron: "45 2 * * *"
+    - cron: '45 2 * * *' # Independent fallback; primary is Cyberdyne at 00:05 UK.
   workflow_dispatch:
-
+    inputs:
+      mode:
+        type: choice
+        default: deliver
+        options: [deliver, check]
+concurrency:
+  group: fpl-price-delivery
+  cancel-in-progress: false
+permissions:
+  contents: write
 jobs:
   price-changes:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write         # needed to commit snapshots back to the repo
+    timeout-minutes: 20
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
         with:
-          python-version: "3.11"
-
-      - name: Install deps
-        run: pip install requests requests-oauthlib
-
-      - name: Run diff
-        id: diff
-        run: |
-          python .github/scripts/price_diff.py
-
-      - name: Commit snapshot (if any)
-        run: |
-          git config user.name "fpl-price-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add data/snapshots/*.json
-          git commit -m "snapshot: $(date -u +%F)" || echo "No changes to commit"
-          git push || true
-
-      - name: Upload detailed changelog
-        if: steps.diff.outputs.has_changes == 'true'
-        uses: actions/upload-artifact@v4
+          ref: main
+      - uses: actions/setup-python@v5
         with:
-          name: changes-${{ steps.diff.outputs.date }}   # dd-MM-YYYY (safe)
-          path: changes.md
-
-      - name: Notify Telegram (only when changes)
-        if: steps.diff.outputs.has_changes == 'true'
+          python-version: '3.11'
+      - run: pip install requests requests-oauthlib
+      - name: Configure delivery commits
+        run: |
+          git config user.name 'fpl-price-bot'
+          git config user.email 'bot@users.noreply.github.com'
+      - name: Observe prices and deliver pending notifications
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-        run: |
-          MSG=$(cat tg_message.txt)
-          # Telegram hard limit: 4096 chars; trim defensively
-          MSG="${MSG:0:4090}"
-          curl -s "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=${TG_CHAT_ID}" \
-            --data-urlencode "text=${MSG}" \
-            --data-urlencode "parse_mode=HTML" \
-            --data-urlencode "disable_web_page_preview=true"
-
-      - name: Post to X (only when changes)
-        if: steps.diff.outputs.has_changes == 'true'
-        env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          RUN_MODE: ${{ inputs.mode }}
         run: |
-          python .github/scripts/post_to_x.py
+          if [ "$RUN_MODE" = check ]; then
+            python .github/scripts/reliable_run.py --check
+          else
+            python .github/scripts/reliable_run.py
+          fi
+      - name: Preserve report and delivery evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fpl-delivery-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            changes.md
+            data/delivery/*.json
