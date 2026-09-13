@@ -399,6 +399,32 @@
           "id": 306
         }
       ]
+    },
+    {
+      "at": "2026-09-13T21:00:11.269163+00:00",
+      "mode": "alerts",
+      "keys": [
+        "123:fall"
+      ],
+      "rows": [
+        {
+          "id": 123,
+          "name": "Hinshelwood",
+          "team": "BHA",
+          "price": 60,
+          "current": -100.1,
+          "projected": -101.6,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 13 Sep, 22:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Hinshelwood (BHA) £6.0m | now -100.1% → midnight -101.6%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
