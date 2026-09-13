@@ -1,0 +1,41 @@
+name: FPL Telegram Prediction Trial
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        default: alerts
+        options: [alerts, roundup, review, preview]
+concurrency:
+  group: fpl-price-delivery
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: |
+          git config user.name 'fpl-price-bot'
+          git config user.email 'bot@users.noreply.github.com'
+      - name: Telegram prediction trial
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          WATCH_MODE: ${{ inputs.mode }}
+        run: python .github/scripts/price_watch.py --mode "$WATCH_MODE"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: price-watch-${{ github.run_id }}
+          path: |
+            data/price-watch/
+            price-watch-preview.txt
