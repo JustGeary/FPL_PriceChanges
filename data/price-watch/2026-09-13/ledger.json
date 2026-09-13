@@ -132,6 +132,32 @@
           "id": 297
         }
       ]
+    },
+    {
+      "at": "2026-09-13T14:30:12.572301+00:00",
+      "mode": "alerts",
+      "keys": [
+        "492:fall"
+      ],
+      "rows": [
+        {
+          "id": 492,
+          "name": "Awoniyi",
+          "team": "COV",
+          "price": 55,
+          "current": -100.3,
+          "projected": -103.7,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 13 Sep, 15:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Awoniyi (COV) £5.5m | now -100.3% → midnight -103.7%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
