@@ -159,6 +159,32 @@
           "id": 298
         }
       ]
+    },
+    {
+      "at": "2026-09-13T16:00:09.864685+00:00",
+      "mode": "alerts",
+      "keys": [
+        "162:fall"
+      ],
+      "rows": [
+        {
+          "id": 162,
+          "name": "Andrey Santos",
+          "team": "MUN",
+          "price": 49,
+          "current": -100.2,
+          "projected": -108.0,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 13 Sep, 17:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Andrey Santos (MUN) £4.9m | now -100.2% → midnight -108.0%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
