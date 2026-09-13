@@ -287,7 +287,7 @@
       "parts": [
         {
           "text": "FPL threshold watch · 13 Sep, 19:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Gvardiol (MCI) £5.6m | now +105.1% → midnight +160.7%\n📉 Fallers (2)\n• Mukiele (SUN) £5.5m | now -100.4% → midnight -110.3%\n• Talbi (SUN) £5.4m | now -100.4% → midnight -108.0%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "ready"
+          "status": "sending"
         }
       ]
     }
