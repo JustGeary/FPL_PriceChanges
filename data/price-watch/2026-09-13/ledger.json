@@ -213,6 +213,32 @@
           "id": 300
         }
       ]
+    },
+    {
+      "at": "2026-09-13T17:30:12.125262+00:00",
+      "mode": "alerts",
+      "keys": [
+        "570:fall"
+      ],
+      "rows": [
+        {
+          "id": 570,
+          "name": "Palacios",
+          "team": "FUL",
+          "price": 55,
+          "current": -100.0,
+          "projected": -105.0,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 13 Sep, 18:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Palacios (FUL) £5.5m | now -100.0% → midnight -105.0%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
