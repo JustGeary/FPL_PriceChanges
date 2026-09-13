@@ -39,6 +39,32 @@
           "id": 294
         }
       ]
+    },
+    {
+      "at": "2026-09-13T09:00:20.220775+00:00",
+      "mode": "alerts",
+      "keys": [
+        "229:rise"
+      ],
+      "rows": [
+        {
+          "id": 229,
+          "name": "Tarkowski",
+          "team": "EVE",
+          "price": 60,
+          "current": 100.3,
+          "projected": 111.6,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 13 Sep, 10:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Tarkowski (EVE) £6.0m | now +100.3% → midnight +111.6%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
