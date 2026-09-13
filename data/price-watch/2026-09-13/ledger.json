@@ -345,6 +345,32 @@
           "id": 304
         }
       ]
+    },
+    {
+      "at": "2026-09-13T19:30:13.121343+00:00",
+      "mode": "alerts",
+      "keys": [
+        "270:fall"
+      ],
+      "rows": [
+        {
+          "id": 270,
+          "name": "Reed",
+          "team": "FUL",
+          "price": 45,
+          "current": -100.1,
+          "projected": -102.1,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 13 Sep, 20:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Reed (FUL) £4.5m | now -100.1% → midnight -102.1%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
