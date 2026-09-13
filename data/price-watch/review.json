@@ -1,6 +1,7 @@
 [
   {
     "night": "2026-09-13",
-    "status": "awaiting roundup or actual snapshot"
+    "status": "pending",
+    "reason": "The nightly roundup was not fully delivered."
   }
 ]
