@@ -318,6 +318,32 @@
           "id": 303
         }
       ]
+    },
+    {
+      "at": "2026-09-13T19:00:13.768495+00:00",
+      "mode": "alerts",
+      "keys": [
+        "246:fall"
+      ],
+      "rows": [
+        {
+          "id": 246,
+          "name": "Röhl",
+          "team": "EVE",
+          "price": 50,
+          "current": -100.0,
+          "projected": -104.1,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 13 Sep, 20:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Röhl (EVE) £5.0m | now -100.0% → midnight -104.1%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
