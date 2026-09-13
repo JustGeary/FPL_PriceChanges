@@ -372,6 +372,32 @@
           "id": 305
         }
       ]
+    },
+    {
+      "at": "2026-09-13T20:30:14.700562+00:00",
+      "mode": "alerts",
+      "keys": [
+        "89:fall"
+      ],
+      "rows": [
+        {
+          "id": 89,
+          "name": "Henry",
+          "team": "BRE",
+          "price": 45,
+          "current": -100.1,
+          "projected": -101.5,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 13 Sep, 21:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Henry (BRE) £4.5m | now -100.1% → midnight -101.5%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
