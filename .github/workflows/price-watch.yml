@@ -5,7 +5,7 @@ on:
       mode:
         type: choice
         default: alerts
-        options: [alerts, roundup, review, preview]
+        options: [alerts, roundup, review, preview, morning]
 concurrency:
   group: fpl-price-delivery
   cancel-in-progress: false

@@ -40,3 +40,21 @@ explicit change to its date limits.
 
 Preview without sending: `python .github/scripts/price_watch.py --mode preview`.
 Run mocked tests with `python -m unittest discover -s tests -v`.
+
+## Morning Telegram accuracy report
+
+`Install-PriceWatchMorning.ps1` adds an unattended 08:00 UK daily task from
+14–20 September inclusive. It sends one grouped report for the previous night's
+23:30 roundup. It scores the categories actually displayed: current threshold
+reached takes precedence, then projected threshold reached. Close-only players
+are excluded from firm predictions and labelled "on watch" among missed changes.
+Wrong-direction moves count as both a false prediction and a missed actual move.
+
+The report includes totals and names for false alarms and misses, and separately
+scores delivered early threshold alerts, listing any early false alarms. A
+complete confirmed-delivery ledger, complete snapshot and fully delivered roundup
+are required; otherwise a pending notice is sent without declaring errors.
+Nightly receipts prevent repeat reports. A manual morning rerun after evidence
+arrives can send one completed follow-up to a pending notice; it cannot repeat
+either report. Ambiguous Telegram results are held for review as with alerts.
+All morning sends are date-limited through 20 September, including delayed jobs.

@@ -159,36 +159,19 @@ def send(batch, save, post=requests.post):
 
 
 def review():
-    results=[]
-    for path in sorted(ROOT.glob('*/ledger.json')):
-        state=json.loads(path.read_text(encoding='utf-8'))
-        actual_day=instant(state['deadline']).astimezone(UK).date().isoformat()
-        actual_path=Path('data/snapshots')/(actual_day+'.json')
-        roundup=next((b for b in state['batches'] if b['mode']=='roundup'),None)
-        if not roundup or not actual_path.exists():
-            results.append({'night':path.parent.name,'status':'awaiting roundup or actual snapshot'})
-            continue
-        actual=json.loads(actual_path.read_text())
-        rows=roundup['rows']
-        expected={(r['id'],1 if r['projected']>0 else -1) for r in rows if r['eligible'] and r['projected'] is not None and abs(r['projected'])>=100}
-        changed={(r['id'],1 if actual[str(r['id'])]>r['price'] else -1) for r in rows if str(r['id']) in actual and actual[str(r['id'])]!=r['price']}
-        early=[r for b in state['batches'] if b['mode']=='alerts' and all(p['status']=='sent' for p in b['parts']) for r in b['rows']]
-        early_correct=[r['id'] for r in early if str(r['id']) in actual and (actual[str(r['id'])]-r['price'])*r['current']>0]
-        results.append({'night':path.parent.name,'status':'compared','predicted':len(expected),'actual':len(changed),
-                        'correct':sorted(expected & changed),'not_changed_as_predicted':sorted(expected-changed),'missed':sorted(changed-expected),
-                        'early_alerted':len(early),'early_correct_player_ids':early_correct,
-                        'early_not_changed_as_alerted':[r['id'] for r in early if r['id'] not in early_correct]})
-    ROOT.mkdir(parents=True,exist_ok=True)
-    output=ROOT/'review.json'
-    output.write_text(json.dumps(results,indent=2)+'\n')
-    return results
+    from prediction_review import collect
+    return collect(ROOT, UK)
 
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('--mode',choices=['alerts','roundup','preview','review'],default='preview')
+    parser.add_argument('--mode',choices=['alerts','roundup','preview','review','morning'],default='preview')
     args=parser.parse_args()
     now=dt.datetime.now(dt.timezone.utc)
+    if args.mode=='morning':
+        from prediction_review import morning
+        morning(now, ROOT, START, END, UK, persist, send)
+        return
     if args.mode=='review':
         results=review()
         persist(ROOT/'review.json',results)

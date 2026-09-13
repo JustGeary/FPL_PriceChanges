@@ -1,9 +1,11 @@
-param([ValidateSet('alerts','roundup','review')][string]$Mode='alerts')
+param([ValidateSet('alerts','roundup','review','morning')][string]$Mode='alerts')
 $ErrorActionPreference='Stop'
 $local=[TimeZoneInfo]::ConvertTimeFromUtc([datetime]::UtcNow,[TimeZoneInfo]::FindSystemTimeZoneById('GMT Standard Time'))
 $day=$local.ToString('yyyy-MM-dd')
 $minute=$local.Hour*60+$local.Minute
-if ($Mode -eq 'review') {
+if ($Mode -eq 'morning') {
+    if ($day -lt '2026-09-14' -or $day -gt '2026-09-20' -or $minute -lt 480) { exit 0 }
+} elseif ($Mode -eq 'review') {
     if ($day -ne '2026-09-20') { exit 0 }
 } else {
     if ($day -lt '2026-09-13' -or $day -ge '2026-09-20') { exit 0 }
