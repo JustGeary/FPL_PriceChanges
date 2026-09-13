@@ -66,6 +66,44 @@
           "id": 295
         }
       ]
+    },
+    {
+      "at": "2026-09-13T10:00:13.851400+00:00",
+      "mode": "alerts",
+      "keys": [
+        "303:fall",
+        "478:fall"
+      ],
+      "rows": [
+        {
+          "id": 303,
+          "name": "Kipré",
+          "team": "IPS",
+          "price": 40,
+          "current": -100.0,
+          "projected": -101.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        },
+        {
+          "id": 478,
+          "name": "Netz",
+          "team": "NFO",
+          "price": 45,
+          "current": -100.1,
+          "projected": -112.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 13 Sep, 11:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (2)\n• Netz (NFO) £4.5m | now -100.1% → midnight -112.9%\n• Kipré (IPS) £4.0m | now -100.0% → midnight -101.9%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
