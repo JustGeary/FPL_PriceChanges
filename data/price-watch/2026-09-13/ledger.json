@@ -236,7 +236,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 13 Sep, 18:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Palacios (FUL) £5.5m | now -100.0% → midnight -105.0%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 301
         }
       ]
     }
