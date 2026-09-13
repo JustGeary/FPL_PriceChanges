@@ -240,6 +240,56 @@
           "id": 301
         }
       ]
+    },
+    {
+      "at": "2026-09-13T18:00:13.082627+00:00",
+      "mode": "alerts",
+      "keys": [
+        "391:rise",
+        "533:fall",
+        "549:fall"
+      ],
+      "rows": [
+        {
+          "id": 391,
+          "name": "Gvardiol",
+          "team": "MCI",
+          "price": 56,
+          "current": 105.1,
+          "projected": 160.7,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        },
+        {
+          "id": 533,
+          "name": "Mukiele",
+          "team": "SUN",
+          "price": 55,
+          "current": -100.4,
+          "projected": -110.3,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        },
+        {
+          "id": 549,
+          "name": "Talbi",
+          "team": "SUN",
+          "price": 54,
+          "current": -100.4,
+          "projected": -108.0,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 13 Sep, 19:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Gvardiol (MCI) £5.6m | now +105.1% → midnight +160.7%\n📉 Fallers (2)\n• Mukiele (SUN) £5.5m | now -100.4% → midnight -110.3%\n• Talbi (SUN) £5.4m | now -100.4% → midnight -108.0%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
