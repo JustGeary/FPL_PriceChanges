@@ -29,9 +29,11 @@
       "channel": "x",
       "group": "risers",
       "text": "📈 FPL Risers #GW4\n📅 14-09-2026 (R:3) #FPL\n\n📈 Risers:\n• Gvardiol (MCI) £5.7m\n• Tarkowski (EVE) £6.1m\n• Tavernier (BOU) £6.1m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2099273513232105972"
     }
   ],
   "report": "# FPL Price Changes — GW4 — 14-09-2026 (Risers: 3, Fallers: 15)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Gvardiol | MCI | £5.6m | £5.7m | +0.1m | 21.4% |\n| Tarkowski | EVE | £6.0m | £6.1m | +0.1m | 12.6% |\n| Tavernier | BOU | £6.0m | £6.1m | +0.1m | 4.6% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Roefs | SUN | £5.0m | £4.9m | -0.1m | 2.8% |\n| Mukiele | SUN | £5.5m | £5.4m | -0.1m | 2.1% |\n| Reed | FUL | £4.5m | £4.4m | -0.1m | 1.1% |\n| Hinshelwood | BHA | £6.0m | £5.9m | -0.1m | 0.8% |\n| Andrey Santos | MUN | £4.9m | £4.8m | -0.1m | 0.7% |\n| Kipré | IPS | £4.0m | £3.9m | -0.1m | 0.5% |\n| Henry | BRE | £4.5m | £4.4m | -0.1m | 0.2% |\n| Palacios | FUL | £5.5m | £5.4m | -0.1m | 0.2% |\n| Sanchez | BOU | £4.5m | £4.4m | -0.1m | 0.2% |\n| Baleba | MUN | £5.0m | £4.9m | -0.1m | 0.1% |\n| Talbi | SUN | £5.4m | £5.3m | -0.1m | 0.1% |\n| Gomez | LIV | £5.0m | £4.9m | -0.1m | 0.0% |\n| Netz | NFO | £4.5m | £4.4m | -0.1m | 0.0% |\n| Quenda | CHE | £5.4m | £5.3m | -0.1m | 0.0% |\n| Röhl | EVE | £5.0m | £4.9m | -0.1m | 0.0% |\n\n_Total changes: 18 (Risers: 3, Fallers: 15)_\n",
-  "updated_at": "2026-09-13T23:06:21.658152+00:00"
+  "updated_at": "2026-09-13T23:06:22.964601+00:00"
 }
