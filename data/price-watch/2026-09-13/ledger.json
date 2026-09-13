@@ -101,7 +101,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 13 Sep, 11:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (2)\n• Netz (NFO) £4.5m | now -100.1% → midnight -112.9%\n• Kipré (IPS) £4.0m | now -100.0% → midnight -101.9%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 296
         }
       ]
     }
