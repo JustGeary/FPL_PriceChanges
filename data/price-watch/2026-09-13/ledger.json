@@ -291,6 +291,32 @@
           "id": 302
         }
       ]
+    },
+    {
+      "at": "2026-09-13T18:30:45.393239+00:00",
+      "mode": "alerts",
+      "keys": [
+        "573:fall"
+      ],
+      "rows": [
+        {
+          "id": 573,
+          "name": "Sanchez",
+          "team": "BOU",
+          "price": 45,
+          "current": -100.0,
+          "projected": -103.0,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 13 Sep, 19:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Sanchez (BOU) £4.5m | now -100.0% → midnight -103.0%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
