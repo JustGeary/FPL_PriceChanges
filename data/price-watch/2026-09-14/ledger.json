@@ -1,0 +1,67 @@
+{
+  "deadline": "2026-09-14T23:00:00+00:00",
+  "batches": [
+    {
+      "at": "2026-09-14T07:00:27.332713+00:00",
+      "mode": "alerts",
+      "keys": [
+        "16:fall",
+        "159:fall",
+        "212:fall",
+        "43:fall"
+      ],
+      "rows": [
+        {
+          "id": 16,
+          "name": "Madueke",
+          "team": "ARS",
+          "price": 63,
+          "current": -101.9,
+          "projected": -108.4,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        },
+        {
+          "id": 159,
+          "name": "Caicedo",
+          "team": "CHE",
+          "price": 54,
+          "current": -101.9,
+          "projected": -106.1,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        },
+        {
+          "id": 212,
+          "name": "Hughes",
+          "team": "CRY",
+          "price": 45,
+          "current": -100.4,
+          "projected": -103.6,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        },
+        {
+          "id": 43,
+          "name": "Tielemans",
+          "team": "MUN",
+          "price": 59,
+          "current": -101.9,
+          "projected": -108.2,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 14 Sep, 08:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (4)\n• Caicedo (CHE) £5.4m | now -101.9% → midnight -106.1%\n• Madueke (ARS) £6.3m | now -101.9% → midnight -108.4%\n• Tielemans (MUN) £5.9m | now -101.9% → midnight -108.2%\n• Hughes (CRY) £4.5m | now -100.4% → midnight -103.6%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
+    }
+  ]
+}
