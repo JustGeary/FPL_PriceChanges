@@ -144,6 +144,32 @@
           "id": 315
         }
       ]
+    },
+    {
+      "at": "2026-09-14T20:00:13.637277+00:00",
+      "mode": "alerts",
+      "keys": [
+        "378:fall"
+      ],
+      "rows": [
+        {
+          "id": 378,
+          "name": "McConnell",
+          "team": "LIV",
+          "price": 45,
+          "current": -100.0,
+          "projected": -100.3,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 14 Sep, 21:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• McConnell (LIV) £4.5m | now -100.0% → midnight -100.3%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
