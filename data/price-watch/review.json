@@ -343,5 +343,10 @@
         "correct": true
       }
     ]
+  },
+  {
+    "night": "2026-09-14",
+    "status": "pending",
+    "reason": "The nightly roundup was not fully delivered."
   }
 ]
