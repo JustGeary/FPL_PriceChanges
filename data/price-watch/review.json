@@ -1,7 +1,347 @@
 [
   {
     "night": "2026-09-13",
-    "status": "pending",
-    "reason": "Confirmed actual prices are missing or incomplete."
+    "status": "compared",
+    "predicted": 18,
+    "actual": 18,
+    "correct": [
+      {
+        "id": 68,
+        "name": "Tavernier",
+        "team": "BOU",
+        "direction": 1,
+        "old": 60,
+        "new": 61,
+        "on_watch": false
+      },
+      {
+        "id": 89,
+        "name": "Henry",
+        "team": "BRE",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 123,
+        "name": "Hinshelwood",
+        "team": "BHA",
+        "direction": -1,
+        "old": 60,
+        "new": 59,
+        "on_watch": false
+      },
+      {
+        "id": 131,
+        "name": "Baleba",
+        "team": "MUN",
+        "direction": -1,
+        "old": 50,
+        "new": 49,
+        "on_watch": false
+      },
+      {
+        "id": 162,
+        "name": "Andrey Santos",
+        "team": "MUN",
+        "direction": -1,
+        "old": 49,
+        "new": 48,
+        "on_watch": false
+      },
+      {
+        "id": 164,
+        "name": "Quenda",
+        "team": "CHE",
+        "direction": -1,
+        "old": 54,
+        "new": 53,
+        "on_watch": false
+      },
+      {
+        "id": 229,
+        "name": "Tarkowski",
+        "team": "EVE",
+        "direction": 1,
+        "old": 60,
+        "new": 61,
+        "on_watch": false
+      },
+      {
+        "id": 246,
+        "name": "Röhl",
+        "team": "EVE",
+        "direction": -1,
+        "old": 50,
+        "new": 49,
+        "on_watch": false
+      },
+      {
+        "id": 270,
+        "name": "Reed",
+        "team": "FUL",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 303,
+        "name": "Kipré",
+        "team": "IPS",
+        "direction": -1,
+        "old": 40,
+        "new": 39,
+        "on_watch": false
+      },
+      {
+        "id": 359,
+        "name": "Gomez",
+        "team": "LIV",
+        "direction": -1,
+        "old": 50,
+        "new": 49,
+        "on_watch": false
+      },
+      {
+        "id": 391,
+        "name": "Gvardiol",
+        "team": "MCI",
+        "direction": 1,
+        "old": 56,
+        "new": 57,
+        "on_watch": false
+      },
+      {
+        "id": 478,
+        "name": "Netz",
+        "team": "NFO",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 529,
+        "name": "Roefs",
+        "team": "SUN",
+        "direction": -1,
+        "old": 50,
+        "new": 49,
+        "on_watch": false
+      },
+      {
+        "id": 533,
+        "name": "Mukiele",
+        "team": "SUN",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 549,
+        "name": "Talbi",
+        "team": "SUN",
+        "direction": -1,
+        "old": 54,
+        "new": 53,
+        "on_watch": false
+      },
+      {
+        "id": 570,
+        "name": "Palacios",
+        "team": "FUL",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 573,
+        "name": "Sanchez",
+        "team": "BOU",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      }
+    ],
+    "false_alarms": [],
+    "missed": [],
+    "early": [
+      {
+        "id": 164,
+        "name": "Quenda",
+        "team": "CHE",
+        "old": 54,
+        "new": 53,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 359,
+        "name": "Gomez",
+        "team": "LIV",
+        "old": 50,
+        "new": 49,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 229,
+        "name": "Tarkowski",
+        "team": "EVE",
+        "old": 60,
+        "new": 61,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 303,
+        "name": "Kipré",
+        "team": "IPS",
+        "old": 40,
+        "new": 39,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 478,
+        "name": "Netz",
+        "team": "NFO",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 529,
+        "name": "Roefs",
+        "team": "SUN",
+        "old": 50,
+        "new": 49,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 492,
+        "name": "Awoniyi",
+        "team": "COV",
+        "old": 55,
+        "new": 55,
+        "direction": -1,
+        "correct": false
+      },
+      {
+        "id": 162,
+        "name": "Andrey Santos",
+        "team": "MUN",
+        "old": 49,
+        "new": 48,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 131,
+        "name": "Baleba",
+        "team": "MUN",
+        "old": 50,
+        "new": 49,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 570,
+        "name": "Palacios",
+        "team": "FUL",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 391,
+        "name": "Gvardiol",
+        "team": "MCI",
+        "old": 56,
+        "new": 57,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 533,
+        "name": "Mukiele",
+        "team": "SUN",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 549,
+        "name": "Talbi",
+        "team": "SUN",
+        "old": 54,
+        "new": 53,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 573,
+        "name": "Sanchez",
+        "team": "BOU",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 246,
+        "name": "Röhl",
+        "team": "EVE",
+        "old": 50,
+        "new": 49,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 270,
+        "name": "Reed",
+        "team": "FUL",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 89,
+        "name": "Henry",
+        "team": "BRE",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 123,
+        "name": "Hinshelwood",
+        "team": "BHA",
+        "old": 60,
+        "new": 59,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 68,
+        "name": "Tavernier",
+        "team": "BOU",
+        "old": 60,
+        "new": 61,
+        "direction": 1,
+        "correct": true
+      }
+    ]
   }
 ]
