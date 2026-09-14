@@ -117,6 +117,32 @@
           "id": 314
         }
       ]
+    },
+    {
+      "at": "2026-09-14T17:00:13.402788+00:00",
+      "mode": "alerts",
+      "keys": [
+        "506:fall"
+      ],
+      "rows": [
+        {
+          "id": 506,
+          "name": "Udogie",
+          "team": "TOT",
+          "price": 45,
+          "current": -168.6,
+          "projected": -171.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 14 Sep, 18:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Udogie (TOT) £4.5m | now -168.6% → midnight -171.9%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
