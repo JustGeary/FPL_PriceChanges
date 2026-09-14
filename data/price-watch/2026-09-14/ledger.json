@@ -90,6 +90,32 @@
           "id": 313
         }
       ]
+    },
+    {
+      "at": "2026-09-14T16:00:13.651079+00:00",
+      "mode": "alerts",
+      "keys": [
+        "568:fall"
+      ],
+      "rows": [
+        {
+          "id": 568,
+          "name": "Barco",
+          "team": "CHE",
+          "price": 55,
+          "current": -100.1,
+          "projected": -102.0,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 14 Sep, 17:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Barco (CHE) £5.5m | now -100.1% → midnight -102.0%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
