@@ -198,6 +198,32 @@
           "id": 317
         }
       ]
+    },
+    {
+      "at": "2026-09-14T21:00:18.078988+00:00",
+      "mode": "alerts",
+      "keys": [
+        "102:fall"
+      ],
+      "rows": [
+        {
+          "id": 102,
+          "name": "Yarmoliuk",
+          "team": "BRE",
+          "price": 49,
+          "current": -100.1,
+          "projected": -101.7,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 14 Sep, 22:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Yarmoliuk (BRE) £4.9m | now -100.1% → midnight -101.7%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
