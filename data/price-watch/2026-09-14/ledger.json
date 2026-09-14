@@ -63,6 +63,32 @@
           "id": 312
         }
       ]
+    },
+    {
+      "at": "2026-09-14T07:30:11.453494+00:00",
+      "mode": "alerts",
+      "keys": [
+        "526:fall"
+      ],
+      "rows": [
+        {
+          "id": 526,
+          "name": "Solanke",
+          "team": "TOT",
+          "price": 59,
+          "current": -100.1,
+          "projected": -102.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 14 Sep, 08:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Solanke (TOT) £5.9m | now -100.1% → midnight -102.9%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
