@@ -171,6 +171,32 @@
           "id": 316
         }
       ]
+    },
+    {
+      "at": "2026-09-14T20:30:16.725304+00:00",
+      "mode": "alerts",
+      "keys": [
+        "309:fall"
+      ],
+      "rows": [
+        {
+          "id": 309,
+          "name": "Núñez",
+          "team": "IPS",
+          "price": 50,
+          "current": -100.3,
+          "projected": -102.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 14 Sep, 21:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Núñez (IPS) £5.0m | now -100.3% → midnight -102.9%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
