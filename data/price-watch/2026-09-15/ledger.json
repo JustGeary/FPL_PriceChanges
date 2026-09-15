@@ -176,7 +176,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 15 Sep, 14:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Collins (BRE) £5.5m | now -100.0% → midnight -103.0%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 327
         }
       ]
     }
