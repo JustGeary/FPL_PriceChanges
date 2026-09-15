@@ -153,6 +153,32 @@
           "id": 326
         }
       ]
+    },
+    {
+      "at": "2026-09-15T13:30:12.962628+00:00",
+      "mode": "alerts",
+      "keys": [
+        "84:fall"
+      ],
+      "rows": [
+        {
+          "id": 84,
+          "name": "Collins",
+          "team": "BRE",
+          "price": 55,
+          "current": -100.0,
+          "projected": -103.0,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 15 Sep, 14:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Collins (BRE) £5.5m | now -100.0% → midnight -103.0%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
