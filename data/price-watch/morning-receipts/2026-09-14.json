@@ -5,7 +5,8 @@
       "parts": [
         {
           "text": "FPL prediction review — night of 2026-09-14\n23:30 roundup vs confirmed overnight prices\n11 predicted · 11 correct · 0 false alarms\n11 actual changes · 0 missed (0 on watch)\nClose-only players are not counted as firm predictions.\n\n❌ False alarms\nNone\n\n🔎 Missed changes\nNone\n\nEarlier threshold alerts\n11 alerts · 11 correct · 0 false alarms",
-          "status": "sending"
+          "status": "sent",
+          "id": 323
         }
       ]
     }
