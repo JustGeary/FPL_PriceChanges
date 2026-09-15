@@ -87,6 +87,44 @@
           "id": 322
         }
       ]
+    },
+    {
+      "at": "2026-09-15T08:30:14.409301+00:00",
+      "mode": "alerts",
+      "keys": [
+        "266:fall",
+        "446:fall"
+      ],
+      "rows": [
+        {
+          "id": 266,
+          "name": "Cairney",
+          "team": "FUL",
+          "price": 50,
+          "current": -101.2,
+          "projected": -101.2,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        },
+        {
+          "id": 446,
+          "name": "Schär",
+          "team": "NEW",
+          "price": 50,
+          "current": -100.0,
+          "projected": -106.0,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 15 Sep, 09:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (2)\n• Cairney (FUL) £5.0m | now -101.2% → midnight -101.2%\n• Schär (NEW) £5.0m | now -100.0% → midnight -106.0%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
