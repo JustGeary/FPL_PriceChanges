@@ -293,7 +293,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 15 Sep, 17:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• O.Dango (BRE) £6.4m | now -100.3% → midnight -105.4%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 330
         }
       ]
     }
