@@ -83,7 +83,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 15 Sep, 08:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Schade (BRE) £6.0m | now +105.6% → midnight +128.8%\n📉 Fallers (5)\n• Mosquera (ARS) £5.4m | now -101.8% → midnight -114.1%\n• Wieffer (BHA) £5.0m | now -101.7% → midnight -108.4%\n• Tomiyasu (CRY) £4.5m | now -100.5% → midnight -107.3%\n• Wilson (COV) £4.5m | now -100.4% → midnight -102.3%\n• Amad (MUN) £5.8m | now -100.2% → midnight -102.5%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 322
         }
       ]
     }
