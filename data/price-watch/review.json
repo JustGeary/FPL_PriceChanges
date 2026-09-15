@@ -346,7 +346,217 @@
   },
   {
     "night": "2026-09-14",
+    "status": "compared",
+    "predicted": 11,
+    "actual": 11,
+    "correct": [
+      {
+        "id": 16,
+        "name": "Madueke",
+        "team": "ARS",
+        "direction": -1,
+        "old": 63,
+        "new": 62,
+        "on_watch": false
+      },
+      {
+        "id": 43,
+        "name": "Tielemans",
+        "team": "MUN",
+        "direction": -1,
+        "old": 59,
+        "new": 58,
+        "on_watch": false
+      },
+      {
+        "id": 102,
+        "name": "Yarmoliuk",
+        "team": "BRE",
+        "direction": -1,
+        "old": 49,
+        "new": 48,
+        "on_watch": false
+      },
+      {
+        "id": 159,
+        "name": "Caicedo",
+        "team": "CHE",
+        "direction": -1,
+        "old": 54,
+        "new": 53,
+        "on_watch": false
+      },
+      {
+        "id": 212,
+        "name": "Hughes",
+        "team": "CRY",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 309,
+        "name": "Núñez",
+        "team": "IPS",
+        "direction": -1,
+        "old": 50,
+        "new": 49,
+        "on_watch": false
+      },
+      {
+        "id": 328,
+        "name": "Struijk",
+        "team": "BHA",
+        "direction": -1,
+        "old": 50,
+        "new": 49,
+        "on_watch": false
+      },
+      {
+        "id": 378,
+        "name": "McConnell",
+        "team": "LIV",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 506,
+        "name": "Udogie",
+        "team": "TOT",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 526,
+        "name": "Solanke",
+        "team": "TOT",
+        "direction": -1,
+        "old": 59,
+        "new": 58,
+        "on_watch": false
+      },
+      {
+        "id": 568,
+        "name": "Barco",
+        "team": "CHE",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      }
+    ],
+    "false_alarms": [],
+    "missed": [],
+    "early": [
+      {
+        "id": 16,
+        "name": "Madueke",
+        "team": "ARS",
+        "old": 63,
+        "new": 62,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 159,
+        "name": "Caicedo",
+        "team": "CHE",
+        "old": 54,
+        "new": 53,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 212,
+        "name": "Hughes",
+        "team": "CRY",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 43,
+        "name": "Tielemans",
+        "team": "MUN",
+        "old": 59,
+        "new": 58,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 526,
+        "name": "Solanke",
+        "team": "TOT",
+        "old": 59,
+        "new": 58,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 568,
+        "name": "Barco",
+        "team": "CHE",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 506,
+        "name": "Udogie",
+        "team": "TOT",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 378,
+        "name": "McConnell",
+        "team": "LIV",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 309,
+        "name": "Núñez",
+        "team": "IPS",
+        "old": 50,
+        "new": 49,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 102,
+        "name": "Yarmoliuk",
+        "team": "BRE",
+        "old": 49,
+        "new": 48,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 328,
+        "name": "Struijk",
+        "team": "BHA",
+        "old": 50,
+        "new": 49,
+        "direction": -1,
+        "correct": true
+      }
+    ]
+  },
+  {
+    "night": "2026-09-15",
     "status": "pending",
-    "reason": "Confirmed actual prices are missing or incomplete."
+    "reason": "The nightly roundup was not fully delivered."
   }
 ]
