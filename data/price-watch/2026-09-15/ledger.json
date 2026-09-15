@@ -270,6 +270,32 @@
           "id": 329
         }
       ]
+    },
+    {
+      "at": "2026-09-15T16:00:15.442785+00:00",
+      "mode": "alerts",
+      "keys": [
+        "95:fall"
+      ],
+      "rows": [
+        {
+          "id": 95,
+          "name": "O.Dango",
+          "team": "BRE",
+          "price": 64,
+          "current": -100.3,
+          "projected": -105.4,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 15 Sep, 17:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• O.Dango (BRE) £6.4m | now -100.3% → midnight -105.4%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
