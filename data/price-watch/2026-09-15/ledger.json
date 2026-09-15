@@ -297,6 +297,32 @@
           "id": 330
         }
       ]
+    },
+    {
+      "at": "2026-09-15T21:00:47.516460+00:00",
+      "mode": "alerts",
+      "keys": [
+        "32:fall"
+      ],
+      "rows": [
+        {
+          "id": 32,
+          "name": "Cash",
+          "team": "AVL",
+          "price": 45,
+          "current": -100.0,
+          "projected": -100.8,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 15 Sep, 22:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Cash (AVL) £4.5m | now -100.0% → midnight -100.8%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
