@@ -266,7 +266,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 15 Sep, 16:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (3)\n• Belloumi (HUL) £5.0m | now +100.3% → midnight +107.8%\n• Gibbs-White (NFO) £7.9m | now +100.2% → midnight +117.4%\n• Groß (BHA) £5.6m | now +100.1% → midnight +114.7%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 329
         }
       ]
     }
