@@ -180,6 +180,44 @@
           "id": 327
         }
       ]
+    },
+    {
+      "at": "2026-09-15T14:30:12.733829+00:00",
+      "mode": "alerts",
+      "keys": [
+        "393:fall",
+        "438:fall"
+      ],
+      "rows": [
+        {
+          "id": 393,
+          "name": "Khusanov",
+          "team": "MCI",
+          "price": 55,
+          "current": -100.1,
+          "projected": -103.5,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        },
+        {
+          "id": 438,
+          "name": "Fletcher",
+          "team": "MUN",
+          "price": 45,
+          "current": -100.1,
+          "projected": -103.0,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 15 Sep, 15:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (2)\n• Fletcher (MUN) £4.5m | now -100.1% → midnight -103.0%\n• Khusanov (MCI) £5.5m | now -100.1% → midnight -103.5%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
