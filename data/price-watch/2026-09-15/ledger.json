@@ -219,6 +219,56 @@
           "id": 328
         }
       ]
+    },
+    {
+      "at": "2026-09-15T15:30:47.161109+00:00",
+      "mode": "alerts",
+      "keys": [
+        "124:rise",
+        "286:rise",
+        "480:rise"
+      ],
+      "rows": [
+        {
+          "id": 124,
+          "name": "Groß",
+          "team": "BHA",
+          "price": 56,
+          "current": 100.1,
+          "projected": 114.7,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        },
+        {
+          "id": 286,
+          "name": "Belloumi",
+          "team": "HUL",
+          "price": 50,
+          "current": 100.3,
+          "projected": 107.8,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        },
+        {
+          "id": 480,
+          "name": "Gibbs-White",
+          "team": "NFO",
+          "price": 79,
+          "current": 100.2,
+          "projected": 117.4,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 15 Sep, 16:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (3)\n• Belloumi (HUL) £5.0m | now +100.3% → midnight +107.8%\n• Gibbs-White (NFO) £7.9m | now +100.2% → midnight +117.4%\n• Groß (BHA) £5.6m | now +100.1% → midnight +114.7%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
