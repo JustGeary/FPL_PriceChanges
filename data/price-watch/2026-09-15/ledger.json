@@ -126,6 +126,32 @@
           "id": 325
         }
       ]
+    },
+    {
+      "at": "2026-09-15T13:00:15.568805+00:00",
+      "mode": "alerts",
+      "keys": [
+        "618:fall"
+      ],
+      "rows": [
+        {
+          "id": 618,
+          "name": "Goretzka",
+          "team": "AVL",
+          "price": 60,
+          "current": -100.1,
+          "projected": -106.2,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 15 Sep, 14:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Goretzka (AVL) £6.0m | now -100.1% → midnight -106.2%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
