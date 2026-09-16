@@ -556,7 +556,334 @@
   },
   {
     "night": "2026-09-15",
+    "status": "compared",
+    "predicted": 18,
+    "actual": 18,
+    "correct": [
+      {
+        "id": 11,
+        "name": "Mosquera",
+        "team": "ARS",
+        "direction": -1,
+        "old": 54,
+        "new": 53,
+        "on_watch": false
+      },
+      {
+        "id": 32,
+        "name": "Cash",
+        "team": "AVL",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 84,
+        "name": "Collins",
+        "team": "BRE",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 94,
+        "name": "Schade",
+        "team": "BRE",
+        "direction": 1,
+        "old": 60,
+        "new": 61,
+        "on_watch": false
+      },
+      {
+        "id": 95,
+        "name": "O.Dango",
+        "team": "BRE",
+        "direction": -1,
+        "old": 64,
+        "new": 63,
+        "on_watch": false
+      },
+      {
+        "id": 124,
+        "name": "Groß",
+        "team": "BHA",
+        "direction": 1,
+        "old": 56,
+        "new": 57,
+        "on_watch": false
+      },
+      {
+        "id": 126,
+        "name": "O'Riley",
+        "team": "BHA",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 130,
+        "name": "Wieffer",
+        "team": "BHA",
+        "direction": -1,
+        "old": 50,
+        "new": 49,
+        "on_watch": false
+      },
+      {
+        "id": 172,
+        "name": "Wilson",
+        "team": "COV",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 266,
+        "name": "Cairney",
+        "team": "FUL",
+        "direction": -1,
+        "old": 50,
+        "new": 49,
+        "on_watch": false
+      },
+      {
+        "id": 286,
+        "name": "Belloumi",
+        "team": "HUL",
+        "direction": 1,
+        "old": 50,
+        "new": 51,
+        "on_watch": false
+      },
+      {
+        "id": 393,
+        "name": "Khusanov",
+        "team": "MCI",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 431,
+        "name": "Amad",
+        "team": "MUN",
+        "direction": -1,
+        "old": 58,
+        "new": 57,
+        "on_watch": false
+      },
+      {
+        "id": 438,
+        "name": "Fletcher",
+        "team": "MUN",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 446,
+        "name": "Schär",
+        "team": "NEW",
+        "direction": -1,
+        "old": 50,
+        "new": 49,
+        "on_watch": false
+      },
+      {
+        "id": 480,
+        "name": "Gibbs-White",
+        "team": "NFO",
+        "direction": 1,
+        "old": 79,
+        "new": 80,
+        "on_watch": false
+      },
+      {
+        "id": 577,
+        "name": "Tomiyasu",
+        "team": "CRY",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 618,
+        "name": "Goretzka",
+        "team": "AVL",
+        "direction": -1,
+        "old": 60,
+        "new": 59,
+        "on_watch": false
+      }
+    ],
+    "false_alarms": [],
+    "missed": [],
+    "early": [
+      {
+        "id": 11,
+        "name": "Mosquera",
+        "team": "ARS",
+        "old": 54,
+        "new": 53,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 94,
+        "name": "Schade",
+        "team": "BRE",
+        "old": 60,
+        "new": 61,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 130,
+        "name": "Wieffer",
+        "team": "BHA",
+        "old": 50,
+        "new": 49,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 172,
+        "name": "Wilson",
+        "team": "COV",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 577,
+        "name": "Tomiyasu",
+        "team": "CRY",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 431,
+        "name": "Amad",
+        "team": "MUN",
+        "old": 58,
+        "new": 57,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 266,
+        "name": "Cairney",
+        "team": "FUL",
+        "old": 50,
+        "new": 49,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 446,
+        "name": "Schär",
+        "team": "NEW",
+        "old": 50,
+        "new": 49,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 618,
+        "name": "Goretzka",
+        "team": "AVL",
+        "old": 60,
+        "new": 59,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 84,
+        "name": "Collins",
+        "team": "BRE",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 393,
+        "name": "Khusanov",
+        "team": "MCI",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 438,
+        "name": "Fletcher",
+        "team": "MUN",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 124,
+        "name": "Groß",
+        "team": "BHA",
+        "old": 56,
+        "new": 57,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 286,
+        "name": "Belloumi",
+        "team": "HUL",
+        "old": 50,
+        "new": 51,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 480,
+        "name": "Gibbs-White",
+        "team": "NFO",
+        "old": 79,
+        "new": 80,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 95,
+        "name": "O.Dango",
+        "team": "BRE",
+        "old": 64,
+        "new": 63,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 32,
+        "name": "Cash",
+        "team": "AVL",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      }
+    ]
+  },
+  {
+    "night": "2026-09-16",
     "status": "pending",
-    "reason": "Confirmed actual prices are missing or incomplete."
+    "reason": "The nightly roundup was not fully delivered."
   }
 ]
