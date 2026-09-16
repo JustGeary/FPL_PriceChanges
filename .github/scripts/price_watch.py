@@ -54,7 +54,10 @@ def extract(data, now):
         eligible = not p.get('removed') and not p.get('price_change_calibrating') and not (lock and instant(lock) > now)
         rows.append({'id': p['id'], 'name': p['web_name'], 'team': teams[p['team']], 'price': p['now_cost'],
                      'current': number(p.get('price_change_percent')), 'projected': number(projection.get('projected_percent')),
-                     'eligible': eligible, 'locked_until': lock, 'calibrating': p.get('price_change_calibrating')})
+                     'eligible': eligible, 'locked_until': lock, 'calibrating': p.get('price_change_calibrating'),
+                     'status': p.get('status'), 'news': p.get('news'), 'news_added': p.get('news_added'),
+                     'chance_of_playing_next_round': p.get('chance_of_playing_next_round'),
+                     'removed': p.get('removed')})
     if not rows:
         raise ValueError('Empty player response')
     return deadline.isoformat(), updated.isoformat(), rows
@@ -130,6 +133,59 @@ def persist(path, state):
         subprocess.run(['git','push','origin','HEAD:main'],check=True)
 
 
+def reassess(state, rows, now):
+    """Revisit delivered alerts with hysteresis; reserved updates prevent duplicates."""
+    latest = {r['id']: r for r in rows}
+    updates = {u['alert_key']: u for b in state['batches'] if b['mode'] == 'update'
+               for u in b.get('updates', [])}
+    changes = []
+    for batch in state['batches']:
+        if batch['mode'] != 'alerts' or not all(p['status'] == 'sent' for p in batch['parts']):
+            continue
+        for original in batch['rows']:
+            alert_key = key(original)
+            current = latest.get(original['id'])
+            if current is None:
+                continue
+            prior = updates.get(alert_key)
+            withdrawn = prior is not None and prior['withdrawn']
+            sign = 1 if original['current'] > 0 else -1
+            values = [current.get(f) for f in ('current', 'projected')]
+            unsupported = not current['eligible'] or (all(v is not None for v in values)
+                                                     and max(v * sign for v in values) < 90)
+            supported = current['eligible'] and any(v is not None and v * sign >= 100 for v in values)
+            if (not withdrawn and unsupported) or (withdrawn and supported):
+                changes.append({'alert_key': alert_key, 'withdrawn': not withdrawn,
+                                'original': original, 'previous': prior['current'] if prior else original,
+                                'current': current})
+    if not changes:
+        return None
+    header = f"FPL alert update · {now.astimezone(UK):%d %b, %H:%M} UK\nFor midnight tonight · predictions are not guaranteed."
+    chunks, text = [], header
+    for change in changes:
+        r, old = change['current'], change['previous']
+        direction = 'rise' if change['original']['current'] > 0 else 'fall'
+        verdict = 'no longer supported — it may not happen tonight' if change['withdrawn'] else 'back at the threshold'
+        line = (f"\n\n• {r['name']} ({r['team']}): earlier {direction} warning {verdict}."
+                f"\nProgress {fmt(old['current'])} → {fmt(r['current'])}; midnight projection {fmt(old['projected'])} → {fmt(r['projected'])}.")
+        if not r['eligible']:
+            line += '\nCurrently excluded: price lock, calibration or removal.'
+        if r.get('status') or r.get('news'):
+            labels = {'a':'Available', 's':'Suspended', 'i':'Injured', 'd':'Doubtful', 'u':'Unavailable', 'n':'Not available'}
+            line += '\nPlayer status: ' + labels.get(r.get('status'), r.get('status') or 'Unknown')
+            if r.get('news'):
+                line += ' — ' + r['news'][:400]
+            if old.get('status') != r.get('status') and old.get('status') is not None:
+                line += ' (changed since the previous warning)'
+        if len((text + line).encode('utf-16-le')) // 2 > 3400:
+            chunks.append(text)
+            text = header
+        text += line
+    chunks.append(text)
+    return {'at': now.isoformat(), 'mode': 'update', 'keys': [], 'rows': [], 'updates': changes,
+            'parts': [{'text': t, 'status': 'ready'} for t in chunks]}
+
+
 def send(batch, save, post=requests.post):
     for part in batch['parts']:
         if part['status'] == 'sent':
@@ -203,6 +259,11 @@ def main():
             send(batch,lambda:persist(path,state))
     reserved={k for b in state['batches'] for k in b['keys']}
     alerted={k for b in state['batches'] if b['mode']=='alerts' and all(p['status']=='sent' for p in b['parts']) for k in b['keys']}
+    update = reassess(state, rows, now)
+    if update:
+        state['batches'].append(update)
+        persist(path,state)
+        send(update,lambda:persist(path,state))
     candidates=[r for r in rows if category(r)=='Threshold reached' and key(r) not in reserved]
     if args.mode=='roundup' and any(b['mode']=='roundup' for b in state['batches']):
         persist(path,state)

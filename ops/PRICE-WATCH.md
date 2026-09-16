@@ -31,6 +31,22 @@ compares nightly roundup projections and early alerts against next-day snapshots
 listing correct predictions, misses and predictions that did not happen. Snapshot
 comparisons are observations, not a proof of the underlying price algorithm.
 
+## Changes after an alert
+
+Each observation also records player status, news and its timestamp, next-round
+playing chance, and removal status. Suspension alone does not exclude a player.
+Every alert/roundup poll revisits delivered early alerts for the same night.
+If both current and projected progress retreat below 90% in the original
+direction, or the player becomes ineligible, a grouped update says the earlier
+warning is no longer supported. Missing percentages alone do not withdraw it.
+A later eligible reading at 100% in the original direction sends a recovery
+update. The 90/100 gap avoids repeated updates from small threshold fluctuations.
+Updates preserve before/after readings and player status in the ledger and use
+the existing durable delivery receipts. They do not change accuracy scoring:
+the original early alert is still scored against the overnight price.
+Detection runs at the existing half-hour polls and final 23:30 roundup; it is
+not continuous. Historical observations without status cannot be backfilled.
+
 Install `Install-PriceWatch.ps1` with administrator rights; it uses the existing
 protected scheduler GitHub credential and runs tasks as SYSTEM. Trial triggers end
 at 00:00 UK on 20 September. Both local and cloud date guards stop later sends.

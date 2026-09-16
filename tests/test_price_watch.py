@@ -80,7 +80,46 @@ class WatchTests(unittest.TestCase):
                     self.assertEqual(send.call_count,1)
                     extract.return_value=('2026-09-14T00:00:00+01:00','2026-09-13T10:00:00Z',[row(current=-101,projected=-110)])
                     w.main()
-                    self.assertEqual(send.call_count,2)
+                    self.assertEqual(send.call_count,3)  # Withdrawal of rise, then new fall alert.
             finally:os.chdir(original)
+
+    def test_awoniyi_withdrawal_recovery_and_deduplication(self):
+        original=row(492,-100.3,-103.7)
+        state={'batches':[{'mode':'alerts','rows':[original],'parts':[{'status':'sent'}]}]}
+        now=dt.datetime(2026,9,13,15,30,tzinfo=dt.timezone.utc)
+        self.assertIsNone(w.reassess(state,[row(492,-104.7,-164.4)],now))
+        current=dict(row(492,-39.1,-57.5),status='s',news='Suspended')
+        update=w.reassess(state,[current],now)
+        self.assertIn('no longer supported',update['parts'][0]['text'])
+        self.assertIn('Suspended',update['parts'][0]['text'])
+        state['batches'].append(update)
+        self.assertIsNone(w.reassess(state,[current],now))
+        self.assertIsNone(w.reassess(state,[row(492,-95,-99)],now))
+        recovery=w.reassess(state,[row(492,-99,-101)],now)
+        self.assertIn('back at the threshold',recovery['parts'][0]['text'])
+        state['batches'].append(recovery)
+        self.assertIsNone(w.reassess(state,[row(492,-101,-110)],now))
+
+    def test_reassessment_requires_evidence_and_delivered_alert(self):
+        state={'batches':[{'mode':'alerts','rows':[row()],'parts':[{'status':'sent'}]}]}
+        now=dt.datetime.now(dt.timezone.utc)
+        for candidate in [row(current=89,projected=101),row(current=89,projected=90),row(current=None,projected=20)]:
+            self.assertIsNone(w.reassess(state,[candidate],now))
+        self.assertIsNotNone(w.reassess(state,[row(eligible=False)],now))
+        state['batches'][0]['parts'][0]['status']='uncertain'
+        self.assertIsNone(w.reassess(state,[row(eligible=False)],now))
+
+    def test_extract_records_status_without_excluding_suspended_player(self):
+        data={'game_config':{'settings':{'price_change_deadlines':['2026-09-13T23:00:00Z']},
+                            'status':{'price_change_last_updated':'2026-09-13T14:20:00Z'}},
+              'teams':[{'id':1,'short_name':'COV'}],
+              'elements':[{'id':492,'web_name':'Awoniyi','team':1,'now_cost':55,
+                           'status':'s','news':'Suspended','news_added':'2026-09-13T14:00:00Z',
+                           'chance_of_playing_next_round':0,'price_change_percent':-100.3}]}
+        _,_,rows=w.extract(data,dt.datetime(2026,9,13,14,30,tzinfo=dt.timezone.utc))
+        self.assertTrue(rows[0]['eligible'])
+        self.assertEqual(rows[0]['status'],'s')
+        self.assertEqual(rows[0]['chance_of_playing_next_round'],0)
+        self.assertEqual(rows[0]['news_added'],'2026-09-13T14:00:00Z')
 
 if __name__=='__main__':unittest.main()
