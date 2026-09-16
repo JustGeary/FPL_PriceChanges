@@ -13,7 +13,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW4\n📅 17-09-2026 (F:1) #FPL\n\n📉 Fallers:\n• Tóth.A (BOU) £4.9m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2100360677525184559"
     },
     {
       "channel": "x",
@@ -23,5 +25,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW4 — 17-09-2026 (Risers: 1, Fallers: 1)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| De Cuyper | BHA | £4.8m | £4.9m | +0.1m | 24.0% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Tóth.A | BOU | £5.0m | £4.9m | -0.1m | 0.0% |\n\n_Total changes: 2 (Risers: 1, Fallers: 1)_\n",
-  "updated_at": "2026-09-16T23:06:21.533715+00:00"
+  "updated_at": "2026-09-16T23:06:23.136055+00:00"
 }
