@@ -5,7 +5,9 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW4 — 17-09-2026 (Risers: 1, Fallers: 1)</b>\n\n📈 <b>Risers</b>\n• <b>De Cuyper</b> (BHA): +0.1m → £4.9m\n\n📉 <b>Fallers</b>\n• <b>Tóth.A</b> (BOU): -0.1m → £4.9m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 200,
+      "id": "338"
     },
     {
       "channel": "x",
@@ -21,5 +23,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW4 — 17-09-2026 (Risers: 1, Fallers: 1)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| De Cuyper | BHA | £4.8m | £4.9m | +0.1m | 24.0% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Tóth.A | BOU | £5.0m | £4.9m | -0.1m | 0.0% |\n\n_Total changes: 2 (Risers: 1, Fallers: 1)_\n",
-  "updated_at": "2026-09-16T23:06:18.037240+00:00"
+  "updated_at": "2026-09-16T23:06:19.861379+00:00"
 }
