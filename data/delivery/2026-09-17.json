@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "status": "prepared",
+  "status": "complete",
   "messages": [
     {
       "channel": "telegram",
@@ -27,5 +27,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW4 — 17-09-2026 (Risers: 1, Fallers: 1)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| De Cuyper | BHA | £4.8m | £4.9m | +0.1m | 24.0% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Tóth.A | BOU | £5.0m | £4.9m | -0.1m | 0.0% |\n\n_Total changes: 2 (Risers: 1, Fallers: 1)_\n",
-  "updated_at": "2026-09-16T23:06:26.061989+00:00"
+  "updated_at": "2026-09-16T23:06:27.360525+00:00"
 }
