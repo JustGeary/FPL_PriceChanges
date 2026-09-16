@@ -32,6 +32,37 @@
           "id": 335
         }
       ]
+    },
+    {
+      "at": "2026-09-16T21:30:12.480987+00:00",
+      "mode": "alerts",
+      "keys": [
+        "115:rise"
+      ],
+      "rows": [
+        {
+          "id": 115,
+          "name": "De Cuyper",
+          "team": "BHA",
+          "price": 48,
+          "current": 100.5,
+          "projected": 104.2,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 16 Sep, 22:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• De Cuyper (BHA) £4.8m | now +100.5% → midnight +104.2%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
