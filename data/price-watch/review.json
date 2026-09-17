@@ -932,6 +932,6 @@
   {
     "night": "2026-09-17",
     "status": "pending",
-    "reason": "The nightly roundup was not fully delivered."
+    "reason": "Confirmed actual prices are missing or incomplete."
   }
 ]
