@@ -64,6 +64,71 @@
           "id": 341
         }
       ]
+    },
+    {
+      "at": "2026-09-17T09:30:11.960876+00:00",
+      "mode": "alerts",
+      "keys": [
+        "315:fall",
+        "330:rise",
+        "366:fall"
+      ],
+      "rows": [
+        {
+          "id": 315,
+          "name": "Fatawu",
+          "team": "IPS",
+          "price": 55,
+          "current": -100.1,
+          "projected": -103.4,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        },
+        {
+          "id": 330,
+          "name": "Bogle",
+          "team": "LEE",
+          "price": 45,
+          "current": 100.4,
+          "projected": 112.5,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        },
+        {
+          "id": 366,
+          "name": "Wirtz",
+          "team": "LIV",
+          "price": 74,
+          "current": -100.0,
+          "projected": -105.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 10:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Bogle (LEE) £4.5m | now +100.4% → midnight +112.5%\n📉 Fallers (2)\n• Fatawu (IPS) £5.5m | now -100.1% → midnight -103.4%\n• Wirtz (LIV) £7.4m | now -100.0% → midnight -105.9%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
