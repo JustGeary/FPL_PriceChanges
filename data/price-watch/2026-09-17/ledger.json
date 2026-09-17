@@ -130,6 +130,37 @@
           "id": 342
         }
       ]
+    },
+    {
+      "at": "2026-09-17T10:00:12.789361+00:00",
+      "mode": "alerts",
+      "keys": [
+        "308:fall"
+      ],
+      "rows": [
+        {
+          "id": 308,
+          "name": "Furlong",
+          "team": "IPS",
+          "price": 40,
+          "current": -100.0,
+          "projected": -101.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 11:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Furlong (IPS) £4.0m | now -100.0% → midnight -101.9%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
