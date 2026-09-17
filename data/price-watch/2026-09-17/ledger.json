@@ -354,6 +354,37 @@
           "id": 349
         }
       ]
+    },
+    {
+      "at": "2026-09-17T19:00:50.440329+00:00",
+      "mode": "alerts",
+      "keys": [
+        "411:rise"
+      ],
+      "rows": [
+        {
+          "id": 411,
+          "name": "Haaland",
+          "team": "MCI",
+          "price": 155,
+          "current": 100.2,
+          "projected": 102.2,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 20:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Haaland (MCI) £15.5m | now +100.2% → midnight +102.2%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
