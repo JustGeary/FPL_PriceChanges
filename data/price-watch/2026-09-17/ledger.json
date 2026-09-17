@@ -290,6 +290,37 @@
           "id": 347
         }
       ]
+    },
+    {
+      "at": "2026-09-17T17:30:11.958886+00:00",
+      "mode": "alerts",
+      "keys": [
+        "183:fall"
+      ],
+      "rows": [
+        {
+          "id": 183,
+          "name": "Rudoni",
+          "team": "COV",
+          "price": 50,
+          "current": -100.2,
+          "projected": -104.8,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": "2026-07-23T12:01:23.481435Z",
+          "chance_of_playing_next_round": 100,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 18:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Rudoni (COV) £5.0m | now -100.2% → midnight -104.8%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
