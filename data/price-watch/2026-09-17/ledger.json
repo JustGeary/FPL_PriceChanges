@@ -1,0 +1,36 @@
+{
+  "deadline": "2026-09-17T23:00:00+00:00",
+  "batches": [
+    {
+      "at": "2026-09-17T07:00:11.247455+00:00",
+      "mode": "alerts",
+      "keys": [
+        "189:fall"
+      ],
+      "rows": [
+        {
+          "id": 189,
+          "name": "Shepherd",
+          "team": "COV",
+          "price": 45,
+          "current": -100.2,
+          "projected": -101.6,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 08:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Shepherd (COV) £4.5m | now -100.2% → midnight -101.6%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
+    }
+  ]
+}
