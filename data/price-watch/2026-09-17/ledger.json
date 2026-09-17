@@ -322,6 +322,37 @@
           "id": 348
         }
       ]
+    },
+    {
+      "at": "2026-09-17T18:00:12.094749+00:00",
+      "mode": "alerts",
+      "keys": [
+        "499:fall"
+      ],
+      "rows": [
+        {
+          "id": 499,
+          "name": "Pedro Porro",
+          "team": "TOT",
+          "price": 55,
+          "current": -100.4,
+          "projected": -104.2,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "d",
+          "news": "Unspecified injury - 75% chance of playing",
+          "news_added": "2026-09-11T18:00:09.076279Z",
+          "chance_of_playing_next_round": 75,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 19:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Pedro Porro (TOT) £5.5m | now -100.4% → midnight -104.2%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
