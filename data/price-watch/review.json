@@ -883,7 +883,55 @@
   },
   {
     "night": "2026-09-16",
+    "status": "compared",
+    "predicted": 2,
+    "actual": 2,
+    "correct": [
+      {
+        "id": 76,
+        "name": "Tóth.A",
+        "team": "BOU",
+        "direction": -1,
+        "old": 50,
+        "new": 49,
+        "on_watch": false
+      },
+      {
+        "id": 115,
+        "name": "De Cuyper",
+        "team": "BHA",
+        "direction": 1,
+        "old": 48,
+        "new": 49,
+        "on_watch": false
+      }
+    ],
+    "false_alarms": [],
+    "missed": [],
+    "early": [
+      {
+        "id": 76,
+        "name": "Tóth.A",
+        "team": "BOU",
+        "old": 50,
+        "new": 49,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 115,
+        "name": "De Cuyper",
+        "team": "BHA",
+        "old": 48,
+        "new": 49,
+        "direction": 1,
+        "correct": true
+      }
+    ]
+  },
+  {
+    "night": "2026-09-17",
     "status": "pending",
-    "reason": "Confirmed actual prices are missing or incomplete."
+    "reason": "The nightly roundup was not fully delivered."
   }
 ]
