@@ -194,6 +194,37 @@
           "id": 344
         }
       ]
+    },
+    {
+      "at": "2026-09-17T12:30:13.614765+00:00",
+      "mode": "alerts",
+      "keys": [
+        "260:fall"
+      ],
+      "rows": [
+        {
+          "id": 260,
+          "name": "Wilson",
+          "team": "LEE",
+          "price": 63,
+          "current": -100.2,
+          "projected": -106.1,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 13:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Wilson (LEE) £6.3m | now -100.2% → midnight -106.1%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
