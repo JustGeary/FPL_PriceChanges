@@ -32,6 +32,37 @@
           "id": 339
         }
       ]
+    },
+    {
+      "at": "2026-09-17T08:00:15.888643+00:00",
+      "mode": "alerts",
+      "keys": [
+        "96:fall"
+      ],
+      "rows": [
+        {
+          "id": 96,
+          "name": "Damsgaard",
+          "team": "BRE",
+          "price": 55,
+          "current": -100.1,
+          "projected": -103.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 09:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Damsgaard (BRE) £5.5m | now -100.1% → midnight -103.9%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
