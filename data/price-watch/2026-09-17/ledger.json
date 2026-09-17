@@ -350,7 +350,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 17 Sep, 19:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Pedro Porro (TOT) £5.5m | now -100.4% → midnight -104.2%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 349
         }
       ]
     }
