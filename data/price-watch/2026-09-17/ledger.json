@@ -382,7 +382,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 17 Sep, 20:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Haaland (MCI) £15.5m | now +100.2% → midnight +102.2%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 350
         }
       ]
     }
