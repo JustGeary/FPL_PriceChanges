@@ -162,6 +162,37 @@
           "id": 343
         }
       ]
+    },
+    {
+      "at": "2026-09-17T10:30:10.769952+00:00",
+      "mode": "alerts",
+      "keys": [
+        "185:fall"
+      ],
+      "rows": [
+        {
+          "id": 185,
+          "name": "Sakamoto",
+          "team": "COV",
+          "price": 49,
+          "current": -100.0,
+          "projected": -110.5,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 11:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Sakamoto (COV) £4.9m | now -100.0% → midnight -110.5%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
