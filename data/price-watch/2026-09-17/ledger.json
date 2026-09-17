@@ -386,6 +386,37 @@
           "id": 350
         }
       ]
+    },
+    {
+      "at": "2026-09-17T21:00:16.026080+00:00",
+      "mode": "alerts",
+      "keys": [
+        "42:fall"
+      ],
+      "rows": [
+        {
+          "id": 42,
+          "name": "Guessand",
+          "team": "CRY",
+          "price": 55,
+          "current": -100.8,
+          "projected": -102.8,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 22:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Guessand (CRY) £5.5m | now -100.8% → midnight -102.8%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
