@@ -226,6 +226,37 @@
           "id": 345
         }
       ]
+    },
+    {
+      "at": "2026-09-17T13:30:13.058035+00:00",
+      "mode": "alerts",
+      "keys": [
+        "357:fall"
+      ],
+      "rows": [
+        {
+          "id": 357,
+          "name": "Frimpong",
+          "team": "LIV",
+          "price": 54,
+          "current": -100.0,
+          "projected": -103.6,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 14:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Frimpong (LIV) £5.4m | now -100.0% → midnight -103.6%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
