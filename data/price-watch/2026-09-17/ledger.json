@@ -126,7 +126,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 17 Sep, 10:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Bogle (LEE) £4.5m | now +100.4% → midnight +112.5%\n📉 Fallers (2)\n• Fatawu (IPS) £5.5m | now -100.1% → midnight -103.4%\n• Wirtz (LIV) £7.4m | now -100.0% → midnight -105.9%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 342
         }
       ]
     }
