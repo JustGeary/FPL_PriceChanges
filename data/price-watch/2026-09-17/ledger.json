@@ -450,6 +450,37 @@
           "id": 352
         }
       ]
+    },
+    {
+      "at": "2026-09-17T22:00:13.369299+00:00",
+      "mode": "alerts",
+      "keys": [
+        "15:rise"
+      ],
+      "rows": [
+        {
+          "id": 15,
+          "name": "Ødegaard",
+          "team": "ARS",
+          "price": 67,
+          "current": 100.0,
+          "projected": 100.8,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 17 Sep, 23:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Ødegaard (ARS) £6.7m | now +100.0% → midnight +100.8%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
