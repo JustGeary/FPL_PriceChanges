@@ -13,7 +13,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW4\n📅 18-09-2026 (F:14) #FPL\n\n📉 Fallers:\n• Thiago (BRE) £7.8m\n• Pedro Porro (TOT) £5.4m\n• Wirtz (LIV) £7.3m\n• Foden (MCI) £6.9m\n• Wilson (LEE) £6.2m\n• Frimpong (LIV) £5.3m\n• Furlong (IPS) £3.9m\n• Damsgaard (BRE) £5.4m\n• Fatawu (IPS) £5.4m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2100723048789811426"
     },
     {
       "channel": "x",
@@ -29,5 +31,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW4 — 18-09-2026 (Risers: 3, Fallers: 14)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Haaland | MCI | £15.5m | £15.6m | +0.1m | 72.9% |\n| Ødegaard | ARS | £6.7m | £6.8m | +0.1m | 19.7% |\n| Bogle | LEE | £4.5m | £4.6m | +0.1m | 4.8% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Thiago | BRE | £7.9m | £7.8m | -0.1m | 9.2% |\n| Pedro Porro | TOT | £5.5m | £5.4m | -0.1m | 8.6% |\n| Wirtz | LIV | £7.4m | £7.3m | -0.1m | 6.5% |\n| Foden | MCI | £7.0m | £6.9m | -0.1m | 2.6% |\n| Wilson | LEE | £6.3m | £6.2m | -0.1m | 2.3% |\n| Frimpong | LIV | £5.4m | £5.3m | -0.1m | 1.9% |\n| Furlong | IPS | £4.0m | £3.9m | -0.1m | 0.5% |\n| Damsgaard | BRE | £5.5m | £5.4m | -0.1m | 0.4% |\n| Fatawu | IPS | £5.5m | £5.4m | -0.1m | 0.2% |\n| Gallagher | TOT | £5.4m | £5.3m | -0.1m | 0.2% |\n| Shepherd | COV | £4.5m | £4.4m | -0.1m | 0.2% |\n| Rudoni | COV | £5.0m | £4.9m | -0.1m | 0.1% |\n| Sakamoto | COV | £4.9m | £4.8m | -0.1m | 0.1% |\n| Guessand | CRY | £5.5m | £5.4m | -0.1m | 0.0% |\n\n_Total changes: 17 (Risers: 3, Fallers: 14)_\n",
-  "updated_at": "2026-09-17T23:06:17.647874+00:00"
+  "updated_at": "2026-09-17T23:06:19.193561+00:00"
 }
