@@ -801,7 +801,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 18 Sep, 18:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (2)\n• Mykolenko (EVE) £4.5m | now +103.0% → midnight +143.1%\n• Delap (NFO) £5.5m | now +102.8% → midnight +157.6%\n📉 Fallers (1)\n• Jaouen (NEW) £4.5m | now -100.3% → midnight -105.1%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 370
         }
       ]
     }
