@@ -931,7 +931,311 @@
   },
   {
     "night": "2026-09-17",
-    "status": "pending",
-    "reason": "Confirmed actual prices are missing or incomplete."
+    "status": "compared",
+    "predicted": 17,
+    "actual": 17,
+    "correct": [
+      {
+        "id": 15,
+        "name": "Ødegaard",
+        "team": "ARS",
+        "direction": 1,
+        "old": 67,
+        "new": 68,
+        "on_watch": false
+      },
+      {
+        "id": 42,
+        "name": "Guessand",
+        "team": "CRY",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 96,
+        "name": "Damsgaard",
+        "team": "BRE",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 106,
+        "name": "Thiago",
+        "team": "BRE",
+        "direction": -1,
+        "old": 79,
+        "new": 78,
+        "on_watch": false
+      },
+      {
+        "id": 183,
+        "name": "Rudoni",
+        "team": "COV",
+        "direction": -1,
+        "old": 50,
+        "new": 49,
+        "on_watch": false
+      },
+      {
+        "id": 185,
+        "name": "Sakamoto",
+        "team": "COV",
+        "direction": -1,
+        "old": 49,
+        "new": 48,
+        "on_watch": false
+      },
+      {
+        "id": 189,
+        "name": "Shepherd",
+        "team": "COV",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 260,
+        "name": "Wilson",
+        "team": "LEE",
+        "direction": -1,
+        "old": 63,
+        "new": 62,
+        "on_watch": false
+      },
+      {
+        "id": 308,
+        "name": "Furlong",
+        "team": "IPS",
+        "direction": -1,
+        "old": 40,
+        "new": 39,
+        "on_watch": false
+      },
+      {
+        "id": 315,
+        "name": "Fatawu",
+        "team": "IPS",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 330,
+        "name": "Bogle",
+        "team": "LEE",
+        "direction": 1,
+        "old": 45,
+        "new": 46,
+        "on_watch": false
+      },
+      {
+        "id": 357,
+        "name": "Frimpong",
+        "team": "LIV",
+        "direction": -1,
+        "old": 54,
+        "new": 53,
+        "on_watch": false
+      },
+      {
+        "id": 366,
+        "name": "Wirtz",
+        "team": "LIV",
+        "direction": -1,
+        "old": 74,
+        "new": 73,
+        "on_watch": false
+      },
+      {
+        "id": 398,
+        "name": "Foden",
+        "team": "MCI",
+        "direction": -1,
+        "old": 70,
+        "new": 69,
+        "on_watch": false
+      },
+      {
+        "id": 411,
+        "name": "Haaland",
+        "team": "MCI",
+        "direction": 1,
+        "old": 155,
+        "new": 156,
+        "on_watch": false
+      },
+      {
+        "id": 499,
+        "name": "Pedro Porro",
+        "team": "TOT",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 519,
+        "name": "Gallagher",
+        "team": "TOT",
+        "direction": -1,
+        "old": 54,
+        "new": 53,
+        "on_watch": false
+      }
+    ],
+    "false_alarms": [],
+    "missed": [],
+    "early": [
+      {
+        "id": 189,
+        "name": "Shepherd",
+        "team": "COV",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 96,
+        "name": "Damsgaard",
+        "team": "BRE",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 315,
+        "name": "Fatawu",
+        "team": "IPS",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 330,
+        "name": "Bogle",
+        "team": "LEE",
+        "old": 45,
+        "new": 46,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 366,
+        "name": "Wirtz",
+        "team": "LIV",
+        "old": 74,
+        "new": 73,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 308,
+        "name": "Furlong",
+        "team": "IPS",
+        "old": 40,
+        "new": 39,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 185,
+        "name": "Sakamoto",
+        "team": "COV",
+        "old": 49,
+        "new": 48,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 260,
+        "name": "Wilson",
+        "team": "LEE",
+        "old": 63,
+        "new": 62,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 357,
+        "name": "Frimpong",
+        "team": "LIV",
+        "old": 54,
+        "new": 53,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 519,
+        "name": "Gallagher",
+        "team": "TOT",
+        "old": 54,
+        "new": 53,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 183,
+        "name": "Rudoni",
+        "team": "COV",
+        "old": 50,
+        "new": 49,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 499,
+        "name": "Pedro Porro",
+        "team": "TOT",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 411,
+        "name": "Haaland",
+        "team": "MCI",
+        "old": 155,
+        "new": 156,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 42,
+        "name": "Guessand",
+        "team": "CRY",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 106,
+        "name": "Thiago",
+        "team": "BRE",
+        "old": 79,
+        "new": 78,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 15,
+        "name": "Ødegaard",
+        "team": "ARS",
+        "old": 67,
+        "new": 68,
+        "direction": 1,
+        "correct": true
+      }
+    ]
   }
 ]
