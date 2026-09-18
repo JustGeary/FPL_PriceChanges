@@ -4490,6 +4490,37 @@
           "id": 375
         }
       ]
+    },
+    {
+      "at": "2026-09-18T21:00:18.378781+00:00",
+      "mode": "alerts",
+      "keys": [
+        "149:fall"
+      ],
+      "rows": [
+        {
+          "id": 149,
+          "name": "Colwill",
+          "team": "CHE",
+          "price": 49,
+          "current": -100.0,
+          "projected": -100.7,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 22:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Colwill (CHE) £4.9m | now -100.0% → midnight -100.7%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
