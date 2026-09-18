@@ -575,6 +575,54 @@
           "id": 366
         }
       ]
+    },
+    {
+      "at": "2026-09-18T16:00:12.115506+00:00",
+      "mode": "alerts",
+      "keys": [
+        "423:fall",
+        "471:fall"
+      ],
+      "rows": [
+        {
+          "id": 423,
+          "name": "Shaw",
+          "team": "MUN",
+          "price": 44,
+          "current": -103.4,
+          "projected": -149.4,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "d",
+          "news": "Unspecified injury - 50% chance of playing",
+          "news_added": "2026-09-11T13:00:09.030120Z",
+          "chance_of_playing_next_round": 50,
+          "removed": false
+        },
+        {
+          "id": 471,
+          "name": "Milenković",
+          "team": "NFO",
+          "price": 55,
+          "current": -100.6,
+          "projected": -125.4,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "i",
+          "news": "Hamstring injury - Expected back 11 Oct",
+          "news_added": "2026-09-12T14:00:09.705107Z",
+          "chance_of_playing_next_round": 0,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 17:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (2)\n• Shaw (MUN) £4.4m | now -103.4% → midnight -149.4%\n• Milenković (NFO) £5.5m | now -100.6% → midnight -125.4%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
