@@ -311,7 +311,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 18 Sep, 11:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Barnes (NEW) £6.0m | now +100.3% → midnight +121.5%\n📉 Fallers (1)\n• Kesler-Hayden (COV) £4.0m | now -100.2% → midnight -104.1%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 360
         }
       ]
     }
