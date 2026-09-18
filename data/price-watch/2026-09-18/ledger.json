@@ -445,6 +445,37 @@
           "id": 363
         }
       ]
+    },
+    {
+      "at": "2026-09-18T14:00:12.876267+00:00",
+      "mode": "alerts",
+      "keys": [
+        "552:fall"
+      ],
+      "rows": [
+        {
+          "id": 552,
+          "name": "Brobbey",
+          "team": "SUN",
+          "price": 58,
+          "current": -100.3,
+          "projected": -132.0,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 15:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Brobbey (SUN) £5.8m | now -100.3% → midnight -132.0%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
