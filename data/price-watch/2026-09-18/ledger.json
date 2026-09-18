@@ -266,6 +266,54 @@
           "id": 359
         }
       ]
+    },
+    {
+      "at": "2026-09-18T10:00:12.998139+00:00",
+      "mode": "alerts",
+      "keys": [
+        "177:fall",
+        "453:rise"
+      ],
+      "rows": [
+        {
+          "id": 177,
+          "name": "Kesler-Hayden",
+          "team": "COV",
+          "price": 40,
+          "current": -100.2,
+          "projected": -104.1,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "i",
+          "news": "Hamstring injury - Unknown return date",
+          "news_added": "2026-08-27T14:56:28.704361Z",
+          "chance_of_playing_next_round": 0,
+          "removed": false
+        },
+        {
+          "id": 453,
+          "name": "Barnes",
+          "team": "NEW",
+          "price": 60,
+          "current": 100.3,
+          "projected": 121.5,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 11:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Barnes (NEW) £6.0m | now +100.3% → midnight +121.5%\n📉 Fallers (1)\n• Kesler-Hayden (COV) £4.0m | now -100.2% → midnight -104.1%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
