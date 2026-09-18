@@ -686,7 +686,7 @@
       "parts": [
         {
           "text": "FPL threshold watch · 18 Sep, 17:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Dewsbury-Hall (EVE) £6.5m | now +101.4% → midnight +136.0%\n📉 Fallers (2)\n• Hume (SUN) £4.4m | now -103.0% → midnight -138.4%\n• Rayan (BOU) £6.4m | now -100.6% → midnight -118.2%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "ready"
+          "status": "sending"
         }
       ]
     }
