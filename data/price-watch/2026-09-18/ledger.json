@@ -690,6 +690,54 @@
           "id": 368
         }
       ]
+    },
+    {
+      "at": "2026-09-18T17:00:12.007429+00:00",
+      "mode": "alerts",
+      "keys": [
+        "329:fall",
+        "370:fall"
+      ],
+      "rows": [
+        {
+          "id": 329,
+          "name": "Rodon",
+          "team": "LEE",
+          "price": 44,
+          "current": -102.2,
+          "projected": -130.6,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "i",
+          "news": "Hamstring injury - Expected back 21 Nov",
+          "news_added": "2026-08-30T16:00:08.564382Z",
+          "chance_of_playing_next_round": 0,
+          "removed": false
+        },
+        {
+          "id": 370,
+          "name": "Chiesa",
+          "team": "LIV",
+          "price": 54,
+          "current": -100.0,
+          "projected": -101.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "i",
+          "news": "Back injury - Unknown return date",
+          "news_added": "2026-08-27T13:30:07.598926Z",
+          "chance_of_playing_next_round": 0,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 18:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (2)\n• Rodon (LEE) £4.4m | now -102.2% → midnight -130.6%\n• Chiesa (LIV) £5.4m | now -100.0% → midnight -101.9%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
