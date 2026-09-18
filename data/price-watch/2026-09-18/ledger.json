@@ -505,7 +505,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 18 Sep, 15:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Crooks (HUL) £4.5m | now -100.5% → midnight -107.6%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 365
         }
       ]
     }
