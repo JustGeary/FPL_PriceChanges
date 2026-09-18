@@ -234,6 +234,37 @@
           "id": 358
         }
       ]
+    },
+    {
+      "at": "2026-09-18T09:30:10.959078+00:00",
+      "mode": "alerts",
+      "keys": [
+        "454:fall"
+      ],
+      "rows": [
+        {
+          "id": 454,
+          "name": "Elanga",
+          "team": "NEW",
+          "price": 62,
+          "current": -101.2,
+          "projected": -132.4,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "i",
+          "news": "Unspecified injury - Unknown return date",
+          "news_added": "2026-09-14T20:00:09.505598Z",
+          "chance_of_playing_next_round": 0,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 10:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Elanga (NEW) £6.2m | now -101.2% → midnight -132.4%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
