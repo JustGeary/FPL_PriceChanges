@@ -202,6 +202,37 @@
           "id": 357
         }
       ]
+    },
+    {
+      "at": "2026-09-18T08:30:12.169215+00:00",
+      "mode": "alerts",
+      "keys": [
+        "565:fall"
+      ],
+      "rows": [
+        {
+          "id": 565,
+          "name": "M.Sangaré",
+          "team": "BRE",
+          "price": 57,
+          "current": -100.2,
+          "projected": -113.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 09:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• M.Sangaré (BRE) £5.7m | now -100.2% → midnight -113.9%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
