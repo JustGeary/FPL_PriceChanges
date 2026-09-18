@@ -413,6 +413,37 @@
           "id": 362
         }
       ]
+    },
+    {
+      "at": "2026-09-18T13:30:13.672699+00:00",
+      "mode": "alerts",
+      "keys": [
+        "31:rise"
+      ],
+      "rows": [
+        {
+          "id": 31,
+          "name": "Konsa",
+          "team": "ARS",
+          "price": 45,
+          "current": 100.3,
+          "projected": 115.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 14:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Konsa (ARS) £4.5m | now +100.3% → midnight +115.9%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
