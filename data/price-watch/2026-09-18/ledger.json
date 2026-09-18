@@ -4518,7 +4518,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 18 Sep, 22:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Colwill (CHE) £4.9m | now -100.0% → midnight -100.7%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 376
         }
       ]
     }
