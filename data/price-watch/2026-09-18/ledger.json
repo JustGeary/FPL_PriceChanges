@@ -262,7 +262,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 18 Sep, 10:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Elanga (NEW) £6.2m | now -101.2% → midnight -132.4%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 359
         }
       ]
     }
