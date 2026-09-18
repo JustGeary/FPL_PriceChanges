@@ -624,6 +624,71 @@
           "id": 367
         }
       ]
+    },
+    {
+      "at": "2026-09-18T16:30:19.011020+00:00",
+      "mode": "alerts",
+      "keys": [
+        "67:fall",
+        "236:rise",
+        "534:fall"
+      ],
+      "rows": [
+        {
+          "id": 67,
+          "name": "Rayan",
+          "team": "BOU",
+          "price": 64,
+          "current": -100.6,
+          "projected": -118.2,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        },
+        {
+          "id": 236,
+          "name": "Dewsbury-Hall",
+          "team": "EVE",
+          "price": 65,
+          "current": 101.4,
+          "projected": 136.0,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        },
+        {
+          "id": 534,
+          "name": "Hume",
+          "team": "SUN",
+          "price": 44,
+          "current": -103.0,
+          "projected": -138.4,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 17:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Dewsbury-Hall (EVE) £6.5m | now +101.4% → midnight +136.0%\n📉 Fallers (2)\n• Hume (SUN) £4.4m | now -103.0% → midnight -138.4%\n• Rayan (BOU) £6.4m | now -100.6% → midnight -118.2%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
