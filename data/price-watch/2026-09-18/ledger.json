@@ -347,6 +347,71 @@
           "id": 361
         }
       ]
+    },
+    {
+      "at": "2026-09-18T13:00:30.468759+00:00",
+      "mode": "alerts",
+      "keys": [
+        "369:fall",
+        "440:fall",
+        "508:fall"
+      ],
+      "rows": [
+        {
+          "id": 369,
+          "name": "Ngumoha",
+          "team": "LIV",
+          "price": 58,
+          "current": -101.0,
+          "projected": -120.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        },
+        {
+          "id": 440,
+          "name": "Zirkzee",
+          "team": "MUN",
+          "price": 54,
+          "current": -100.5,
+          "projected": -106.8,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        },
+        {
+          "id": 508,
+          "name": "Davies",
+          "team": "TOT",
+          "price": 40,
+          "current": -100.2,
+          "projected": -104.5,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 14:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (3)\n• Ngumoha (LIV) £5.8m | now -101.0% → midnight -120.9%\n• Zirkzee (MUN) £5.4m | now -100.5% → midnight -106.8%\n• Davies (TOT) £4.0m | now -100.2% → midnight -104.5%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
