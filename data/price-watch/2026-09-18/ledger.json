@@ -315,6 +315,37 @@
           "id": 360
         }
       ]
+    },
+    {
+      "at": "2026-09-18T11:30:10.710476+00:00",
+      "mode": "alerts",
+      "keys": [
+        "206:fall"
+      ],
+      "rows": [
+        {
+          "id": 206,
+          "name": "Chadi Riad",
+          "team": "CRY",
+          "price": 44,
+          "current": -100.6,
+          "projected": -112.7,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "i",
+          "news": "Knee injury - Unknown return date",
+          "news_added": "2026-08-22T18:00:07.352049Z",
+          "chance_of_playing_next_round": 0,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 12:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Chadi Riad (CRY) £4.4m | now -100.6% → midnight -112.7%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
