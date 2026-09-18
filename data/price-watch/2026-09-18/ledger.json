@@ -735,7 +735,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 18 Sep, 18:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (2)\n• Rodon (LEE) £4.4m | now -102.2% → midnight -130.6%\n• Chiesa (LIV) £5.4m | now -100.0% → midnight -101.9%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 369
         }
       ]
     }
