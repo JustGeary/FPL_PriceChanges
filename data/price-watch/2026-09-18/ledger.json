@@ -477,6 +477,37 @@
           "id": 364
         }
       ]
+    },
+    {
+      "at": "2026-09-18T14:30:12.683596+00:00",
+      "mode": "alerts",
+      "keys": [
+        "289:fall"
+      ],
+      "rows": [
+        {
+          "id": 289,
+          "name": "Crooks",
+          "team": "HUL",
+          "price": 45,
+          "current": -100.5,
+          "projected": -107.6,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": "2026-08-29T15:00:08.569326Z",
+          "chance_of_playing_next_round": 100,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 15:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Crooks (HUL) £4.5m | now -100.5% → midnight -107.6%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
