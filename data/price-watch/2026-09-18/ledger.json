@@ -509,6 +509,71 @@
           "id": 365
         }
       ]
+    },
+    {
+      "at": "2026-09-18T15:30:13.841432+00:00",
+      "mode": "alerts",
+      "keys": [
+        "203:fall",
+        "371:fall",
+        "542:fall"
+      ],
+      "rows": [
+        {
+          "id": 203,
+          "name": "Canvot",
+          "team": "CRY",
+          "price": 49,
+          "current": -100.8,
+          "projected": -121.2,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        },
+        {
+          "id": 371,
+          "name": "Gravenberch",
+          "team": "LIV",
+          "price": 59,
+          "current": -100.6,
+          "projected": -113.3,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        },
+        {
+          "id": 542,
+          "name": "E.Le Fée",
+          "team": "SUN",
+          "price": 58,
+          "current": -101.6,
+          "projected": -132.9,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 18 Sep, 16:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (3)\n• E.Le Fée (SUN) £5.8m | now -101.6% → midnight -132.9%\n• Canvot (CRY) £4.9m | now -100.8% → midnight -121.2%\n• Gravenberch (LIV) £5.9m | now -100.6% → midnight -113.3%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
