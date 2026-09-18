@@ -409,7 +409,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 18 Sep, 14:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (3)\n• Ngumoha (LIV) £5.8m | now -101.0% → midnight -120.9%\n• Zirkzee (MUN) £5.4m | now -100.5% → midnight -106.8%\n• Davies (TOT) £4.0m | now -100.2% → midnight -104.5%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 362
         }
       ]
     }
