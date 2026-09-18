@@ -198,7 +198,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 18 Sep, 08:01 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (11)\n• David (BHA) £6.0m | now -102.7% → midnight -111.7%\n• Awoniyi (COV) £5.5m | now -102.6% → midnight -116.4%\n• Lacroix (CHE) £6.0m | now -102.3% → midnight -110.2%\n• Tel (TOT) £5.8m | now -102.1% → midnight -118.1%\n• Osula (NEW) £5.9m | now -101.6% → midnight -104.9%\n• Ndiaye (MCI) £5.9m | now -101.4% → midnight -109.9%\n• Torp (COV) £5.4m | now -101.1% → midnight -104.7%\n• Wilson (BRE) £5.5m | now -101.0% → midnight -108.8%\n• Tonali (TOT) £5.4m | now -100.7% → midnight -117.7%\n• O'Nien (SUN) £4.0m | now -100.4% → midnight -104.4%\n• Yoro (MUN) £4.9m | now -100.4% → midnight -104.9%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 357
         }
       ]
     }
