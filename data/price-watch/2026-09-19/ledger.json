@@ -254,7 +254,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 19 Sep, 15:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (2)\n• Taylor (IPS) £4.5m | now -100.1% → midnight -101.6%\n• Eccles (COV) £4.9m | now -100.0% → midnight -110.8%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 387
         }
       ]
     }
