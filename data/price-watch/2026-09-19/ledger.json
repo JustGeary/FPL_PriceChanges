@@ -177,6 +177,37 @@
           "id": 385
         }
       ]
+    },
+    {
+      "at": "2026-09-19T14:00:13.577025+00:00",
+      "mode": "alerts",
+      "keys": [
+        "7:fall"
+      ],
+      "rows": [
+        {
+          "id": 7,
+          "name": "Lewis-Skelly",
+          "team": "ARS",
+          "price": 55,
+          "current": -100.0,
+          "projected": -103.7,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 19 Sep, 15:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Lewis-Skelly (ARS) £5.5m | now -100.0% → midnight -103.7%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
