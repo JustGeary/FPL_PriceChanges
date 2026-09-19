@@ -258,6 +258,54 @@
           "id": 387
         }
       ]
+    },
+    {
+      "at": "2026-09-19T15:00:11.710811+00:00",
+      "mode": "alerts",
+      "keys": [
+        "25:fall",
+        "267:fall"
+      ],
+      "rows": [
+        {
+          "id": 25,
+          "name": "Gyökeres",
+          "team": "ARS",
+          "price": 72,
+          "current": -100.0,
+          "projected": -103.6,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        },
+        {
+          "id": 267,
+          "name": "Lukić",
+          "team": "IPS",
+          "price": 50,
+          "current": -100.0,
+          "projected": -103.5,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 19 Sep, 16:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (2)\n• Gyökeres (ARS) £7.2m | now -100.0% → midnight -103.6%\n• Lukić (IPS) £5.0m | now -100.0% → midnight -103.5%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
