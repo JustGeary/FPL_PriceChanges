@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "status": "prepared",
+  "status": "complete",
   "messages": [
     {
       "channel": "telegram",
@@ -35,5 +35,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 20-09-2026 (Risers: 1, Fallers: 14)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Groß | BHA | £5.7m | £5.8m | +0.1m | 23.8% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Tzolis | ARS | £6.4m | £6.3m | -0.1m | 12.9% |\n| Gyökeres | ARS | £7.2m | £7.1m | -0.1m | 3.1% |\n| Lewis-Skelly | ARS | £5.5m | £5.4m | -0.1m | 0.6% |\n| Georginio | BHA | £5.4m | £5.3m | -0.1m | 0.5% |\n| Reinildo | SUN | £4.5m | £4.4m | -0.1m | 0.3% |\n| Alderete | SUN | £4.9m | £4.8m | -0.1m | 0.2% |\n| Maeda | IPS | £5.4m | £5.3m | -0.1m | 0.2% |\n| Lukić | IPS | £5.0m | £4.9m | -0.1m | 0.1% |\n| Eccles | COV | £4.9m | £4.8m | -0.1m | 0.0% |\n| Ji-soo | BRE | £4.5m | £4.4m | -0.1m | 0.0% |\n| Mehmeti | IPS | £4.9m | £4.8m | -0.1m | 0.0% |\n| Minteh | BHA | £5.9m | £5.8m | -0.1m | 0.0% |\n| Mudryk | TOT | £5.4m | £5.3m | -0.1m | 0.0% |\n| Taylor | IPS | £4.5m | £4.4m | -0.1m | 0.0% |\n\n_Total changes: 15 (Risers: 1, Fallers: 14)_\n",
-  "updated_at": "2026-09-19T23:06:25.065301+00:00"
+  "updated_at": "2026-09-19T23:06:26.323020+00:00"
 }
