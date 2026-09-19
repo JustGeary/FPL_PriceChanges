@@ -49,6 +49,37 @@
           "id": 381
         }
       ]
+    },
+    {
+      "at": "2026-09-19T07:30:13.509539+00:00",
+      "mode": "alerts",
+      "keys": [
+        "578:fall"
+      ],
+      "rows": [
+        {
+          "id": 578,
+          "name": "Mudryk",
+          "team": "TOT",
+          "price": 54,
+          "current": -100.0,
+          "projected": -103.1,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "i",
+          "news": "Ankle injury - Unknown return date",
+          "news_added": "2026-09-11T18:00:09.154412Z",
+          "chance_of_playing_next_round": 0,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 19 Sep, 08:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Mudryk (TOT) £5.4m | now -100.0% → midnight -103.1%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
