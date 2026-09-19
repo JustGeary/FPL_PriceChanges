@@ -205,7 +205,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 19 Sep, 15:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Lewis-Skelly (ARS) £5.5m | now -100.0% → midnight -103.7%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 386
         }
       ]
     }
