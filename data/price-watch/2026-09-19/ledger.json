@@ -1,0 +1,53 @@
+{
+  "deadline": "2026-09-19T23:00:00+00:00",
+  "batches": [
+    {
+      "at": "2026-09-19T07:00:29.600621+00:00",
+      "mode": "alerts",
+      "keys": [
+        "562:fall",
+        "536:fall"
+      ],
+      "rows": [
+        {
+          "id": 562,
+          "name": "Maeda",
+          "team": "IPS",
+          "price": 54,
+          "current": -100.4,
+          "projected": -103.7,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        },
+        {
+          "id": 536,
+          "name": "Reinildo",
+          "team": "SUN",
+          "price": 45,
+          "current": -100.6,
+          "projected": -101.6,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "s",
+          "news": "Suspended until 10 Oct",
+          "news_added": "2026-09-12T21:30:09.421687Z",
+          "chance_of_playing_next_round": 0,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 19 Sep, 08:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (2)\n• Reinildo (SUN) £4.5m | now -100.6% → midnight -101.6%\n• Maeda (IPS) £5.4m | now -100.4% → midnight -103.7%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
+    }
+  ]
+}
