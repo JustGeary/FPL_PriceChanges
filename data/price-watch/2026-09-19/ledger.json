@@ -369,7 +369,8 @@
       "parts": [
         {
           "text": "FPL threshold watch · 19 Sep, 17:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Groß (BHA) £5.7m | now +101.4% → midnight +295.3%\n📉 Fallers (2)\n• Mehmeti (IPS) £4.9m | now -100.5% → midnight -107.4%\n• Minteh (BHA) £5.9m | now -100.2% → midnight -104.1%\n\nFirst observed at/over the threshold in this monitoring window.",
-          "status": "sending"
+          "status": "sent",
+          "id": 389
         }
       ]
     }
