@@ -1240,7 +1240,662 @@
   },
   {
     "night": "2026-09-18",
-    "status": "pending",
-    "reason": "Confirmed actual prices are missing or incomplete."
+    "status": "compared",
+    "predicted": 36,
+    "actual": 36,
+    "correct": [
+      {
+        "id": 31,
+        "name": "Konsa",
+        "team": "ARS",
+        "direction": 1,
+        "old": 45,
+        "new": 46,
+        "on_watch": false
+      },
+      {
+        "id": 67,
+        "name": "Rayan",
+        "team": "BOU",
+        "direction": -1,
+        "old": 64,
+        "new": 63,
+        "on_watch": false
+      },
+      {
+        "id": 108,
+        "name": "Wilson",
+        "team": "BRE",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 149,
+        "name": "Colwill",
+        "team": "CHE",
+        "direction": -1,
+        "old": 49,
+        "new": 48,
+        "on_watch": false
+      },
+      {
+        "id": 167,
+        "name": "Delap",
+        "team": "NFO",
+        "direction": 1,
+        "old": 55,
+        "new": 56,
+        "on_watch": false
+      },
+      {
+        "id": 177,
+        "name": "Kesler-Hayden",
+        "team": "COV",
+        "direction": -1,
+        "old": 40,
+        "new": 39,
+        "on_watch": false
+      },
+      {
+        "id": 188,
+        "name": "Torp",
+        "team": "COV",
+        "direction": -1,
+        "old": 54,
+        "new": 53,
+        "on_watch": false
+      },
+      {
+        "id": 200,
+        "name": "Lacroix",
+        "team": "CHE",
+        "direction": -1,
+        "old": 60,
+        "new": 59,
+        "on_watch": false
+      },
+      {
+        "id": 203,
+        "name": "Canvot",
+        "team": "CRY",
+        "direction": -1,
+        "old": 49,
+        "new": 48,
+        "on_watch": false
+      },
+      {
+        "id": 206,
+        "name": "Chadi Riad",
+        "team": "CRY",
+        "direction": -1,
+        "old": 44,
+        "new": 43,
+        "on_watch": false
+      },
+      {
+        "id": 233,
+        "name": "Mykolenko",
+        "team": "EVE",
+        "direction": 1,
+        "old": 45,
+        "new": 46,
+        "on_watch": false
+      },
+      {
+        "id": 236,
+        "name": "Dewsbury-Hall",
+        "team": "EVE",
+        "direction": 1,
+        "old": 65,
+        "new": 66,
+        "on_watch": false
+      },
+      {
+        "id": 237,
+        "name": "Ndiaye",
+        "team": "MCI",
+        "direction": -1,
+        "old": 59,
+        "new": 58,
+        "on_watch": false
+      },
+      {
+        "id": 289,
+        "name": "Crooks",
+        "team": "HUL",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 329,
+        "name": "Rodon",
+        "team": "LEE",
+        "direction": -1,
+        "old": 44,
+        "new": 43,
+        "on_watch": false
+      },
+      {
+        "id": 369,
+        "name": "Ngumoha",
+        "team": "LIV",
+        "direction": -1,
+        "old": 58,
+        "new": 57,
+        "on_watch": false
+      },
+      {
+        "id": 370,
+        "name": "Chiesa",
+        "team": "LIV",
+        "direction": -1,
+        "old": 54,
+        "new": 53,
+        "on_watch": false
+      },
+      {
+        "id": 371,
+        "name": "Gravenberch",
+        "team": "LIV",
+        "direction": -1,
+        "old": 59,
+        "new": 58,
+        "on_watch": false
+      },
+      {
+        "id": 420,
+        "name": "Yoro",
+        "team": "MUN",
+        "direction": -1,
+        "old": 49,
+        "new": 48,
+        "on_watch": false
+      },
+      {
+        "id": 423,
+        "name": "Shaw",
+        "team": "MUN",
+        "direction": -1,
+        "old": 44,
+        "new": 43,
+        "on_watch": false
+      },
+      {
+        "id": 440,
+        "name": "Zirkzee",
+        "team": "MUN",
+        "direction": -1,
+        "old": 54,
+        "new": 53,
+        "on_watch": false
+      },
+      {
+        "id": 444,
+        "name": "Jaouen",
+        "team": "NEW",
+        "direction": -1,
+        "old": 45,
+        "new": 44,
+        "on_watch": false
+      },
+      {
+        "id": 453,
+        "name": "Barnes",
+        "team": "NEW",
+        "direction": 1,
+        "old": 60,
+        "new": 61,
+        "on_watch": false
+      },
+      {
+        "id": 454,
+        "name": "Elanga",
+        "team": "NEW",
+        "direction": -1,
+        "old": 62,
+        "new": 61,
+        "on_watch": false
+      },
+      {
+        "id": 455,
+        "name": "Tonali",
+        "team": "TOT",
+        "direction": -1,
+        "old": 54,
+        "new": 53,
+        "on_watch": false
+      },
+      {
+        "id": 465,
+        "name": "Osula",
+        "team": "NEW",
+        "direction": -1,
+        "old": 59,
+        "new": 58,
+        "on_watch": false
+      },
+      {
+        "id": 471,
+        "name": "Milenković",
+        "team": "NFO",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 492,
+        "name": "Awoniyi",
+        "team": "COV",
+        "direction": -1,
+        "old": 55,
+        "new": 54,
+        "on_watch": false
+      },
+      {
+        "id": 508,
+        "name": "Davies",
+        "team": "TOT",
+        "direction": -1,
+        "old": 40,
+        "new": 39,
+        "on_watch": false
+      },
+      {
+        "id": 514,
+        "name": "Tel",
+        "team": "TOT",
+        "direction": -1,
+        "old": 58,
+        "new": 57,
+        "on_watch": false
+      },
+      {
+        "id": 534,
+        "name": "Hume",
+        "team": "SUN",
+        "direction": -1,
+        "old": 44,
+        "new": 43,
+        "on_watch": false
+      },
+      {
+        "id": 539,
+        "name": "O'Nien",
+        "team": "SUN",
+        "direction": -1,
+        "old": 40,
+        "new": 39,
+        "on_watch": false
+      },
+      {
+        "id": 542,
+        "name": "E.Le Fée",
+        "team": "SUN",
+        "direction": -1,
+        "old": 58,
+        "new": 57,
+        "on_watch": false
+      },
+      {
+        "id": 552,
+        "name": "Brobbey",
+        "team": "SUN",
+        "direction": -1,
+        "old": 58,
+        "new": 57,
+        "on_watch": false
+      },
+      {
+        "id": 565,
+        "name": "M.Sangaré",
+        "team": "BRE",
+        "direction": -1,
+        "old": 57,
+        "new": 56,
+        "on_watch": false
+      },
+      {
+        "id": 594,
+        "name": "David",
+        "team": "BHA",
+        "direction": -1,
+        "old": 60,
+        "new": 59,
+        "on_watch": false
+      }
+    ],
+    "false_alarms": [],
+    "missed": [],
+    "early": [
+      {
+        "id": 108,
+        "name": "Wilson",
+        "team": "BRE",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 594,
+        "name": "David",
+        "team": "BHA",
+        "old": 60,
+        "new": 59,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 200,
+        "name": "Lacroix",
+        "team": "CHE",
+        "old": 60,
+        "new": 59,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 188,
+        "name": "Torp",
+        "team": "COV",
+        "old": 54,
+        "new": 53,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 492,
+        "name": "Awoniyi",
+        "team": "COV",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 237,
+        "name": "Ndiaye",
+        "team": "MCI",
+        "old": 59,
+        "new": 58,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 420,
+        "name": "Yoro",
+        "team": "MUN",
+        "old": 49,
+        "new": 48,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 465,
+        "name": "Osula",
+        "team": "NEW",
+        "old": 59,
+        "new": 58,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 455,
+        "name": "Tonali",
+        "team": "TOT",
+        "old": 54,
+        "new": 53,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 514,
+        "name": "Tel",
+        "team": "TOT",
+        "old": 58,
+        "new": 57,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 539,
+        "name": "O'Nien",
+        "team": "SUN",
+        "old": 40,
+        "new": 39,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 565,
+        "name": "M.Sangaré",
+        "team": "BRE",
+        "old": 57,
+        "new": 56,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 454,
+        "name": "Elanga",
+        "team": "NEW",
+        "old": 62,
+        "new": 61,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 177,
+        "name": "Kesler-Hayden",
+        "team": "COV",
+        "old": 40,
+        "new": 39,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 453,
+        "name": "Barnes",
+        "team": "NEW",
+        "old": 60,
+        "new": 61,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 206,
+        "name": "Chadi Riad",
+        "team": "CRY",
+        "old": 44,
+        "new": 43,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 369,
+        "name": "Ngumoha",
+        "team": "LIV",
+        "old": 58,
+        "new": 57,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 440,
+        "name": "Zirkzee",
+        "team": "MUN",
+        "old": 54,
+        "new": 53,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 508,
+        "name": "Davies",
+        "team": "TOT",
+        "old": 40,
+        "new": 39,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 31,
+        "name": "Konsa",
+        "team": "ARS",
+        "old": 45,
+        "new": 46,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 552,
+        "name": "Brobbey",
+        "team": "SUN",
+        "old": 58,
+        "new": 57,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 289,
+        "name": "Crooks",
+        "team": "HUL",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 203,
+        "name": "Canvot",
+        "team": "CRY",
+        "old": 49,
+        "new": 48,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 371,
+        "name": "Gravenberch",
+        "team": "LIV",
+        "old": 59,
+        "new": 58,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 542,
+        "name": "E.Le Fée",
+        "team": "SUN",
+        "old": 58,
+        "new": 57,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 423,
+        "name": "Shaw",
+        "team": "MUN",
+        "old": 44,
+        "new": 43,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 471,
+        "name": "Milenković",
+        "team": "NFO",
+        "old": 55,
+        "new": 54,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 67,
+        "name": "Rayan",
+        "team": "BOU",
+        "old": 64,
+        "new": 63,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 236,
+        "name": "Dewsbury-Hall",
+        "team": "EVE",
+        "old": 65,
+        "new": 66,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 534,
+        "name": "Hume",
+        "team": "SUN",
+        "old": 44,
+        "new": 43,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 329,
+        "name": "Rodon",
+        "team": "LEE",
+        "old": 44,
+        "new": 43,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 370,
+        "name": "Chiesa",
+        "team": "LIV",
+        "old": 54,
+        "new": 53,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 233,
+        "name": "Mykolenko",
+        "team": "EVE",
+        "old": 45,
+        "new": 46,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 444,
+        "name": "Jaouen",
+        "team": "NEW",
+        "old": 45,
+        "new": 44,
+        "direction": -1,
+        "correct": true
+      },
+      {
+        "id": 167,
+        "name": "Delap",
+        "team": "NFO",
+        "old": 55,
+        "new": 56,
+        "direction": 1,
+        "correct": true
+      },
+      {
+        "id": 149,
+        "name": "Colwill",
+        "team": "CHE",
+        "old": 49,
+        "new": 48,
+        "direction": -1,
+        "correct": true
+      }
+    ]
   }
 ]
