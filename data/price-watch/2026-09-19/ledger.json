@@ -307,6 +307,71 @@
           "id": 388
         }
       ]
+    },
+    {
+      "at": "2026-09-19T16:30:12.551635+00:00",
+      "mode": "alerts",
+      "keys": [
+        "122:fall",
+        "124:rise",
+        "324:fall"
+      ],
+      "rows": [
+        {
+          "id": 122,
+          "name": "Minteh",
+          "team": "BHA",
+          "price": 59,
+          "current": -100.2,
+          "projected": -104.1,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "i",
+          "news": "Leg injury - Expected back 28 Nov",
+          "news_added": "2026-08-14T18:00:06.418033Z",
+          "chance_of_playing_next_round": 0,
+          "removed": false
+        },
+        {
+          "id": 124,
+          "name": "Groß",
+          "team": "BHA",
+          "price": 57,
+          "current": 101.4,
+          "projected": 295.3,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        },
+        {
+          "id": 324,
+          "name": "Mehmeti",
+          "team": "IPS",
+          "price": 49,
+          "current": -100.5,
+          "projected": -107.4,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 19 Sep, 17:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📈 Risers (1)\n• Groß (BHA) £5.7m | now +101.4% → midnight +295.3%\n📉 Fallers (2)\n• Mehmeti (IPS) £4.9m | now -100.5% → midnight -107.4%\n• Minteh (BHA) £5.9m | now -100.2% → midnight -104.1%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
