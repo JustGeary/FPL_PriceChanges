@@ -209,6 +209,54 @@
           "id": 386
         }
       ]
+    },
+    {
+      "at": "2026-09-19T14:30:14.703115+00:00",
+      "mode": "alerts",
+      "keys": [
+        "187:fall",
+        "312:fall"
+      ],
+      "rows": [
+        {
+          "id": 187,
+          "name": "Eccles",
+          "team": "COV",
+          "price": 49,
+          "current": -100.0,
+          "projected": -110.8,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "i",
+          "news": "Unspecified injury - Expected back 12 Oct",
+          "news_added": "2026-09-10T18:30:08.877110Z",
+          "chance_of_playing_next_round": 0,
+          "removed": false
+        },
+        {
+          "id": 312,
+          "name": "Taylor",
+          "team": "IPS",
+          "price": 45,
+          "current": -100.1,
+          "projected": -101.6,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "i",
+          "news": "Knee injury - Unknown return date",
+          "news_added": "2026-07-29T18:00:10.319370Z",
+          "chance_of_playing_next_round": 0,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 19 Sep, 15:30 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (2)\n• Taylor (IPS) £4.5m | now -100.1% → midnight -101.6%\n• Eccles (COV) £4.9m | now -100.0% → midnight -110.8%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
