@@ -373,6 +373,37 @@
           "id": 389
         }
       ]
+    },
+    {
+      "at": "2026-09-19T21:00:13.028100+00:00",
+      "mode": "alerts",
+      "keys": [
+        "557:fall"
+      ],
+      "rows": [
+        {
+          "id": 557,
+          "name": "Tzolis",
+          "team": "ARS",
+          "price": 64,
+          "current": -100.4,
+          "projected": -102.2,
+          "eligible": true,
+          "locked_until": null,
+          "calibrating": false,
+          "status": "a",
+          "news": "",
+          "news_added": null,
+          "chance_of_playing_next_round": null,
+          "removed": false
+        }
+      ],
+      "parts": [
+        {
+          "text": "FPL threshold watch · 19 Sep, 22:00 UK\nFor midnight tonight · 7-day Telegram trial\nFPL predictions — not guaranteed changes.\n\nThreshold reached\n📉 Fallers (1)\n• Tzolis (ARS) £6.4m | now -100.4% → midnight -102.2%\n\nFirst observed at/over the threshold in this monitoring window.",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }
