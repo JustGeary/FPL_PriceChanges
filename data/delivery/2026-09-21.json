@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-21",
+  "status": "prepared",
+  "messages": [
+    {
+      "channel": "telegram",
+      "text": "<b>FPL Price Changes — GW5 — 21-09-2026 (Risers: 2, Fallers: 11)</b>\n\n📈 <b>Risers</b>\n• <b>Raya</b> (ARS): +0.1m → £6.1m\n• <b>Kostoulas</b> (BHA): +0.1m → £5.6m\n\n📉 <b>Fallers</b>\n• <b>Hincapie</b> (ARS): -0.1m → £5.2m\n• <b>Burn</b> (NEW): -0.1m → £4.8m\n• <b>Fernandes</b> (TOT): -0.1m → £5.7m\n• <b>Aaronson</b> (LEE): -0.1m → £5.3m\n• <b>O'Brien</b> (EVE): -0.1m → £4.8m\n• <b>Sessegnon</b> (FUL): -0.1m → £4.3m\n• <b>Diakité</b> (BOU): -0.1m → £4.9m\n• <b>Hackney</b> (EVE): -0.1m → £5.4m\n• <b>Florentino</b> (IPS): -0.1m → £4.8m\n• <b>Yirenkyi</b> (COV): -0.1m → £4.8m\n• <b>Gittens</b> (CHE): -0.1m → £5.8m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 FPL Fallers #GW5\n📅 21-09-2026 (F:11) #FPL\n\n📉 Fallers:\n• Hincapie (ARS) £5.2m\n• Burn (NEW) £4.8m\n• Fernandes (TOT) £5.7m\n• Aaronson (LEE) £5.3m\n• O'Brien (EVE) £4.8m\n• Sessegnon (FUL) £4.3m\n• Diakité (BOU) £4.9m\n• Hackney (EVE) £5.4m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 Fallers (cont.)\n• Florentino (IPS) £4.8m\n• Yirenkyi (COV) £4.8m\n• Gittens (CHE) £5.8m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "risers",
+      "text": "📈 FPL Risers #GW5\n📅 21-09-2026 (R:2) #FPL\n\n📈 Risers:\n• Raya (ARS) £6.1m\n• Kostoulas (BHA) £5.6m",
+      "status": "ready"
+    }
+  ],
+  "report": "# FPL Price Changes — GW5 — 21-09-2026 (Risers: 2, Fallers: 11)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Raya | ARS | £6.0m | £6.1m | +0.1m | 42.0% |\n| Kostoulas | BHA | £5.5m | £5.6m | +0.1m | 2.8% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Hincapie | ARS | £5.3m | £5.2m | -0.1m | 0.9% |\n| Burn | NEW | £4.9m | £4.8m | -0.1m | 0.8% |\n| Fernandes | TOT | £5.8m | £5.7m | -0.1m | 0.8% |\n| Aaronson | LEE | £5.4m | £5.3m | -0.1m | 0.5% |\n| O'Brien | EVE | £4.9m | £4.8m | -0.1m | 0.3% |\n| Sessegnon | FUL | £4.4m | £4.3m | -0.1m | 0.3% |\n| Diakité | BOU | £5.0m | £4.9m | -0.1m | 0.2% |\n| Hackney | EVE | £5.5m | £5.4m | -0.1m | 0.2% |\n| Florentino | IPS | £4.9m | £4.8m | -0.1m | 0.1% |\n| Yirenkyi | COV | £4.9m | £4.8m | -0.1m | 0.1% |\n| Gittens | CHE | £5.9m | £5.8m | -0.1m | 0.0% |\n\n_Total changes: 13 (Risers: 2, Fallers: 11)_\n",
+  "updated_at": "2026-09-20T23:06:16.414128+00:00"
+}
