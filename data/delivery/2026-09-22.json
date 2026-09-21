@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-22",
+  "status": "prepared",
+  "messages": [
+    {
+      "channel": "telegram",
+      "text": "<b>FPL Price Changes — GW5 — 22-09-2026 (Risers: 2, Fallers: 13)</b>\n\n📈 <b>Risers</b>\n• <b>Hall</b> (NEW): +0.1m → £5.3m\n• <b>Schade</b> (BRE): +0.1m → £6.2m\n\n📉 <b>Fallers</b>\n• <b>João Pedro</b> (CHE): -0.1m → £7.7m\n• <b>B.Fernandes</b> (MUN): -0.1m → £11.9m\n• <b>O'Reilly</b> (MCI): -0.1m → £6.3m\n• <b>Truffert</b> (BOU): -0.1m → £5.4m\n• <b>Aina</b> (NFO): -0.1m → £4.4m\n• <b>Gusto</b> (CHE): -0.1m → £4.9m\n• <b>McAteer</b> (IPS): -0.1m → £4.4m\n• <b>Simms</b> (COV): -0.1m → £4.9m\n• <b>Bergvall</b> (TOT): -0.1m → £5.3m\n• <b>Bogarde</b> (AVL): -0.1m → £4.9m\n• <b>Lerma</b> (CRY): -0.1m → £4.8m\n• <b>Mason-Clark</b> (COV): -0.1m → £5.3m\n• <b>Doucouré</b> (CRY): -0.1m → £4.8m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 FPL Fallers #GW5\n📅 22-09-2026 (F:13) #FPL\n\n📉 Fallers:\n• João Pedro (CHE) £7.7m\n• B.Fernandes (MUN) £11.9m\n• O'Reilly (MCI) £6.3m\n• Truffert (BOU) £5.4m\n• Aina (NFO) £4.4m\n• Gusto (CHE) £4.9m\n• McAteer (IPS) £4.4m\n• Simms (COV) £4.9m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 Fallers (cont.)\n• Bergvall (TOT) £5.3m\n• Bogarde (AVL) £4.9m\n• Lerma (CRY) £4.8m\n• Mason-Clark (COV) £5.3m\n• Doucouré (CRY) £4.8m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "risers",
+      "text": "📈 FPL Risers #GW5\n📅 22-09-2026 (R:2) #FPL\n\n📈 Risers:\n• Hall (NEW) £5.3m\n• Schade (BRE) £6.2m",
+      "status": "ready"
+    }
+  ],
+  "report": "# FPL Price Changes — GW5 — 22-09-2026 (Risers: 2, Fallers: 13)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Hall | NEW | £5.2m | £5.3m | +0.1m | 16.6% |\n| Schade | BRE | £6.1m | £6.2m | +0.1m | 10.4% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| João Pedro | CHE | £7.8m | £7.7m | -0.1m | 66.1% |\n| B.Fernandes | MUN | £12.0m | £11.9m | -0.1m | 38.8% |\n| O'Reilly | MCI | £6.4m | £6.3m | -0.1m | 11.1% |\n| Truffert | BOU | £5.5m | £5.4m | -0.1m | 3.0% |\n| Aina | NFO | £4.5m | £4.4m | -0.1m | 2.4% |\n| Gusto | CHE | £5.0m | £4.9m | -0.1m | 1.0% |\n| McAteer | IPS | £4.5m | £4.4m | -0.1m | 1.0% |\n| Simms | COV | £5.0m | £4.9m | -0.1m | 0.6% |\n| Bergvall | TOT | £5.4m | £5.3m | -0.1m | 0.1% |\n| Bogarde | AVL | £5.0m | £4.9m | -0.1m | 0.1% |\n| Lerma | CRY | £4.9m | £4.8m | -0.1m | 0.1% |\n| Mason-Clark | COV | £5.4m | £5.3m | -0.1m | 0.1% |\n| Doucouré | CRY | £4.9m | £4.8m | -0.1m | 0.0% |\n\n_Total changes: 15 (Risers: 2, Fallers: 13)_\n",
+  "updated_at": "2026-09-21T23:06:13.493868+00:00"
+}
