@@ -5,7 +5,9 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW5 — 23-09-2026 (Risers: 0, Fallers: 5)</b>\n\n📉 <b>Fallers</b>\n• <b>Maguire</b> (MUN): -0.1m → £4.8m\n• <b>Wharton</b> (CRY): -0.1m → £5.4m\n• <b>Maatsen</b> (AVL): -0.1m → £4.4m\n• <b>Bendito Mantato</b> (MUN): -0.1m → £4.4m\n• <b>Gyabi</b> (HUL): -0.1m → £4.4m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 200,
+      "id": "396"
     },
     {
       "channel": "x",
@@ -15,5 +17,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 23-09-2026 (Risers: 0, Fallers: 5)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Maguire | MUN | £4.9m | £4.8m | -0.1m | 8.7% |\n| Wharton | CRY | £5.5m | £5.4m | -0.1m | 0.7% |\n| Maatsen | AVL | £4.5m | £4.4m | -0.1m | 0.5% |\n| Bendito Mantato | MUN | £4.5m | £4.4m | -0.1m | 0.2% |\n| Gyabi | HUL | £4.5m | £4.4m | -0.1m | 0.0% |\n\n_Total changes: 5 (Risers: 0, Fallers: 5)_\n",
-  "updated_at": "2026-09-22T23:06:15.170312+00:00"
+  "updated_at": "2026-09-22T23:06:16.981143+00:00"
 }
