@@ -1,6 +1,6 @@
 {
   "date": "2026-09-24",
-  "status": "prepared",
+  "status": "complete",
   "messages": [
     {
       "channel": "telegram",
@@ -19,5 +19,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 24-09-2026 (Risers: 0, Fallers: 1)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Butland | HUL | £4.5m | £4.4m | -0.1m | 0.1% |\n\n_Total changes: 1 (Risers: 0, Fallers: 1)_\n",
-  "updated_at": "2026-09-23T23:06:24.515128+00:00"
+  "updated_at": "2026-09-23T23:06:26.042497+00:00"
 }
