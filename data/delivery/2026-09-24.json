@@ -5,7 +5,9 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW5 — 24-09-2026 (Risers: 0, Fallers: 1)</b>\n\n📉 <b>Fallers</b>\n• <b>Butland</b> (HUL): -0.1m → £4.4m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 200,
+      "id": "397"
     },
     {
       "channel": "x",
@@ -15,5 +17,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 24-09-2026 (Risers: 0, Fallers: 1)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Butland | HUL | £4.5m | £4.4m | -0.1m | 0.1% |\n\n_Total changes: 1 (Risers: 0, Fallers: 1)_\n",
-  "updated_at": "2026-09-23T23:06:19.119345+00:00"
+  "updated_at": "2026-09-23T23:06:21.427767+00:00"
 }
