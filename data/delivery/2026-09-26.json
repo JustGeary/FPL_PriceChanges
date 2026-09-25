@@ -21,9 +21,11 @@
       "channel": "x",
       "group": "risers",
       "text": "📈 FPL Risers #GW5\n📅 26-09-2026 (R:1) #FPL\n\n📈 Risers:\n• De Cuyper (BHA) £5.0m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2103622163802509763"
     }
   ],
   "report": "# FPL Price Changes — GW5 — 26-09-2026 (Risers: 1, Fallers: 3)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| De Cuyper | BHA | £4.9m | £5.0m | +0.1m | 27.6% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Eze | ARS | £6.3m | £6.2m | -0.1m | 1.0% |\n| Gozo | CRY | £5.0m | £4.9m | -0.1m | 0.0% |\n| Yohanna | BHA | £4.9m | £4.8m | -0.1m | 0.0% |\n\n_Total changes: 4 (Risers: 1, Fallers: 3)_\n",
-  "updated_at": "2026-09-25T23:06:20.495982+00:00"
+  "updated_at": "2026-09-25T23:06:22.047655+00:00"
 }
