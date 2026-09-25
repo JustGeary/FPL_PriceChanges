@@ -5,7 +5,7 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW5 — 26-09-2026 (Risers: 1, Fallers: 3)</b>\n\n📈 <b>Risers</b>\n• <b>De Cuyper</b> (BHA): +0.1m → £5.0m\n\n📉 <b>Fallers</b>\n• <b>Eze</b> (ARS): -0.1m → £6.2m\n• <b>Gozo</b> (CRY): -0.1m → £4.9m\n• <b>Yohanna</b> (BHA): -0.1m → £4.8m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -21,5 +21,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 26-09-2026 (Risers: 1, Fallers: 3)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| De Cuyper | BHA | £4.9m | £5.0m | +0.1m | 27.6% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Eze | ARS | £6.3m | £6.2m | -0.1m | 1.0% |\n| Gozo | CRY | £5.0m | £4.9m | -0.1m | 0.0% |\n| Yohanna | BHA | £4.9m | £4.8m | -0.1m | 0.0% |\n\n_Total changes: 4 (Risers: 1, Fallers: 3)_\n",
-  "updated_at": "2026-09-25T23:06:12.314411+00:00"
+  "updated_at": "2026-09-25T23:06:14.244090+00:00"
 }
