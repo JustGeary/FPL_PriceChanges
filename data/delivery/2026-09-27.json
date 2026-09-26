@@ -13,9 +13,11 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW5\n📅 27-09-2026 (F:1) #FPL\n\n📉 Fallers:\n• Zepa (FUL) £4.4m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2103984546530152823"
     }
   ],
   "report": "# FPL Price Changes — GW5 — 27-09-2026 (Risers: 0, Fallers: 1)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Zepa | FUL | £4.5m | £4.4m | -0.1m | 0.3% |\n\n_Total changes: 1 (Risers: 0, Fallers: 1)_\n",
-  "updated_at": "2026-09-26T23:06:19.105526+00:00"
+  "updated_at": "2026-09-26T23:06:20.836860+00:00"
 }
