@@ -5,7 +5,7 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW5 — 27-09-2026 (Risers: 0, Fallers: 1)</b>\n\n📉 <b>Fallers</b>\n• <b>Zepa</b> (FUL): -0.1m → £4.4m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -15,5 +15,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 27-09-2026 (Risers: 0, Fallers: 1)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Zepa | FUL | £4.5m | £4.4m | -0.1m | 0.3% |\n\n_Total changes: 1 (Risers: 0, Fallers: 1)_\n",
-  "updated_at": "2026-09-26T23:06:13.849456+00:00"
+  "updated_at": "2026-09-26T23:06:15.392740+00:00"
 }
