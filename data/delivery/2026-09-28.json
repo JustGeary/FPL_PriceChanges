@@ -5,7 +5,9 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW5 — 28-09-2026 (Risers: 1, Fallers: 1)</b>\n\n📈 <b>Risers</b>\n• <b>Barry</b> (EVE): +0.1m → £5.7m\n\n📉 <b>Fallers</b>\n• <b>Emegha</b> (CHE): -0.1m → £4.9m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 200,
+      "id": "401"
     },
     {
       "channel": "x",
@@ -21,5 +23,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 28-09-2026 (Risers: 1, Fallers: 1)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Barry | EVE | £5.6m | £5.7m | +0.1m | 8.3% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Emegha | CHE | £5.0m | £4.9m | -0.1m | 0.1% |\n\n_Total changes: 2 (Risers: 1, Fallers: 1)_\n",
-  "updated_at": "2026-09-27T23:06:13.979189+00:00"
+  "updated_at": "2026-09-27T23:06:15.488412+00:00"
 }
