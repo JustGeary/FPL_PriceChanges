@@ -13,9 +13,11 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW5\n📅 29-09-2026 (F:4) #FPL\n\n📉 Fallers:\n• Ellborg (SUN) £4.4m\n• Diarra (SUN) £5.3m\n• Morita (HUL) £4.9m\n• Nørgaard (EVE) £4.8m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2104709324714979517"
     }
   ],
   "report": "# FPL Price Changes — GW5 — 29-09-2026 (Risers: 0, Fallers: 4)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Ellborg | SUN | £4.5m | £4.4m | -0.1m | 0.1% |\n| Diarra | SUN | £5.4m | £5.3m | -0.1m | 0.0% |\n| Morita | HUL | £5.0m | £4.9m | -0.1m | 0.0% |\n| Nørgaard | EVE | £4.9m | £4.8m | -0.1m | 0.0% |\n\n_Total changes: 4 (Risers: 0, Fallers: 4)_\n",
-  "updated_at": "2026-09-28T23:06:19.711744+00:00"
+  "updated_at": "2026-09-28T23:06:21.424702+00:00"
 }
