@@ -5,7 +5,9 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW5 — 30-09-2026 (Risers: 0, Fallers: 3)</b>\n\n📉 <b>Fallers</b>\n• <b>Kerkez</b> (LIV): -0.1m → £5.3m\n• <b>Pau</b> (AVL): -0.1m → £4.4m\n• <b>Wright</b> (COV): -0.1m → £5.3m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 200,
+      "id": "403"
     },
     {
       "channel": "x",
@@ -15,5 +17,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 30-09-2026 (Risers: 0, Fallers: 3)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Kerkez | LIV | £5.4m | £5.3m | -0.1m | 2.2% |\n| Pau | AVL | £4.5m | £4.4m | -0.1m | 0.3% |\n| Wright | COV | £5.4m | £5.3m | -0.1m | 0.1% |\n\n_Total changes: 3 (Risers: 0, Fallers: 3)_\n",
-  "updated_at": "2026-09-30T05:21:20.090458+00:00"
+  "updated_at": "2026-09-30T05:21:22.082802+00:00"
 }
