@@ -13,7 +13,7 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW5\n📅 01-10-2026 (F:3) #FPL\n\n📉 Fallers:\n• Richards (CRY) £4.9m\n• Merino (ARS) £5.7m\n• Heaven (MUN) £4.3m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -23,5 +23,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 01-10-2026 (Risers: 1, Fallers: 3)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Tarkowski | EVE | £6.1m | £6.2m | +0.1m | 16.5% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Richards | CRY | £5.0m | £4.9m | -0.1m | 0.6% |\n| Merino | ARS | £5.8m | £5.7m | -0.1m | 0.4% |\n| Heaven | MUN | £4.4m | £4.3m | -0.1m | 0.3% |\n\n_Total changes: 4 (Risers: 1, Fallers: 3)_\n",
-  "updated_at": "2026-09-30T23:06:20.384028+00:00"
+  "updated_at": "2026-09-30T23:06:21.822668+00:00"
 }
