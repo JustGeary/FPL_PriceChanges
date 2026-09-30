@@ -22,15 +22,61 @@ def now():
     return dt.datetime.now(UTC)
 
 
+class SaveError(RuntimeError):
+    pass
+
+
+def push_confirmed(sleep=time.sleep):
+    """Retry the same commit; never repeat an external notification."""
+    head = subprocess.run(['git', 'rev-parse', 'HEAD'], check=True,
+                          capture_output=True, text=True).stdout.strip()
+    for attempt in range(4):
+        # Capture output because remote URLs may contain credentials.
+        try:
+            pushed = subprocess.run(['git', 'push', 'origin', 'HEAD:main'],
+                                    capture_output=True, text=True, timeout=30)
+            push_code = pushed.returncode
+        except subprocess.TimeoutExpired:
+            push_code = 'timeout'
+        try:
+            remote = subprocess.run(['git', 'ls-remote', 'origin', 'refs/heads/main'],
+                                    capture_output=True, text=True, timeout=30)
+            verify_code = remote.returncode
+            if remote.returncode == 0 and remote.stdout.split()[:1] == [head]:
+                return
+        except subprocess.TimeoutExpired:
+            verify_code = 'timeout'
+        print(f'GitHub save attempt {attempt + 1}/4 not confirmed '
+              f'(push exit {push_code}, verification exit {verify_code})', flush=True)
+        if attempt < 3:
+            sleep((5, 15, 30)[attempt])
+    raise SaveError('GitHub save failed after initial attempt and 3 retries; '
+                    'delivery stopped. Inspect the remote delivery record before resuming.')
+
+
 def persist(path, state):
     state['updated_at'] = now().isoformat()
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    subprocess.run(['git', 'add', 'data/delivery', 'data/snapshots'], check=True)
-    if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode:
-        subprocess.run(['git', 'commit', '-m', f"FPL delivery {state['date']}: {state['status']}"], check=True)
-        # Failure here stops before any further notification. Never suppress push errors.
-        subprocess.run(['git', 'push', 'origin', 'HEAD:main'], check=True)
+    try:
+        subprocess.run(['git', 'add', 'data/delivery', 'data/snapshots'], check=True)
+        changed = subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode
+        if changed not in (0, 1):
+            raise SaveError('GitHub save failed: unable to inspect staged delivery changes.')
+        if changed:
+            subprocess.run(['git', 'commit', '-m', f"FPL delivery {state['date']}: {state['status']}"], check=True)
+        # Verify even when no new commit was needed: a previous push may have failed.
+        push_confirmed()
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as exc:
+        raise SaveError('GitHub save failed: ' + type(exc).__name__ +
+                        '; delivery stopped. Review the remote delivery record.') from None
+
+
+def save_delivery(save, phase):
+    try:
+        save()
+    except SaveError as exc:
+        raise SaveError(f'{phase}: {exc}') from None
 
 
 def fetch():
@@ -106,10 +152,10 @@ def deliver(state, save, x_session=None, tg_post=requests.post):
             continue
         if item['status'] in ('sending', 'uncertain') or group in blocked_groups:
             blocked_groups.add(group)
-            problems.append('Uncertain delivery requires review: ' + group)
+            problems.append(f'{item["channel"]}/{group}: held for review or blocked by an earlier message; do not repost blindly')
             continue
         item['status'] = 'sending'
-        save()  # Durable intent must reach GitHub BEFORE the external side effect.
+        save_delivery(save, f'Before sending {item["channel"]}/{group}; this message was not posted')
         try:
             if item['channel'] == 'x':
                 if x_session is None:
@@ -125,11 +171,11 @@ def deliver(state, save, x_session=None, tg_post=requests.post):
             item['http_status'] = response.status_code
             if 400 <= response.status_code < 500 and response.status_code != 408:
                 item['status'] = 'failed'
-                problems.append(f'{group}: HTTP {response.status_code}')
+                problems.append(f'{item["channel"]}/{group}: rejected, HTTP {response.status_code}')
                 blocked_groups.add(group)
             elif not 200 <= response.status_code < 300:
                 item['status'] = 'uncertain'
-                problems.append(f'{group}: ambiguous HTTP {response.status_code}')
+                problems.append(f'{item["channel"]}/{group}: uncertain HTTP {response.status_code}; check whether it appeared before retrying')
                 blocked_groups.add(group)
             else:
                 body = response.json()
@@ -145,11 +191,11 @@ def deliver(state, save, x_session=None, tg_post=requests.post):
         except (requests.RequestException, ValueError, KeyError) as exc:
             # Do not log exception text: Telegram URLs contain a secret token.
             item['status'] = 'uncertain'
-            problems.append(f'{group}: uncertain result ({type(exc).__name__})')
+            problems.append(f'{item["channel"]}/{group}: uncertain result ({type(exc).__name__}); check whether it appeared before retrying')
             blocked_groups.add(group)
-        save()  # A failed receipt push aborts, leaving durable 'sending' for human review.
+        save_delivery(save, f'After {item["channel"]}/{group} attempt; receipt not saved, review before retrying')
     state['status'] = 'complete' if all(m['status'] == 'sent' for m in state['messages']) else 'needs_attention'
-    save()
+    save_delivery(save, 'Saving final delivery status')
     if problems:
         raise RuntimeError('; '.join(problems))
 
@@ -165,7 +211,8 @@ def main():
     state = json.loads(path.read_text(encoding='utf-8')) if path.exists() else None
     if '--check' in sys.argv:
         if not state or state['status'] != 'complete':
-            raise RuntimeError('00:15 completion check: ' + (state['status'] if state else 'no delivery record'))
+            details = '; '.join(f'{m["channel"]}/{m.get("group", "report")}: {m["status"]}' for m in (state or {}).get('messages', []))
+            raise RuntimeError('00:15 completion check: ' + (state['status'] if state else 'no delivery record') + '; ' + details)
         print('Completion check passed for ' + day)
         return
     if state and state['status'] == 'complete':
@@ -199,4 +246,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except RuntimeError as exc:
+        with open(os.environ.get('GITHUB_STEP_SUMMARY', os.devnull), 'a', encoding='utf-8') as out:
+            out.write(f'## FPL delivery needs attention\n\n{exc}\n')
+        raise

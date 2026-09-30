@@ -25,6 +25,8 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install requests requests-oauthlib
+      - name: Verify delivery safeguards
+        run: python -m unittest discover -s tests
       - name: Configure delivery commits
         run: |
           git config user.name 'fpl-price-bot'

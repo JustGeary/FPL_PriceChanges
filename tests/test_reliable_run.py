@@ -132,5 +132,60 @@ class DeliveryTests(unittest.TestCase):
                 os.chdir(original)
 
 
+class SaveRetryTests(unittest.TestCase):
+    def result(self, code=0, output=''):
+        return Mock(returncode=code, stdout=output)
+
+    def test_transient_failure_recovers(self):
+        sleep = Mock()
+        with patch.object(run.subprocess, 'run', side_effect=[
+                self.result(output='abc'), self.result(1), self.result(output='old refs/heads/main'),
+                self.result(), self.result(output='abc refs/heads/main')]) as git:
+            run.push_confirmed(sleep)
+        sleep.assert_called_once_with(5)
+        self.assertEqual(git.call_count, 5)
+
+    def test_accepted_push_with_lost_response_is_confirmed(self):
+        sleep = Mock()
+        with patch.object(run.subprocess, 'run', side_effect=[
+                self.result(output='abc'), run.subprocess.TimeoutExpired('git', 30),
+                self.result(output='abc refs/heads/main')]):
+            run.push_confirmed(sleep)
+        sleep.assert_not_called()
+
+    def test_exhaustion_is_bounded(self):
+        sleep = Mock()
+        results = [self.result(output='abc')]
+        for _ in range(4):
+            results.extend([self.result(1), self.result(output='old refs/heads/main')])
+        with patch.object(run.subprocess, 'run', side_effect=results):
+            with self.assertRaises(run.SaveError):
+                run.push_confirmed(sleep)
+        self.assertEqual([c.args[0] for c in sleep.call_args_list], [5, 15, 30])
+
+    def test_unverified_success_is_not_enough(self):
+        results = [self.result(output='abc')]
+        for _ in range(4):
+            results.extend([self.result(), self.result(1)])
+        with patch.object(run.subprocess, 'run', side_effect=results):
+            with self.assertRaises(run.SaveError):
+                run.push_confirmed(Mock())
+
+    def test_save_failure_blocks_all_posts_and_names_phase(self):
+        state = DeliveryTests().state()
+        session = Mock()
+        with self.assertRaisesRegex(run.SaveError, 'Before sending x/fallers'):
+            run.deliver(state, Mock(side_effect=run.SaveError('save failed')), session)
+        session.post.assert_not_called()
+
+    def test_receipt_failure_does_not_repeat_post(self):
+        state = DeliveryTests().state()
+        session = Mock()
+        session.post.return_value = response()
+        with self.assertRaisesRegex(run.SaveError, 'receipt not saved'):
+            run.deliver(state, Mock(side_effect=[None, run.SaveError('save failed')]), session)
+        self.assertEqual(session.post.call_count, 1)
+
+
 if __name__ == '__main__':
     unittest.main()
