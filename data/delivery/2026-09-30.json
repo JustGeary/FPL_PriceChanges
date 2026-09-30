@@ -1,6 +1,6 @@
 {
   "date": "2026-09-30",
-  "status": "prepared",
+  "status": "complete",
   "messages": [
     {
       "channel": "telegram",
@@ -19,5 +19,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 30-09-2026 (Risers: 0, Fallers: 3)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Kerkez | LIV | £5.4m | £5.3m | -0.1m | 2.2% |\n| Pau | AVL | £4.5m | £4.4m | -0.1m | 0.3% |\n| Wright | COV | £5.4m | £5.3m | -0.1m | 0.1% |\n\n_Total changes: 3 (Risers: 0, Fallers: 3)_\n",
-  "updated_at": "2026-09-30T05:21:25.356986+00:00"
+  "updated_at": "2026-09-30T05:21:26.585724+00:00"
 }
