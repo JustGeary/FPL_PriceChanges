@@ -210,7 +210,7 @@ def main():
             raise RuntimeError(f'Unresolved delivery {prior.stem}; review before continuing')
     state = json.loads(path.read_text(encoding='utf-8')) if path.exists() else None
     if '--check' in sys.argv:
-        if not state or state['status'] != 'complete':
+        if not state or not (state['status'] == 'complete' or (state['status'] == 'no_change_unconfirmed' and not state.get('messages'))):
             details = '; '.join(f'{m["channel"]}/{m.get("group", "report")}: {m["status"]}' for m in (state or {}).get('messages', []))
             raise RuntimeError('00:15 completion check: ' + (state['status'] if state else 'no delivery record') + '; ' + details)
         print('Completion check passed for ' + day)
@@ -232,7 +232,10 @@ def main():
             # Today's state stays unconfirmed and the fallback still rechecks yesterday's baseline.
             (diff.SNAP_DIR / (day + '.json')).write_text(json.dumps(prices), encoding='utf-8')
             persist(path, state)
-            raise RuntimeError('No stable changed prices confirmed; fallback will check again')
+            print('No price changes observed; fallback will check again', flush=True)
+            with open(os.environ.get('GITHUB_STEP_SUMMARY', os.devnull), 'a', encoding='utf-8') as out:
+                out.write(f'## {day}: no price changes observed\n\nThe later fallback will recheck for delayed updates.\n')
+            return
         if now().astimezone(diff.UK_TZ).date().isoformat() != day:
             raise RuntimeError('UK date changed during observation')
         state = build_state(day, data, prices, previous)

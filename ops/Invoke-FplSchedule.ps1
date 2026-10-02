@@ -40,7 +40,8 @@ try {
     if ($Mode -eq 'Check') {
         $file = Invoke-RestMethod -Uri "$base/contents/data/delivery/$day.json?ref=main" -Headers $headers
         $state = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($file.content)) | ConvertFrom-Json
-        if ($state.date -ne $day -or $state.status -ne 'complete') { throw 'Delivery is not complete; check GitHub Actions.' }
+        if ($state.date -ne $day -or ($state.status -ne 'complete' -and -not ($state.status -eq 'no_change_unconfirmed' -and @($state.messages).Count -eq 0))) { throw 'Delivery is not complete; check GitHub Actions.' }
+        if ($state.status -eq 'no_change_unconfirmed') { Record 'no_change_unconfirmed' 'No price changes observed; the later fallback will recheck.'; exit 0 }
         Record 'complete' 'Daily delivery ledger confirms completion.'
     }
 } catch {

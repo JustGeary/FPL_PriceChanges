@@ -25,8 +25,8 @@ reset the whole ledger to retry. Prior unresolved deliveries block new days and
 must be reviewed rather than discarded. There is no claim of exactly-once delivery
 across an external API and GitHub; uncertain outcomes intentionally stop automation.
 
-A day with no changed prices remains `no_change_unconfirmed`; it is rechecked by
-the fallback and reported by the completion check. Its observed snapshot is kept
+A day with no changed prices remains `no_change_unconfirmed`; it finishes successfully, is accepted by the completion check, and is rechecked by
+the fallback. Only an empty notification ledger qualifies for this normal result. Its observed snapshot is kept
 for tomorrow, but it does not falsely claim FPL publication was confirmed. A missing
 yesterday snapshot or incomplete API response requires attention.
 
