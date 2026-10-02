@@ -5,7 +5,7 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW5 — 03-10-2026 (Risers: 0, Fallers: 6)</b>\n\n📉 <b>Fallers</b>\n• <b>Szoboszlai</b> (LIV): -0.1m → £6.9m\n• <b>Henderson</b> (CRY): -0.1m → £4.9m\n• <b>Aït-Nouri</b> (MCI): -0.1m → £5.2m\n• <b>I.Sangaré</b> (NFO): -0.1m → £4.8m\n• <b>Longstaff</b> (LEE): -0.1m → £4.8m\n• <b>Mamardashvili</b> (LIV): -0.1m → £4.8m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -15,5 +15,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 03-10-2026 (Risers: 0, Fallers: 6)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Szoboszlai | LIV | £7.0m | £6.9m | -0.1m | 32.7% |\n| Henderson | CRY | £5.0m | £4.9m | -0.1m | 1.3% |\n| Aït-Nouri | MCI | £5.3m | £5.2m | -0.1m | 0.4% |\n| I.Sangaré | NFO | £4.9m | £4.8m | -0.1m | 0.4% |\n| Longstaff | LEE | £4.9m | £4.8m | -0.1m | 0.1% |\n| Mamardashvili | LIV | £4.9m | £4.8m | -0.1m | 0.1% |\n\n_Total changes: 6 (Risers: 0, Fallers: 6)_\n",
-  "updated_at": "2026-10-02T23:06:14.219755+00:00"
+  "updated_at": "2026-10-02T23:06:15.586218+00:00"
 }
