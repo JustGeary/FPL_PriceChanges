@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "status": "prepared",
+  "status": "complete",
   "messages": [
     {
       "channel": "telegram",
@@ -27,5 +27,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 04-10-2026 (Risers: 1, Fallers: 6)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Groß | BHA | £5.8m | £5.9m | +0.1m | 29.2% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| James | CHE | £5.4m | £5.3m | -0.1m | 5.8% |\n| Martinez | MUN | £5.0m | £4.9m | -0.1m | 1.3% |\n| Dowell | HUL | £4.5m | £4.4m | -0.1m | 0.3% |\n| Kovačić | MCI | £5.4m | £5.3m | -0.1m | 0.1% |\n| McNeil | CRY | £5.4m | £5.3m | -0.1m | 0.1% |\n| Woolfenden | COV | £4.0m | £3.9m | -0.1m | 0.1% |\n\n_Total changes: 7 (Risers: 1, Fallers: 6)_\n",
-  "updated_at": "2026-10-03T23:06:25.899379+00:00"
+  "updated_at": "2026-10-03T23:06:27.089715+00:00"
 }
