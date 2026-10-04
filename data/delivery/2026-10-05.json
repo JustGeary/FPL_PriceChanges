@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "status": "prepared",
+  "status": "complete",
   "messages": [
     {
       "channel": "telegram",
@@ -19,5 +19,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 05-10-2026 (Risers: 0, Fallers: 2)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Drakes-Thomas | CRY | £4.5m | £4.4m | -0.1m | 0.1% |\n| De Ligt | MUN | £5.0m | £4.9m | -0.1m | 0.0% |\n\n_Total changes: 2 (Risers: 0, Fallers: 2)_\n",
-  "updated_at": "2026-10-04T23:06:19.210458+00:00"
+  "updated_at": "2026-10-04T23:06:20.451770+00:00"
 }
