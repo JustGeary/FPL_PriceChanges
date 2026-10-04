@@ -5,7 +5,9 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW5 — 05-10-2026 (Risers: 0, Fallers: 2)</b>\n\n📉 <b>Fallers</b>\n• <b>Drakes-Thomas</b> (CRY): -0.1m → £4.4m\n• <b>De Ligt</b> (MUN): -0.1m → £4.9m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 200,
+      "id": "407"
     },
     {
       "channel": "x",
@@ -15,5 +17,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 05-10-2026 (Risers: 0, Fallers: 2)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Drakes-Thomas | CRY | £4.5m | £4.4m | -0.1m | 0.1% |\n| De Ligt | MUN | £5.0m | £4.9m | -0.1m | 0.0% |\n\n_Total changes: 2 (Risers: 0, Fallers: 2)_\n",
-  "updated_at": "2026-10-04T23:06:14.987219+00:00"
+  "updated_at": "2026-10-04T23:06:16.581597+00:00"
 }
