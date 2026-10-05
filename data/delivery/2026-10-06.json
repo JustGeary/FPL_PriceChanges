@@ -13,7 +13,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW5\n📅 06-10-2026 (F:1) #FPL\n\n📉 Fallers:\n• J.Ramsey (NEW) £4.8m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2107246031528137034"
     },
     {
       "channel": "x",
@@ -23,5 +25,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 06-10-2026 (Risers: 2, Fallers: 1)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Calafiori | ARS | £5.8m | £5.9m | +0.1m | 50.5% |\n| Saka | ARS | £9.5m | £9.6m | +0.1m | 14.1% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| J.Ramsey | NEW | £4.9m | £4.8m | -0.1m | 0.2% |\n\n_Total changes: 3 (Risers: 2, Fallers: 1)_\n",
-  "updated_at": "2026-10-05T23:06:17.679314+00:00"
+  "updated_at": "2026-10-05T23:06:19.459199+00:00"
 }
