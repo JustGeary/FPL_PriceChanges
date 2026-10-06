@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "status": "prepared",
+  "status": "complete",
   "messages": [
     {
       "channel": "telegram",
@@ -19,5 +19,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 07-10-2026 (Risers: 2, Fallers: 0)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Rogers | CHE | £7.7m | £7.8m | +0.1m | 40.8% |\n| King | FUL | £5.5m | £5.6m | +0.1m | 2.9% |\n\n_Total changes: 2 (Risers: 2, Fallers: 0)_\n",
-  "updated_at": "2026-10-06T23:06:20.657426+00:00"
+  "updated_at": "2026-10-06T23:06:22.070582+00:00"
 }
