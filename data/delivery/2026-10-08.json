@@ -13,9 +13,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW5\n📅 08-10-2026 (F:2) #FPL\n\n📉 Fallers:\n• Greaves (IPS) £3.9m\n• McAidoo (MCI) £4.4m",
-      "status": "ready"
+      "status": "sending"
     }
   ],
   "report": "# FPL Price Changes — GW5 — 08-10-2026 (Risers: 0, Fallers: 2)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Greaves | IPS | £4.0m | £3.9m | -0.1m | 1.1% |\n| McAidoo | MCI | £4.5m | £4.4m | -0.1m | 0.1% |\n\n_Total changes: 2 (Risers: 0, Fallers: 2)_\n",
-  "updated_at": "2026-10-07T23:06:21.999682+00:00"
+  "updated_at": "2026-10-07T23:06:23.365338+00:00"
 }
