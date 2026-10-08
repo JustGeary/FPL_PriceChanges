@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-09",
+  "status": "prepared",
+  "messages": [
+    {
+      "channel": "telegram",
+      "text": "<b>FPL Price Changes — GW5 — 09-10-2026 (Risers: 0, Fallers: 4)</b>\n\n📉 <b>Fallers</b>\n• <b>Rashford</b> (MUN): -0.1m → £6.9m\n• <b>Yates</b> (NFO): -0.1m → £4.4m\n• <b>Mingueza</b> (CRY): -0.1m → £4.3m\n• <b>Dibling</b> (EVE): -0.1m → £5.3m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 FPL Fallers #GW5\n📅 09-10-2026 (F:4) #FPL\n\n📉 Fallers:\n• Rashford (MUN) £6.9m\n• Yates (NFO) £4.4m\n• Mingueza (CRY) £4.3m\n• Dibling (EVE) £5.3m",
+      "status": "ready"
+    }
+  ],
+  "report": "# FPL Price Changes — GW5 — 09-10-2026 (Risers: 0, Fallers: 4)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Rashford | MUN | £7.0m | £6.9m | -0.1m | 1.4% |\n| Yates | NFO | £4.5m | £4.4m | -0.1m | 1.1% |\n| Mingueza | CRY | £4.4m | £4.3m | -0.1m | 0.1% |\n| Dibling | EVE | £5.4m | £5.3m | -0.1m | 0.0% |\n\n_Total changes: 4 (Risers: 0, Fallers: 4)_\n",
+  "updated_at": "2026-10-08T23:06:14.408081+00:00"
+}
