@@ -1,6 +1,6 @@
 {
   "date": "2026-10-10",
-  "status": "prepared",
+  "status": "complete",
   "messages": [
     {
       "channel": "telegram",
@@ -27,5 +27,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW5 — 10-10-2026 (Risers: 2, Fallers: 9)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Gonzalo | FUL | £6.0m | £6.1m | +0.1m | 6.2% |\n| Emersonn | IPS | £5.5m | £5.6m | +0.1m | 4.0% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| White | ARS | £5.5m | £5.4m | -0.1m | 4.5% |\n| Kluivert | BOU | £6.0m | £5.9m | -0.1m | 0.7% |\n| Clarke | IPS | £5.4m | £5.3m | -0.1m | 0.2% |\n| Oriola | BHA | £4.5m | £4.4m | -0.1m | 0.2% |\n| Hamer | COV | £5.4m | £5.3m | -0.1m | 0.1% |\n| Tchaouna | COV | £5.4m | £5.3m | -0.1m | 0.1% |\n| Jocelin.T | SUN | £5.0m | £4.9m | -0.1m | 0.0% |\n| Mundle | SUN | £4.9m | £4.8m | -0.1m | 0.0% |\n| Nyoni | LIV | £4.9m | £4.8m | -0.1m | 0.0% |\n\n_Total changes: 11 (Risers: 2, Fallers: 9)_\n",
-  "updated_at": "2026-10-09T23:06:25.238233+00:00"
+  "updated_at": "2026-10-09T23:06:26.391944+00:00"
 }
