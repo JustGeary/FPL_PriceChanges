@@ -5,7 +5,7 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW6 — 11-10-2026 (Risers: 3, Fallers: 18)</b>\n\n📈 <b>Risers</b>\n• <b>Groß</b> (BHA): +0.1m → £6.0m\n• <b>Gvardiol</b> (MCI): +0.1m → £5.8m\n• <b>Wissa</b> (NEW): +0.1m → £6.3m\n\n📉 <b>Fallers</b>\n• <b>Gabriel</b> (ARS): -0.1m → £7.9m\n• <b>Isak</b> (LIV): -0.1m → £9.0m\n• <b>Rice</b> (ARS): -0.1m → £7.3m\n• <b>Havertz</b> (ARS): -0.1m → £7.5m\n• <b>Xhaka</b> (SUN): -0.1m → £5.4m\n• <b>Ballard</b> (SUN): -0.1m → £4.8m\n• <b>Foden</b> (MCI): -0.1m → £6.8m\n• <b>Burrowes</b> (AVL): -0.1m → £4.4m\n• <b>Chilwell</b> (CRY): -0.1m → £4.4m\n• <b>Sadiki</b> (SUN): -0.1m → £4.8m\n• <b>Disasi</b> (CRY): -0.1m → £4.4m\n• <b>Hjertø-Dahl</b> (HUL): -0.1m → £4.8m\n• <b>Bahoya</b> (LEE): -0.1m → £4.9m\n• <b>Bradley</b> (LIV): -0.1m → £4.9m\n• <b>Gourna-Douath</b> (HUL): -0.1m → £4.9m\n• <b>Osorio</b> (CRY): -0.1m → £5.4m\n• <b>Rigg</b> (SUN): -0.1m → £4.8m\n• <b>Rulli</b> (MCI): -0.1m → £4.9m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -27,5 +27,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW6 — 11-10-2026 (Risers: 3, Fallers: 18)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Groß | BHA | £5.9m | £6.0m | +0.1m | 36.7% |\n| Gvardiol | MCI | £5.7m | £5.8m | +0.1m | 27.6% |\n| Wissa | NEW | £6.2m | £6.3m | +0.1m | 19.0% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Gabriel | ARS | £8.0m | £7.9m | -0.1m | 22.3% |\n| Isak | LIV | £9.1m | £9.0m | -0.1m | 16.2% |\n| Rice | ARS | £7.4m | £7.3m | -0.1m | 10.7% |\n| Havertz | ARS | £7.6m | £7.5m | -0.1m | 6.7% |\n| Xhaka | SUN | £5.5m | £5.4m | -0.1m | 3.4% |\n| Ballard | SUN | £4.9m | £4.8m | -0.1m | 1.8% |\n| Foden | MCI | £6.9m | £6.8m | -0.1m | 1.5% |\n| Burrowes | AVL | £4.5m | £4.4m | -0.1m | 0.5% |\n| Chilwell | CRY | £4.5m | £4.4m | -0.1m | 0.4% |\n| Sadiki | SUN | £4.9m | £4.8m | -0.1m | 0.2% |\n| Disasi | CRY | £4.5m | £4.4m | -0.1m | 0.1% |\n| Hjertø-Dahl | HUL | £4.9m | £4.8m | -0.1m | 0.1% |\n| Bahoya | LEE | £5.0m | £4.9m | -0.1m | 0.0% |\n| Bradley | LIV | £5.0m | £4.9m | -0.1m | 0.0% |\n| Gourna-Douath | HUL | £5.0m | £4.9m | -0.1m | 0.0% |\n| Osorio | CRY | £5.5m | £5.4m | -0.1m | 0.0% |\n| Rigg | SUN | £4.9m | £4.8m | -0.1m | 0.0% |\n| Rulli | MCI | £5.0m | £4.9m | -0.1m | 0.0% |\n\n_Total changes: 21 (Risers: 3, Fallers: 18)_\n",
-  "updated_at": "2026-10-10T23:06:13.330000+00:00"
+  "updated_at": "2026-10-10T23:06:14.893318+00:00"
 }
