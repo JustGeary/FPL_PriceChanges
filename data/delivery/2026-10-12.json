@@ -21,7 +21,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 Fallers (cont.)\n• Gannon-Doak (BOU) £4.8m\n• Adli (BOU) £4.8m\n• Ansah (HUL) £4.9m\n• Bettinelli (MCI) £4.4m\n• Vitor Reis (MCI) £4.4m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2109420370352824617"
     },
     {
       "channel": "x",
@@ -31,5 +33,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW6 — 12-10-2026 (Risers: 6, Fallers: 13)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| João Pedro | CHE | £7.7m | £7.8m | +0.1m | 68.3% |\n| Rogers | CHE | £7.8m | £7.9m | +0.1m | 44.1% |\n| De Cuyper | BHA | £5.0m | £5.1m | +0.1m | 33.6% |\n| Bogle | LEE | £4.6m | £4.7m | +0.1m | 8.6% |\n| Belloumi | HUL | £5.1m | £5.2m | +0.1m | 6.6% |\n| N.Jackson | AVL | £6.5m | £6.6m | +0.1m | 2.3% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Semenyo | MCI | £8.4m | £8.3m | -0.1m | 13.5% |\n| Gakpo | LIV | £7.2m | £7.1m | -0.1m | 8.4% |\n| Scott | BOU | £6.1m | £6.0m | -0.1m | 3.9% |\n| Dalot | MUN | £4.9m | £4.8m | -0.1m | 1.5% |\n| Andrey Santos | MUN | £4.8m | £4.7m | -0.1m | 0.5% |\n| Garnacho | AVL | £5.8m | £5.7m | -0.1m | 0.3% |\n| Bamba | NEW | £4.9m | £4.8m | -0.1m | 0.1% |\n| Dominguez | NFO | £4.9m | £4.8m | -0.1m | 0.1% |\n| Gannon-Doak | BOU | £4.9m | £4.8m | -0.1m | 0.1% |\n| Adli | BOU | £4.9m | £4.8m | -0.1m | 0.0% |\n| Ansah | HUL | £5.0m | £4.9m | -0.1m | 0.0% |\n| Bettinelli | MCI | £4.5m | £4.4m | -0.1m | 0.0% |\n| Vitor Reis | MCI | £4.5m | £4.4m | -0.1m | 0.0% |\n\n_Total changes: 19 (Risers: 6, Fallers: 13)_\n",
-  "updated_at": "2026-10-11T23:06:20.781122+00:00"
+  "updated_at": "2026-10-11T23:06:22.209247+00:00"
 }
