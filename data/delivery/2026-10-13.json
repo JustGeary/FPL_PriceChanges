@@ -13,7 +13,7 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW6\n📅 13-10-2026 (F:3) #FPL\n\n📉 Fallers:\n• van Ewijk (COV) £3.9m\n• Dorgu (MUN) £5.7m\n• Osman (BHA) £4.9m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -23,5 +23,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW6 — 13-10-2026 (Risers: 1, Fallers: 3)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Kostoulas | BHA | £5.6m | £5.7m | +0.1m | 8.5% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| van Ewijk | COV | £4.0m | £3.9m | -0.1m | 7.4% |\n| Dorgu | MUN | £5.8m | £5.7m | -0.1m | 0.4% |\n| Osman | BHA | £5.0m | £4.9m | -0.1m | 0.0% |\n\n_Total changes: 4 (Risers: 1, Fallers: 3)_\n",
-  "updated_at": "2026-10-12T23:06:17.069868+00:00"
+  "updated_at": "2026-10-12T23:06:18.492865+00:00"
 }
