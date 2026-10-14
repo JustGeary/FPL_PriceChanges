@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-15",
+  "status": "prepared",
+  "messages": [
+    {
+      "channel": "telegram",
+      "text": "<b>FPL Price Changes — GW6 — 15-10-2026 (Risers: 0, Fallers: 5)</b>\n\n📉 <b>Fallers</b>\n• <b>Pedro Porro</b> (TOT): -0.1m → £5.3m\n• <b>Muñoz</b> (NFO): -0.1m → £5.3m\n• <b>Senesi</b> (TOT): -0.1m → £5.7m\n• <b>Mazraoui</b> (MUN): -0.1m → £4.3m\n• <b>Dasilva</b> (BRE): -0.1m → £4.8m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 FPL Fallers #GW6\n📅 15-10-2026 (F:5) #FPL\n\n📉 Fallers:\n• Pedro Porro (TOT) £5.3m\n• Muñoz (NFO) £5.3m\n• Senesi (TOT) £5.7m\n• Mazraoui (MUN) £4.3m\n• Dasilva (BRE) £4.8m",
+      "status": "ready"
+    }
+  ],
+  "report": "# FPL Price Changes — GW6 — 15-10-2026 (Risers: 0, Fallers: 5)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Pedro Porro | TOT | £5.4m | £5.3m | -0.1m | 5.7% |\n| Muñoz | NFO | £5.4m | £5.3m | -0.1m | 5.2% |\n| Senesi | TOT | £5.8m | £5.7m | -0.1m | 3.3% |\n| Mazraoui | MUN | £4.4m | £4.3m | -0.1m | 0.4% |\n| Dasilva | BRE | £4.9m | £4.8m | -0.1m | 0.0% |\n\n_Total changes: 5 (Risers: 0, Fallers: 5)_\n",
+  "updated_at": "2026-10-14T23:06:12.260185+00:00"
+}
