@@ -13,7 +13,7 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW7\n📅 18-10-2026 (F:7) #FPL\n\n📉 Fallers:\n• Diop (IPS) £3.9m\n• Aina (NFO) £4.3m\n• Robinson (FUL) £4.4m\n• Khusanov (MCI) £5.3m\n• Bentancur (TOT) £5.4m\n• Tel (TOT) £5.6m\n• Touré (NEW) £5.7m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -23,5 +23,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW7 — 18-10-2026 (Risers: 3, Fallers: 7)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Calafiori | ARS | £5.9m | £6.0m | +0.1m | 53.3% |\n| Cherki | MCI | £7.9m | £8.0m | +0.1m | 37.0% |\n| Manzambi | AVL | £5.9m | £6.0m | +0.1m | 2.4% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Diop | IPS | £4.0m | £3.9m | -0.1m | 11.1% |\n| Aina | NFO | £4.4m | £4.3m | -0.1m | 1.8% |\n| Robinson | FUL | £4.5m | £4.4m | -0.1m | 1.3% |\n| Khusanov | MCI | £5.4m | £5.3m | -0.1m | 1.2% |\n| Bentancur | TOT | £5.5m | £5.4m | -0.1m | 0.1% |\n| Tel | TOT | £5.7m | £5.6m | -0.1m | 0.1% |\n| Touré | NEW | £5.8m | £5.7m | -0.1m | 0.1% |\n\n_Total changes: 10 (Risers: 3, Fallers: 7)_\n",
-  "updated_at": "2026-10-17T23:06:17.401799+00:00"
+  "updated_at": "2026-10-17T23:06:18.899573+00:00"
 }
