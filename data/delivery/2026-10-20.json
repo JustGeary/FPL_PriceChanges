@@ -13,7 +13,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW7\n📅 20-10-2026 (F:6) #FPL\n\n📉 Fallers:\n• Welbeck (CHE) £5.8m\n• Alcaraz (EVE) £4.8m\n• Grimes (COV) £4.8m\n• Onyeka (COV) £4.8m\n• Stroud (HUL) £4.9m\n• Wieffer (BHA) £4.8m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2112319473093062756"
     },
     {
       "channel": "x",
@@ -23,5 +25,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW7 — 20-10-2026 (Risers: 4, Fallers: 6)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Rogers | CHE | £7.9m | £8.0m | +0.1m | 47.9% |\n| Groß | BHA | £6.1m | £6.2m | +0.1m | 45.1% |\n| De Cuyper | BHA | £5.2m | £5.3m | +0.1m | 40.8% |\n| Doku | MCI | £7.4m | £7.5m | +0.1m | 2.3% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Welbeck | CHE | £5.9m | £5.8m | -0.1m | 0.8% |\n| Alcaraz | EVE | £4.9m | £4.8m | -0.1m | 0.1% |\n| Grimes | COV | £4.9m | £4.8m | -0.1m | 0.1% |\n| Onyeka | COV | £4.9m | £4.8m | -0.1m | 0.1% |\n| Stroud | HUL | £5.0m | £4.9m | -0.1m | 0.1% |\n| Wieffer | BHA | £4.9m | £4.8m | -0.1m | 0.1% |\n\n_Total changes: 10 (Risers: 4, Fallers: 6)_\n",
-  "updated_at": "2026-10-19T23:06:19.224726+00:00"
+  "updated_at": "2026-10-19T23:06:22.198054+00:00"
 }
