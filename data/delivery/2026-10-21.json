@@ -21,9 +21,11 @@
       "channel": "x",
       "group": "risers",
       "text": "📈 FPL Risers #GW7\n📅 21-10-2026 (R:1) #FPL\n\n📈 Risers:\n• Jacquet (LIV) £5.1m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2112681860719366147"
     }
   ],
   "report": "# FPL Price Changes — GW7 — 21-10-2026 (Risers: 1, Fallers: 7)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Jacquet | LIV | £5.0m | £5.1m | +0.1m | 4.1% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Hughes | CRY | £4.4m | £4.3m | -0.1m | 6.1% |\n| Gyökeres | ARS | £7.1m | £7.0m | -0.1m | 3.2% |\n| Muniz | FUL | £5.4m | £5.3m | -0.1m | 0.4% |\n| Nmecha | LEE | £5.4m | £5.3m | -0.1m | 0.4% |\n| Endo | LIV | £4.9m | £4.8m | -0.1m | 0.1% |\n| Hudson-Odoi | NFO | £5.8m | £5.7m | -0.1m | 0.1% |\n| Ruggeri | AVL | £4.5m | £4.4m | -0.1m | 0.1% |\n\n_Total changes: 8 (Risers: 1, Fallers: 7)_\n",
-  "updated_at": "2026-10-20T23:06:20.593253+00:00"
+  "updated_at": "2026-10-20T23:06:22.164305+00:00"
 }
