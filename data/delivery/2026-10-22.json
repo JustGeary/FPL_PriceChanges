@@ -13,7 +13,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW7\n📅 22-10-2026 (F:1) #FPL\n\n📉 Fallers:\n• Palacios (FUL) £5.3m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2113044251261210661"
     },
     {
       "channel": "x",
@@ -23,5 +25,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW7 — 22-10-2026 (Risers: 1, Fallers: 1)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Calvert-Lewin | LEE | £6.0m | £6.1m | +0.1m | 23.4% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Palacios | FUL | £5.4m | £5.3m | -0.1m | 0.1% |\n\n_Total changes: 2 (Risers: 1, Fallers: 1)_\n",
-  "updated_at": "2026-10-21T23:06:20.443385+00:00"
+  "updated_at": "2026-10-21T23:06:22.748934+00:00"
 }
