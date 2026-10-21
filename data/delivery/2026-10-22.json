@@ -5,7 +5,9 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW7 — 22-10-2026 (Risers: 1, Fallers: 1)</b>\n\n📈 <b>Risers</b>\n• <b>Calvert-Lewin</b> (LEE): +0.1m → £6.1m\n\n📉 <b>Fallers</b>\n• <b>Palacios</b> (FUL): -0.1m → £5.3m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 200,
+      "id": "424"
     },
     {
       "channel": "x",
@@ -21,5 +23,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW7 — 22-10-2026 (Risers: 1, Fallers: 1)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Calvert-Lewin | LEE | £6.0m | £6.1m | +0.1m | 23.4% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Palacios | FUL | £5.4m | £5.3m | -0.1m | 0.1% |\n\n_Total changes: 2 (Risers: 1, Fallers: 1)_\n",
-  "updated_at": "2026-10-21T23:06:15.856007+00:00"
+  "updated_at": "2026-10-21T23:06:18.852499+00:00"
 }
