@@ -13,7 +13,7 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW7\n📅 23-10-2026 (F:2) #FPL\n\n📉 Fallers:\n• Maguire (MUN) £4.7m\n• Ampadu (LEE) £5.3m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -23,5 +23,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW7 — 23-10-2026 (Risers: 2, Fallers: 2)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Palmer | CHE | £9.7m | £9.8m | +0.1m | 27.1% |\n| Mbeumo | MUN | £7.8m | £7.9m | +0.1m | 20.9% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Maguire | MUN | £4.8m | £4.7m | -0.1m | 6.6% |\n| Ampadu | LEE | £5.4m | £5.3m | -0.1m | 0.8% |\n\n_Total changes: 4 (Risers: 2, Fallers: 2)_\n",
-  "updated_at": "2026-10-22T23:06:16.502457+00:00"
+  "updated_at": "2026-10-22T23:06:17.704168+00:00"
 }
