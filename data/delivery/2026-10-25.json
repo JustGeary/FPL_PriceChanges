@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-25",
+  "status": "prepared",
+  "messages": [
+    {
+      "channel": "telegram",
+      "text": "<b>FPL Price Changes — GW8 — 25-10-2026 (Risers: 2, Fallers: 6)</b>\n\n📈 <b>Risers</b>\n• <b>Rice</b> (ARS): +0.1m → £7.4m\n• <b>N.Jackson</b> (AVL): +0.1m → £6.7m\n\n📉 <b>Fallers</b>\n• <b>Szoboszlai</b> (LIV): -0.1m → £6.7m\n• <b>Gonzalo</b> (FUL): -0.1m → £6.0m\n• <b>Hume</b> (SUN): -0.1m → £4.2m\n• <b>Aaronson</b> (LEE): -0.1m → £5.2m\n• <b>I.Sangaré</b> (NFO): -0.1m → £4.7m\n• <b>Hackney</b> (EVE): -0.1m → £5.3m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 FPL Fallers #GW8\n📅 25-10-2026 (F:6) #FPL\n\n📉 Fallers:\n• Szoboszlai (LIV) £6.7m\n• Gonzalo (FUL) £6.0m\n• Hume (SUN) £4.2m\n• Aaronson (LEE) £5.2m\n• I.Sangaré (NFO) £4.7m\n• Hackney (EVE) £5.3m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "risers",
+      "text": "📈 FPL Risers #GW8\n📅 25-10-2026 (R:2) #FPL\n\n📈 Risers:\n• Rice (ARS) £7.4m\n• N.Jackson (AVL) £6.7m",
+      "status": "ready"
+    }
+  ],
+  "report": "# FPL Price Changes — GW8 — 25-10-2026 (Risers: 2, Fallers: 6)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Rice | ARS | £7.3m | £7.4m | +0.1m | 12.3% |\n| N.Jackson | AVL | £6.6m | £6.7m | +0.1m | 5.9% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Szoboszlai | LIV | £6.8m | £6.7m | -0.1m | 15.9% |\n| Gonzalo | FUL | £6.1m | £6.0m | -0.1m | 6.1% |\n| Hume | SUN | £4.3m | £4.2m | -0.1m | 2.0% |\n| Aaronson | LEE | £5.3m | £5.2m | -0.1m | 0.4% |\n| I.Sangaré | NFO | £4.8m | £4.7m | -0.1m | 0.3% |\n| Hackney | EVE | £5.4m | £5.3m | -0.1m | 0.2% |\n\n_Total changes: 8 (Risers: 2, Fallers: 6)_\n",
+  "updated_at": "2026-10-24T23:06:11.738756+00:00"
+}
