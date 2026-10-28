@@ -5,7 +5,9 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW8 — 28-10-2026 (Risers: 4, Fallers: 4)</b>\n\n📈 <b>Risers</b>\n• <b>Haaland</b> (MCI): +0.1m → £15.8m\n• <b>Isak</b> (LIV): +0.1m → £9.1m\n• <b>N.Jackson</b> (AVL): +0.1m → £6.8m\n• <b>Vuskovic</b> (BHA): +0.1m → £5.2m\n\n📉 <b>Fallers</b>\n• <b>João Pedro</b> (CHE): -0.1m → £7.8m\n• <b>Cunha</b> (MUN): -0.1m → £7.8m\n• <b>Rashford</b> (MUN): -0.1m → £6.8m\n• <b>Diomande</b> (NFO): -0.1m → £5.3m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 200,
+      "id": "430"
     },
     {
       "channel": "x",
@@ -21,5 +23,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW8 — 28-10-2026 (Risers: 4, Fallers: 4)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Haaland | MCI | £15.7m | £15.8m | +0.1m | 78.2% |\n| Isak | LIV | £9.0m | £9.1m | +0.1m | 16.5% |\n| N.Jackson | AVL | £6.7m | £6.8m | +0.1m | 11.4% |\n| Vuskovic | BHA | £5.1m | £5.2m | +0.1m | 6.6% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| João Pedro | CHE | £7.9m | £7.8m | -0.1m | 66.3% |\n| Cunha | MUN | £7.9m | £7.8m | -0.1m | 6.0% |\n| Rashford | MUN | £6.9m | £6.8m | -0.1m | 1.1% |\n| Diomande | NFO | £5.4m | £5.3m | -0.1m | 0.5% |\n\n_Total changes: 8 (Risers: 4, Fallers: 4)_\n",
-  "updated_at": "2026-10-28T00:06:15.679434+00:00"
+  "updated_at": "2026-10-28T00:06:24.688147+00:00"
 }
