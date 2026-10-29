@@ -5,7 +5,9 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW8 — 29-10-2026 (Risers: 1, Fallers: 1)</b>\n\n📈 <b>Risers</b>\n• <b>Manzambi</b> (AVL): +0.1m → £6.1m\n\n📉 <b>Fallers</b>\n• <b>M.Sangaré</b> (BRE): -0.1m → £5.4m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 200,
+      "id": "431"
     },
     {
       "channel": "x",
@@ -21,5 +23,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW8 — 29-10-2026 (Risers: 1, Fallers: 1)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Manzambi | AVL | £6.0m | £6.1m | +0.1m | 4.8% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| M.Sangaré | BRE | £5.5m | £5.4m | -0.1m | 6.6% |\n\n_Total changes: 2 (Risers: 1, Fallers: 1)_\n",
-  "updated_at": "2026-10-29T00:06:13.984424+00:00"
+  "updated_at": "2026-10-29T00:06:15.863049+00:00"
 }
