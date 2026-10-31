@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-31",
+  "status": "prepared",
+  "messages": [
+    {
+      "channel": "telegram",
+      "text": "<b>FPL Price Changes — GW8 — 31-10-2026 (Risers: 4, Fallers: 8)</b>\n\n📈 <b>Risers</b>\n• <b>Rogers</b> (CHE): +0.1m → £8.1m\n• <b>Tavernier</b> (BOU): +0.1m → £6.5m\n• <b>Gabriel</b> (ARS): +0.1m → £8.0m\n• <b>N.Jackson</b> (AVL): +0.1m → £6.9m\n\n📉 <b>Fallers</b>\n• <b>Martinez</b> (CHE): -0.1m → £4.9m\n• <b>Delap</b> (NFO): -0.1m → £5.4m\n• <b>George Hemmings</b> (AVL): -0.1m → £4.4m\n• <b>Yarmoliuk</b> (BRE): -0.1m → £4.7m\n• <b>Smith Rowe</b> (FUL): -0.1m → £5.2m\n• <b>Fernandez-Pardo</b> (NEW): -0.1m → £5.9m\n• <b>Williams-Barnett</b> (TOT): -0.1m → £4.4m\n• <b>Ferguson</b> (BHA): -0.1m → £4.9m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 FPL Fallers #GW8\n📅 31-10-2026 (F:8) #FPL\n\n📉 Fallers:\n• Martinez (CHE) £4.9m\n• Delap (NFO) £5.4m\n• George Hemmings (AVL) £4.4m\n• Yarmoliuk (BRE) £4.7m\n• Smith Rowe (FUL) £5.2m\n• Fernandez-Pardo (NEW) £5.9m\n• Williams-Barnett (TOT) £4.4m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 Fallers (cont.)\n• Ferguson (BHA) £4.9m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "risers",
+      "text": "📈 FPL Risers #GW8\n📅 31-10-2026 (R:4) #FPL\n\n📈 Risers:\n• Rogers (CHE) £8.1m\n• Tavernier (BOU) £6.5m\n• Gabriel (ARS) £8.0m\n• N.Jackson (AVL) £6.9m",
+      "status": "ready"
+    }
+  ],
+  "report": "# FPL Price Changes — GW8 — 31-10-2026 (Risers: 4, Fallers: 8)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Rogers | CHE | £8.0m | £8.1m | +0.1m | 50.7% |\n| Tavernier | BOU | £6.4m | £6.5m | +0.1m | 24.1% |\n| Gabriel | ARS | £7.9m | £8.0m | +0.1m | 23.9% |\n| N.Jackson | AVL | £6.8m | £6.9m | +0.1m | 20.6% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Martinez | CHE | £5.0m | £4.9m | -0.1m | 3.4% |\n| Delap | NFO | £5.5m | £5.4m | -0.1m | 1.7% |\n| George Hemmings | AVL | £4.5m | £4.4m | -0.1m | 0.7% |\n| Yarmoliuk | BRE | £4.8m | £4.7m | -0.1m | 0.5% |\n| Smith Rowe | FUL | £5.3m | £5.2m | -0.1m | 0.2% |\n| Fernandez-Pardo | NEW | £6.0m | £5.9m | -0.1m | 0.1% |\n| Williams-Barnett | TOT | £4.5m | £4.4m | -0.1m | 0.1% |\n| Ferguson | BHA | £5.0m | £4.9m | -0.1m | 0.0% |\n\n_Total changes: 12 (Risers: 4, Fallers: 8)_\n",
+  "updated_at": "2026-10-31T00:06:18.106893+00:00"
+}
