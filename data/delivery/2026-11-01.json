@@ -13,7 +13,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW9\n📅 01-11-2026 (F:7) #FPL\n\n📉 Fallers:\n• João Pedro (CHE) £7.7m\n• Cherki (MCI) £7.9m\n• N.Williams (NFO) £4.9m\n• King (FUL) £5.5m\n• Igor Jesus (NFO) £5.6m\n• Ballard (SUN) £4.7m\n• Furo (BRE) £4.4m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2116683209819763140"
     },
     {
       "channel": "x",
@@ -23,5 +25,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW9 — 01-11-2026 (Risers: 7, Fallers: 7)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| De Cuyper | BHA | £5.3m | £5.4m | +0.1m | 44.0% |\n| Tavernier | BOU | £6.5m | £6.6m | +0.1m | 26.0% |\n| N.Jackson | AVL | £6.9m | £7.0m | +0.1m | 23.9% |\n| Isak | LIV | £9.1m | £9.2m | +0.1m | 20.8% |\n| Evanilson | BOU | £6.3m | £6.4m | +0.1m | 15.5% |\n| Belloumi | HUL | £5.2m | £5.3m | +0.1m | 10.2% |\n| Van Hecke | TOT | £4.9m | £5.0m | +0.1m | 9.7% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| João Pedro | CHE | £7.8m | £7.7m | -0.1m | 44.1% |\n| Cherki | MCI | £8.0m | £7.9m | -0.1m | 36.8% |\n| N.Williams | NFO | £5.0m | £4.9m | -0.1m | 5.8% |\n| King | FUL | £5.6m | £5.5m | -0.1m | 3.8% |\n| Igor Jesus | NFO | £5.7m | £5.6m | -0.1m | 1.1% |\n| Ballard | SUN | £4.8m | £4.7m | -0.1m | 1.0% |\n| Furo | BRE | £4.5m | £4.4m | -0.1m | 0.6% |\n\n_Total changes: 14 (Risers: 7, Fallers: 7)_\n",
-  "updated_at": "2026-11-01T00:06:16.440559+00:00"
+  "updated_at": "2026-11-01T00:06:18.124057+00:00"
 }
