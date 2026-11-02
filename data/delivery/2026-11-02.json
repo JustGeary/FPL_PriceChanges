@@ -1,6 +1,6 @@
 {
   "date": "2026-11-02",
-  "status": "prepared",
+  "status": "complete",
   "messages": [
     {
       "channel": "telegram",
@@ -19,5 +19,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW9 — 02-11-2026 (Risers: 0, Fallers: 3)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Lewis-Skelly | ARS | £5.4m | £5.3m | -0.1m | 0.5% |\n| Lucky | LIV | £4.0m | £3.9m | -0.1m | 0.1% |\n| McNair | HUL | £4.0m | £3.9m | -0.1m | 0.1% |\n\n_Total changes: 3 (Risers: 0, Fallers: 3)_\n",
-  "updated_at": "2026-11-02T00:06:19.296376+00:00"
+  "updated_at": "2026-11-02T00:06:20.723668+00:00"
 }
