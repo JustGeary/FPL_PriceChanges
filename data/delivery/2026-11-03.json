@@ -5,7 +5,7 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW9 — 03-11-2026 (Risers: 0, Fallers: 3)</b>\n\n📉 <b>Fallers</b>\n• <b>Gonzalo</b> (FUL): -0.1m → £5.9m\n• <b>Mosquera</b> (ARS): -0.1m → £5.1m\n• <b>Barco</b> (CHE): -0.1m → £5.3m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -15,5 +15,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW9 — 03-11-2026 (Risers: 0, Fallers: 3)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Gonzalo | FUL | £6.0m | £5.9m | -0.1m | 4.4% |\n| Mosquera | ARS | £5.2m | £5.1m | -0.1m | 1.2% |\n| Barco | CHE | £5.4m | £5.3m | -0.1m | 0.1% |\n\n_Total changes: 3 (Risers: 0, Fallers: 3)_\n",
-  "updated_at": "2026-11-03T00:06:13.480524+00:00"
+  "updated_at": "2026-11-03T00:06:15.374941+00:00"
 }
