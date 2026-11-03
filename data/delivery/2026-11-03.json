@@ -13,9 +13,11 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW9\n📅 03-11-2026 (F:3) #FPL\n\n📉 Fallers:\n• Gonzalo (FUL) £5.9m\n• Mosquera (ARS) £5.1m\n• Barco (CHE) £5.3m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2117407996925927907"
     }
   ],
   "report": "# FPL Price Changes — GW9 — 03-11-2026 (Risers: 0, Fallers: 3)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Gonzalo | FUL | £6.0m | £5.9m | -0.1m | 4.4% |\n| Mosquera | ARS | £5.2m | £5.1m | -0.1m | 1.2% |\n| Barco | CHE | £5.4m | £5.3m | -0.1m | 0.1% |\n\n_Total changes: 3 (Risers: 0, Fallers: 3)_\n",
-  "updated_at": "2026-11-03T00:06:18.987955+00:00"
+  "updated_at": "2026-11-03T00:06:20.879696+00:00"
 }
