@@ -5,7 +5,7 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW9 — 04-11-2026 (Risers: 4, Fallers: 8)</b>\n\n📈 <b>Risers</b>\n• <b>Rogers</b> (CHE): +0.1m → £8.2m\n• <b>Konsa</b> (ARS): +0.1m → £4.8m\n• <b>Silva</b> (BOU): +0.1m → £5.1m\n• <b>Kudus</b> (TOT): +0.1m → £6.6m\n\n📉 <b>Fallers</b>\n• <b>Kayode</b> (BRE): -0.1m → £4.5m\n• <b>Thiaw</b> (NEW): -0.1m → £4.9m\n• <b>Aina</b> (NFO): -0.1m → £4.2m\n• <b>McAteer</b> (IPS): -0.1m → £4.3m\n• <b>Sávio</b> (TOT): -0.1m → £6.4m\n• <b>Fofana</b> (SUN): -0.1m → £5.4m\n• <b>Guessand</b> (CRY): -0.1m → £5.3m\n• <b>Ömür</b> (HUL): -0.1m → £4.8m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -21,5 +21,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW9 — 04-11-2026 (Risers: 4, Fallers: 8)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Rogers | CHE | £8.1m | £8.2m | +0.1m | 52.5% |\n| Konsa | ARS | £4.7m | £4.8m | +0.1m | 23.1% |\n| Silva | BOU | £5.0m | £5.1m | +0.1m | 2.6% |\n| Kudus | TOT | £6.5m | £6.6m | +0.1m | 1.7% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Kayode | BRE | £4.6m | £4.5m | -0.1m | 6.8% |\n| Thiaw | NEW | £5.0m | £4.9m | -0.1m | 1.6% |\n| Aina | NFO | £4.3m | £4.2m | -0.1m | 1.5% |\n| McAteer | IPS | £4.4m | £4.3m | -0.1m | 0.8% |\n| Sávio | TOT | £6.5m | £6.4m | -0.1m | 0.4% |\n| Fofana | SUN | £5.5m | £5.4m | -0.1m | 0.0% |\n| Guessand | CRY | £5.4m | £5.3m | -0.1m | 0.0% |\n| Ömür | HUL | £4.9m | £4.8m | -0.1m | 0.0% |\n\n_Total changes: 12 (Risers: 4, Fallers: 8)_\n",
-  "updated_at": "2026-11-04T00:06:14.956002+00:00"
+  "updated_at": "2026-11-04T00:06:16.459696+00:00"
 }
