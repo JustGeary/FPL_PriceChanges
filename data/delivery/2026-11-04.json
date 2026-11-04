@@ -21,9 +21,9 @@
       "channel": "x",
       "group": "risers",
       "text": "📈 FPL Risers #GW9\n📅 04-11-2026 (R:4) #FPL\n\n📈 Risers:\n• Rogers (CHE) £8.2m\n• Konsa (ARS) £4.8m\n• Silva (BOU) £5.1m\n• Kudus (TOT) £6.6m",
-      "status": "ready"
+      "status": "sending"
     }
   ],
   "report": "# FPL Price Changes — GW9 — 04-11-2026 (Risers: 4, Fallers: 8)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Rogers | CHE | £8.1m | £8.2m | +0.1m | 52.5% |\n| Konsa | ARS | £4.7m | £4.8m | +0.1m | 23.1% |\n| Silva | BOU | £5.0m | £5.1m | +0.1m | 2.6% |\n| Kudus | TOT | £6.5m | £6.6m | +0.1m | 1.7% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Kayode | BRE | £4.6m | £4.5m | -0.1m | 6.8% |\n| Thiaw | NEW | £5.0m | £4.9m | -0.1m | 1.6% |\n| Aina | NFO | £4.3m | £4.2m | -0.1m | 1.5% |\n| McAteer | IPS | £4.4m | £4.3m | -0.1m | 0.8% |\n| Sávio | TOT | £6.5m | £6.4m | -0.1m | 0.4% |\n| Fofana | SUN | £5.5m | £5.4m | -0.1m | 0.0% |\n| Guessand | CRY | £5.4m | £5.3m | -0.1m | 0.0% |\n| Ömür | HUL | £4.9m | £4.8m | -0.1m | 0.0% |\n\n_Total changes: 12 (Risers: 4, Fallers: 8)_\n",
-  "updated_at": "2026-11-04T00:06:21.171323+00:00"
+  "updated_at": "2026-11-04T00:06:22.683408+00:00"
 }
