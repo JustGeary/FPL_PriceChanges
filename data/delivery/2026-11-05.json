@@ -5,7 +5,7 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW9 — 05-11-2026 (Risers: 0, Fallers: 4)</b>\n\n📉 <b>Fallers</b>\n• <b>Gibbs-White</b> (NFO): -0.1m → £7.8m\n• <b>Maguire</b> (MUN): -0.1m → £4.6m\n• <b>Rodon</b> (LEE): -0.1m → £4.2m\n• <b>Tutierov</b> (SUN): -0.1m → £4.9m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -15,5 +15,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW9 — 05-11-2026 (Risers: 0, Fallers: 4)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Gibbs-White | NFO | £7.9m | £7.8m | -0.1m | 10.5% |\n| Maguire | MUN | £4.7m | £4.6m | -0.1m | 5.5% |\n| Rodon | LEE | £4.3m | £4.2m | -0.1m | 0.4% |\n| Tutierov | SUN | £5.0m | £4.9m | -0.1m | 0.0% |\n\n_Total changes: 4 (Risers: 0, Fallers: 4)_\n",
-  "updated_at": "2026-11-05T00:06:12.354526+00:00"
+  "updated_at": "2026-11-05T00:06:13.867839+00:00"
 }
