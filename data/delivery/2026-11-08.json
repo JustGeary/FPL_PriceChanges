@@ -21,7 +21,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 Fallers (cont.)\n• Mateo Joseph (LEE) £4.4m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2119219938422341890"
     },
     {
       "channel": "x",
@@ -31,5 +33,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW10 — 08-11-2026 (Risers: 2, Fallers: 9)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Tavernier | BOU | £6.6m | £6.7m | +0.1m | 30.7% |\n| N.Jackson | AVL | £7.0m | £7.1m | +0.1m | 28.8% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| B.Fernandes | MUN | £11.7m | £11.6m | -0.1m | 20.6% |\n| Saka | ARS | £9.5m | £9.4m | -0.1m | 5.7% |\n| Lacroix | CHE | £5.9m | £5.8m | -0.1m | 4.7% |\n| Muñoz | NFO | £5.3m | £5.2m | -0.1m | 4.2% |\n| Dalot | MUN | £4.8m | £4.7m | -0.1m | 1.2% |\n| Pope | NEW | £4.9m | £4.8m | -0.1m | 0.9% |\n| Herrington | HUL | £4.0m | £3.9m | -0.1m | 0.5% |\n| Fernandez-Pardo | NEW | £5.9m | £5.8m | -0.1m | 0.1% |\n| Mateo Joseph | LEE | £4.5m | £4.4m | -0.1m | 0.0% |\n\n_Total changes: 11 (Risers: 2, Fallers: 9)_\n",
-  "updated_at": "2026-11-08T00:06:19.742977+00:00"
+  "updated_at": "2026-11-08T00:06:21.307472+00:00"
 }
