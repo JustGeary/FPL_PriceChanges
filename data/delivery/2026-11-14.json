@@ -1,6 +1,6 @@
 {
   "date": "2026-11-14",
-  "status": "prepared",
+  "status": "complete",
   "messages": [
     {
       "channel": "telegram",
@@ -19,5 +19,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW10 — 14-11-2026 (Risers: 0, Fallers: 1)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Roefs | SUN | £4.9m | £4.8m | -0.1m | 1.9% |\n\n_Total changes: 1 (Risers: 0, Fallers: 1)_\n",
-  "updated_at": "2026-11-14T00:06:21.961808+00:00"
+  "updated_at": "2026-11-14T00:06:23.250886+00:00"
 }
