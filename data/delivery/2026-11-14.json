@@ -5,7 +5,9 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW10 — 14-11-2026 (Risers: 0, Fallers: 1)</b>\n\n📉 <b>Fallers</b>\n• <b>Roefs</b> (SUN): -0.1m → £4.8m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 200,
+      "id": "446"
     },
     {
       "channel": "x",
@@ -15,5 +17,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW10 — 14-11-2026 (Risers: 0, Fallers: 1)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Roefs | SUN | £4.9m | £4.8m | -0.1m | 1.9% |\n\n_Total changes: 1 (Risers: 0, Fallers: 1)_\n",
-  "updated_at": "2026-11-14T00:06:16.913264+00:00"
+  "updated_at": "2026-11-14T00:06:19.106068+00:00"
 }
