@@ -13,7 +13,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW10\n📅 15-11-2026 (F:2) #FPL\n\n📉 Fallers:\n• Steele (BHA) £3.9m\n• Frimpong (LIV) £5.1m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2121756638960914480"
     },
     {
       "channel": "x",
@@ -23,5 +25,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW10 — 15-11-2026 (Risers: 1, Fallers: 2)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Konsa | ARS | £4.8m | £4.9m | +0.1m | 24.7% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Steele | BHA | £4.0m | £3.9m | -0.1m | 3.4% |\n| Frimpong | LIV | £5.2m | £5.1m | -0.1m | 1.2% |\n\n_Total changes: 3 (Risers: 1, Fallers: 2)_\n",
-  "updated_at": "2026-11-15T00:06:16.471598+00:00"
+  "updated_at": "2026-11-15T00:06:17.856497+00:00"
 }
