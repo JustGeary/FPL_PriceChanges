@@ -5,7 +5,7 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW10 — 16-11-2026 (Risers: 0, Fallers: 1)</b>\n\n📉 <b>Fallers</b>\n• <b>Hamer</b> (COV): -0.1m → £5.2m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -15,5 +15,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW10 — 16-11-2026 (Risers: 0, Fallers: 1)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Hamer | COV | £5.3m | £5.2m | -0.1m | 0.1% |\n\n_Total changes: 1 (Risers: 0, Fallers: 1)_\n",
-  "updated_at": "2026-11-16T10:12:08.337522+00:00"
+  "updated_at": "2026-11-16T10:12:10.052020+00:00"
 }
