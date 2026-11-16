@@ -13,9 +13,11 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW10\n📅 16-11-2026 (F:1) #FPL\n\n📉 Fallers:\n• Hamer (COV) £5.2m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2122271520705724462"
     }
   ],
   "report": "# FPL Price Changes — GW10 — 16-11-2026 (Risers: 0, Fallers: 1)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Hamer | COV | £5.3m | £5.2m | -0.1m | 0.1% |\n\n_Total changes: 1 (Risers: 0, Fallers: 1)_\n",
-  "updated_at": "2026-11-16T10:12:13.380814+00:00"
+  "updated_at": "2026-11-16T10:12:15.211878+00:00"
 }
