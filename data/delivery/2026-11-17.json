@@ -5,7 +5,7 @@
     {
       "channel": "telegram",
       "text": "<b>FPL Price Changes — GW10 — 17-11-2026 (Risers: 0, Fallers: 3)</b>\n\n📉 <b>Fallers</b>\n• <b>Cook</b> (BOU): -0.1m → £4.9m\n• <b>J.Fletcher</b> (MUN): -0.1m → £4.8m\n• <b>Mingueza</b> (CRY): -0.1m → £4.2m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -15,5 +15,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW10 — 17-11-2026 (Risers: 0, Fallers: 3)\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Cook | BOU | £5.0m | £4.9m | -0.1m | 0.1% |\n| J.Fletcher | MUN | £4.9m | £4.8m | -0.1m | 0.0% |\n| Mingueza | CRY | £4.3m | £4.2m | -0.1m | 0.0% |\n\n_Total changes: 3 (Risers: 0, Fallers: 3)_\n",
-  "updated_at": "2026-11-17T00:06:14.285576+00:00"
+  "updated_at": "2026-11-17T00:06:16.189204+00:00"
 }
