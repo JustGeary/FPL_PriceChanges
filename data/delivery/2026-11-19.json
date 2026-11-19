@@ -13,7 +13,7 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW10\n📅 19-11-2026 (F:3) #FPL\n\n📉 Fallers:\n• Gonzalo (FUL) £5.8m\n• Georginio (BHA) £5.2m\n• McConnell (LIV) £4.3m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -23,5 +23,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW10 — 19-11-2026 (Risers: 3, Fallers: 3)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Gomez | BHA | £5.0m | £5.1m | +0.1m | 4.4% |\n| McGinn | AVL | £5.4m | £5.5m | +0.1m | 3.9% |\n| Suzuki | AVL | £5.0m | £5.1m | +0.1m | 3.2% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Gonzalo | FUL | £5.9m | £5.8m | -0.1m | 3.5% |\n| Georginio | BHA | £5.3m | £5.2m | -0.1m | 0.4% |\n| McConnell | LIV | £4.4m | £4.3m | -0.1m | 0.2% |\n\n_Total changes: 6 (Risers: 3, Fallers: 3)_\n",
-  "updated_at": "2026-11-19T00:06:16.982900+00:00"
+  "updated_at": "2026-11-19T00:06:18.246475+00:00"
 }
