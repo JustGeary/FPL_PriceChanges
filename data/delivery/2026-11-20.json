@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-20",
+  "status": "prepared",
+  "messages": [
+    {
+      "channel": "telegram",
+      "text": "<b>FPL Price Changes — GW10 — 20-11-2026 (Risers: 1, Fallers: 3)</b>\n\n📈 <b>Risers</b>\n• <b>N.Jackson</b> (AVL): +0.1m → £7.2m\n\n📉 <b>Fallers</b>\n• <b>Mitchell</b> (CRY): -0.1m → £4.4m\n• <b>Walle Egeli</b> (IPS): -0.1m → £4.4m\n• <b>Palacios</b> (FUL): -0.1m → £5.2m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 FPL Fallers #GW10\n📅 20-11-2026 (F:3) #FPL\n\n📉 Fallers:\n• Mitchell (CRY) £4.4m\n• Walle Egeli (IPS) £4.4m\n• Palacios (FUL) £5.2m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "risers",
+      "text": "📈 FPL Risers #GW10\n📅 20-11-2026 (R:1) #FPL\n\n📈 Risers:\n• N.Jackson (AVL) £7.2m",
+      "status": "ready"
+    }
+  ],
+  "report": "# FPL Price Changes — GW10 — 20-11-2026 (Risers: 1, Fallers: 3)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| N.Jackson | AVL | £7.1m | £7.2m | +0.1m | 32.6% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Mitchell | CRY | £4.5m | £4.4m | -0.1m | 4.6% |\n| Walle Egeli | IPS | £4.5m | £4.4m | -0.1m | 2.5% |\n| Palacios | FUL | £5.3m | £5.2m | -0.1m | 0.1% |\n\n_Total changes: 4 (Risers: 1, Fallers: 3)_\n",
+  "updated_at": "2026-11-20T00:06:14.030548+00:00"
+}
