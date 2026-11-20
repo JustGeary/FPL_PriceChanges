@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "status": "prepared",
+  "status": "needs_attention",
   "messages": [
     {
       "channel": "telegram",
@@ -25,5 +25,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW10 — 20-11-2026 (Risers: 1, Fallers: 3)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| N.Jackson | AVL | £7.1m | £7.2m | +0.1m | 32.6% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Mitchell | CRY | £4.5m | £4.4m | -0.1m | 4.6% |\n| Walle Egeli | IPS | £4.5m | £4.4m | -0.1m | 2.5% |\n| Palacios | FUL | £5.3m | £5.2m | -0.1m | 0.1% |\n\n_Total changes: 4 (Risers: 1, Fallers: 3)_\n",
-  "updated_at": "2026-11-20T00:06:52.521341+00:00"
+  "updated_at": "2026-11-20T00:06:53.763843+00:00"
 }
