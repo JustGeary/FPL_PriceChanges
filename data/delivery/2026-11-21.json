@@ -13,7 +13,7 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW10\n📅 21-11-2026 (F:9) #FPL\n\n📉 Fallers:\n• Mbeumo (MUN) £7.8m\n• Dubravka (TOT) £3.9m\n• Guéhi (MCI) £5.9m\n• King (FUL) £5.4m\n• Simms (COV) £4.8m\n• Fletcher (MUN) £4.3m\n• Barkley (AVL) £4.9m\n• Dowman (ARS) £5.2m\n• Hjertø-Dahl (HUL) £4.7m",
-      "status": "ready"
+      "status": "sending"
     },
     {
       "channel": "x",
@@ -23,5 +23,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW10 — 21-11-2026 (Risers: 2, Fallers: 9)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Raya | ARS | £6.2m | £6.3m | +0.1m | 47.7% |\n| Wirtz | LIV | £7.2m | £7.3m | +0.1m | 6.7% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Mbeumo | MUN | £7.9m | £7.8m | -0.1m | 18.2% |\n| Dubravka | TOT | £4.0m | £3.9m | -0.1m | 15.0% |\n| Guéhi | MCI | £6.0m | £5.9m | -0.1m | 12.8% |\n| King | FUL | £5.5m | £5.4m | -0.1m | 2.9% |\n| Simms | COV | £4.9m | £4.8m | -0.1m | 0.6% |\n| Fletcher | MUN | £4.4m | £4.3m | -0.1m | 0.3% |\n| Barkley | AVL | £5.0m | £4.9m | -0.1m | 0.2% |\n| Dowman | ARS | £5.3m | £5.2m | -0.1m | 0.1% |\n| Hjertø-Dahl | HUL | £4.8m | £4.7m | -0.1m | 0.0% |\n\n_Total changes: 11 (Risers: 2, Fallers: 9)_\n",
-  "updated_at": "2026-11-21T07:28:00.778011+00:00"
+  "updated_at": "2026-11-21T07:28:02.055946+00:00"
 }
