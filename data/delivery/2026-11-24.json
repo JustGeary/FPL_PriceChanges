@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-24",
+  "status": "prepared",
+  "messages": [
+    {
+      "channel": "telegram",
+      "text": "<b>FPL Price Changes — GW11 — 24-11-2026 (Risers: 2, Fallers: 3)</b>\n\n📈 <b>Risers</b>\n• <b>Tavernier</b> (BOU): +0.1m → £6.8m\n• <b>Rudoni</b> (COV): +0.1m → £5.0m\n\n📉 <b>Fallers</b>\n• <b>Egan</b> (HUL): -0.1m → £4.0m\n• <b>Woodman</b> (LIV): -0.1m → £3.9m\n• <b>Wood</b> (NFO): -0.1m → £5.6m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 FPL Fallers #GW11\n📅 24-11-2026 (F:3) #FPL\n\n📉 Fallers:\n• Egan (HUL) £4.0m\n• Woodman (LIV) £3.9m\n• Wood (NFO) £5.6m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "risers",
+      "text": "📈 FPL Risers #GW11\n📅 24-11-2026 (R:2) #FPL\n\n📈 Risers:\n• Tavernier (BOU) £6.8m\n• Rudoni (COV) £5.0m",
+      "status": "ready"
+    }
+  ],
+  "report": "# FPL Price Changes — GW11 — 24-11-2026 (Risers: 2, Fallers: 3)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Tavernier | BOU | £6.7m | £6.8m | +0.1m | 33.4% |\n| Rudoni | COV | £4.9m | £5.0m | +0.1m | 1.8% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Egan | HUL | £4.1m | £4.0m | -0.1m | 6.2% |\n| Woodman | LIV | £4.0m | £3.9m | -0.1m | 0.9% |\n| Wood | NFO | £5.7m | £5.6m | -0.1m | 0.7% |\n\n_Total changes: 5 (Risers: 2, Fallers: 3)_\n",
+  "updated_at": "2026-11-24T00:06:23.531491+00:00"
+}
