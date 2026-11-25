@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-25",
+  "status": "prepared",
+  "messages": [
+    {
+      "channel": "telegram",
+      "text": "<b>FPL Price Changes — GW11 — 25-11-2026 (Risers: 1, Fallers: 5)</b>\n\n📈 <b>Risers</b>\n• <b>Hill</b> (BOU): +0.1m → £5.7m\n\n📉 <b>Fallers</b>\n• <b>Andrey Santos</b> (MUN): -0.1m → £4.6m\n• <b>Merino</b> (ARS): -0.1m → £5.6m\n• <b>Grimes</b> (COV): -0.1m → £4.7m\n• <b>Henry</b> (BRE): -0.1m → £4.3m\n• <b>Schlager</b> (NFO): -0.1m → £4.9m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "fallers",
+      "text": "📉 FPL Fallers #GW11\n📅 25-11-2026 (F:5) #FPL\n\n📉 Fallers:\n• Andrey Santos (MUN) £4.6m\n• Merino (ARS) £5.6m\n• Grimes (COV) £4.7m\n• Henry (BRE) £4.3m\n• Schlager (NFO) £4.9m",
+      "status": "ready"
+    },
+    {
+      "channel": "x",
+      "group": "risers",
+      "text": "📈 FPL Risers #GW11\n📅 25-11-2026 (R:1) #FPL\n\n📈 Risers:\n• Hill (BOU) £5.7m",
+      "status": "ready"
+    }
+  ],
+  "report": "# FPL Price Changes — GW11 — 25-11-2026 (Risers: 1, Fallers: 5)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Hill | BOU | £5.6m | £5.7m | +0.1m | 4.5% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Andrey Santos | MUN | £4.7m | £4.6m | -0.1m | 0.4% |\n| Merino | ARS | £5.7m | £5.6m | -0.1m | 0.4% |\n| Grimes | COV | £4.8m | £4.7m | -0.1m | 0.1% |\n| Henry | BRE | £4.4m | £4.3m | -0.1m | 0.1% |\n| Schlager | NFO | £5.0m | £4.9m | -0.1m | 0.1% |\n\n_Total changes: 6 (Risers: 1, Fallers: 5)_\n",
+  "updated_at": "2026-11-25T00:06:22.920972+00:00"
+}
