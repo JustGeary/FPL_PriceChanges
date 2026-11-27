@@ -13,7 +13,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW11\n📅 27-11-2026 (F:5) #FPL\n\n📉 Fallers:\n• Haaland (MCI) £15.7m\n• Thiago (BRE) £7.7m\n• Brobbey (SUN) £5.6m\n• Hume (SUN) £4.1m\n• George Hemmings (AVL) £4.3m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2126105310058405913"
     },
     {
       "channel": "x",
@@ -23,5 +25,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW11 — 27-11-2026 (Risers: 5, Fallers: 5)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| De Cuyper | BHA | £5.5m | £5.6m | +0.1m | 50.5% |\n| Kinsky | TOT | £4.4m | £4.5m | +0.1m | 16.6% |\n| Wirtz | LIV | £7.4m | £7.5m | +0.1m | 12.7% |\n| Muharemović | LEE | £5.1m | £5.2m | +0.1m | 8.2% |\n| Okafor | LEE | £5.7m | £5.8m | +0.1m | 1.8% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Haaland | MCI | £15.8m | £15.7m | -0.1m | 76.5% |\n| Thiago | BRE | £7.8m | £7.7m | -0.1m | 6.4% |\n| Brobbey | SUN | £5.7m | £5.6m | -0.1m | 3.9% |\n| Hume | SUN | £4.2m | £4.1m | -0.1m | 1.6% |\n| George Hemmings | AVL | £4.4m | £4.3m | -0.1m | 0.7% |\n\n_Total changes: 10 (Risers: 5, Fallers: 5)_\n",
-  "updated_at": "2026-11-27T00:06:20.072372+00:00"
+  "updated_at": "2026-11-27T00:06:21.898350+00:00"
 }
