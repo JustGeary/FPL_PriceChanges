@@ -13,7 +13,9 @@
       "channel": "x",
       "group": "fallers",
       "text": "📉 FPL Fallers #GW12\n📅 28-11-2026 (F:21) #FPL\n\n📉 Fallers:\n• João Pedro (CHE) £7.5m\n• Palmer (CHE) £9.7m\n• Hall (NEW) £5.1m\n• Schade (BRE) £6.0m\n• Wissa (NEW) £5.8m\n• Gonzalo (FUL) £5.7m\n• King (FUL) £5.3m\n• Yates (NFO) £4.3m\n• Bentley (COV) £3.9m",
-      "status": "sending"
+      "status": "sent",
+      "http_status": 201,
+      "id": "2126467688038007197"
     },
     {
       "channel": "x",
@@ -35,5 +37,5 @@
     }
   ],
   "report": "# FPL Price Changes — GW12 — 28-11-2026 (Risers: 7, Fallers: 21)\n\n## Risers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| Groß | BHA | £6.3m | £6.4m | +0.1m | 50.0% |\n| Verbruggen | BHA | £4.7m | £4.8m | +0.1m | 25.7% |\n| Calvert-Lewin | LEE | £6.0m | £6.1m | +0.1m | 19.7% |\n| Wirtz | LIV | £7.5m | £7.6m | +0.1m | 17.0% |\n| Bogle | LEE | £4.8m | £4.9m | +0.1m | 12.8% |\n| Vuskovic | BHA | £5.3m | £5.4m | +0.1m | 12.2% |\n| Justin | LEE | £4.5m | £4.6m | +0.1m | 3.0% |\n\n## Fallers\n| Player | Team | Old | New | Δ | Own% |\n|---|:---:|---:|---:|---:|---:|\n| João Pedro | CHE | £7.6m | £7.5m | -0.1m | 26.2% |\n| Palmer | CHE | £9.8m | £9.7m | -0.1m | 25.4% |\n| Hall | NEW | £5.2m | £5.1m | -0.1m | 14.8% |\n| Schade | BRE | £6.1m | £6.0m | -0.1m | 10.5% |\n| Wissa | NEW | £5.9m | £5.8m | -0.1m | 7.0% |\n| Gonzalo | FUL | £5.8m | £5.7m | -0.1m | 2.7% |\n| King | FUL | £5.4m | £5.3m | -0.1m | 2.5% |\n| Yates | NFO | £4.4m | £4.3m | -0.1m | 1.0% |\n| Bentley | COV | £4.0m | £3.9m | -0.1m | 0.8% |\n| Isidor | SUN | £5.4m | £5.3m | -0.1m | 0.7% |\n| J.Angulo | SUN | £4.5m | £4.4m | -0.1m | 0.6% |\n| Burrowes | AVL | £4.4m | £4.3m | -0.1m | 0.5% |\n| Nketiah | CRY | £5.4m | £5.3m | -0.1m | 0.4% |\n| Garnacho | AVL | £5.7m | £5.6m | -0.1m | 0.3% |\n| I.Sangaré | NFO | £4.7m | £4.6m | -0.1m | 0.3% |\n| Bamba | NEW | £4.8m | £4.7m | -0.1m | 0.1% |\n| Bogarde | AVL | £4.9m | £4.8m | -0.1m | 0.1% |\n| Yirenkyi | COV | £4.8m | £4.7m | -0.1m | 0.1% |\n| Fofana | SUN | £5.4m | £5.3m | -0.1m | 0.0% |\n| Gillespie | NEW | £4.5m | £4.4m | -0.1m | 0.0% |\n| Tutierov | SUN | £4.8m | £4.7m | -0.1m | 0.0% |\n\n_Total changes: 28 (Risers: 7, Fallers: 21)_\n",
-  "updated_at": "2026-11-28T00:06:17.549197+00:00"
+  "updated_at": "2026-11-28T00:06:19.475412+00:00"
 }
